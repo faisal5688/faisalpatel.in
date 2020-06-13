@@ -1,0 +1,136 @@
+// Styling for the portfolio grid section
+.portfolio {
+  margin-bottom: -30px;
+  .portfolio-item {
+    cursor: pointer;
+    position: relative;
+    display: block;
+    max-width: 25rem;
+    margin-bottom: 30px;
+    border-radius: $border-radius;
+    overflow: hidden;
+    .portfolio-item-caption {
+      position: absolute;
+      top: 0;
+      left: 0;
+      transition: $transition-base;
+      opacity: 0;
+      background-color: fade-out($primary, .1);
+      &:hover {
+        opacity: 1;
+      }
+      .portfolio-item-caption-content {
+        font-size: 1.5rem;
+      }
+    }
+  }
+}
+
+// Styling for the portfolio modals
+.portfolio-modal {
+  .portfolio-modal-title {
+    font-size: 2.25rem;
+    line-height: 2rem;
+    @include media-breakpoint-up(lg) {
+      font-size: 3rem;
+      line-height: 2.5rem;
+    }
+  }
+  .close {
+    position: absolute;
+    z-index: 1;
+    right: 1.5rem;
+    top: 1rem;
+    font-size: 3rem;
+    line-height: 3rem;
+    color: $primary;
+    opacity: 1;
+  }
+}
+
+
+// Skills start
+
+.service-area {
+    background: #FAFAFA;
+}
+
+.single-service {
+    background: #fff;
+    padding: 60px 30px;
+    text-align: center;
+    height: 450px;
+}
+
+.service-icon i {
+    font-size: 60px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.single-service h2 {
+    font-size: 26px;
+    text-transform: capitalize;
+    margin-top: 10px;
+    margin-bottom: 40px;
+    -webkit-transition: .3s;
+    transition: .3s;
+    color: #333;
+    font-weight: 400;
+    position: relative;
+}
+
+.single-service h2::before {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    height: 1px;
+    width: 30px;
+    background: #333;
+    content: "";
+    margin-top: 40px;
+    margin-left: -15px;
+}
+
+.single-service p {
+    color: #000;
+    font-size: 14px;
+    margin-bottom: 0;
+}
+
+.text-gray{
+  color: #999;
+}
+
+.logo{
+  font-family: 'Shadows Into Light', cursive;
+
+  .lname{
+    color: #999a9a;
+  }
+}
+
+@include media-breakpoint-down(xs) {
+  .masthead{
+      padding-top: calc(0rem + 104px);
+
+      .masthead-heading{
+        font-size: 2rem;
+      }
+    }
+    .portfolio {
+      .portfolio-item{
+        .portfolio-item-caption{
+          &:hover{
+            opacity: 0;
+          }
+        }
+      }
+    }
+  }
+
+.education-section{
+  .sub-title{
+    font-size: .800rem;
+  }
+}
