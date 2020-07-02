@@ -1,0 +1,13 @@
+
+main font
+origna #e31b6d
+
+#b3e31b
+
+#1be3b3
+
+
+bar color 
+orignal #04c2c9
+
+#b3e31bb8
