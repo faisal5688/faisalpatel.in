@@ -140,6 +140,16 @@ $(function() {
   // GALLERY
   $('#gallery').mixItUp({});
 
+  function resetBarAnimation(){
+    //$(".bar.fill").removeAttr("style");
+    //setTimeout(function() {
+      $(".bar.fill").each(function(index){    
+        $(this).css("width", $(this).next().text())      
+    });
+    //}, 2000);
+    
+  }
+
   function mixClear() {
     setTimeout(function() {
       $('#gallery').removeClass('waypoint');
@@ -164,8 +174,13 @@ $(function() {
 
       trigger.waypoint(
         function() {
+
           elem.addClass('animated').addClass(animationClass);
+          //alert(elem.get(0).id)
+          
           if (elem.get(0).id === 'gallery') mixClear(); //OPTIONAL
+          if (elem.get(0).id === 'skilBar') resetBarAnimation(); //OPTIONAL
+          
         },
         {
           triggerOnce: true,
