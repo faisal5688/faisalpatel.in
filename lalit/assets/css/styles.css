@@ -536,7 +536,7 @@ header {
     position: absolute;
     right: 300px;
     top: 5px;
-    display: block !important;
+    display: none !important;
     z-index: 11;
 }
 
