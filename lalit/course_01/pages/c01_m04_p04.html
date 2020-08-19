@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html" charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+	<title>MCMS</title>
+
+	<link rel="stylesheet" href="assets/css/templates/knowledgeCheck_mcss.css">
+	<link rel="stylesheet" href="course_01/css/c01_m04_p04.css" type="text/css" />
+
+	<script src="js/controller/Templates/MCMS/SubmitButton.js"></script>
+	<script src="js/controller/Templates/MCMS/Feedback.js"></script>
+	<script src="js/controller/Templates/MCMS/Option.js"></script>
+	<script src="js/controller/Templates/MCMS/MCMSController_new.js"></script>
+	<script src="course_01/js/c01_m04_p04.js"></script>
+
+</head>
+
+<body>
+
+	<div class="wrapper">
+		<section id="mcmsContainer" class="mainContent">
+			<div id="KCContent">
+				<div id="mcmsHolder" class="mcmsWrap">
+					<div class="mcmsContainer">
+						<div class="mcmsQuestion">
+							<!-- <div class="imgSec">
+						<img src="assets/images/questIcon.png" alt="" />
+						<div class="questStatus"></div>
+					</div> -->
+							<div class="questSec">
+								<div id="mcmsQuestionTxt" class="question">Question?</div>
+								<div id="mcssInstructionTxt" class="mcssInstruction">
+									<p>Select the best response and click <b>Submit</b>.</p>
+								</div>
+							</div>
+						</div>
+						<div class="mainBorder">
+							<div id="mcmsOptionContainer" class="optionContainer">
+								<div class="row cloneOption">
+									<div class="optionIcons">
+										<div id="tickCross" class="tickIco correct"></div>
+										<div id="optionBox" class="checkBox"></div>
+									</div>
+									<div class="optionText">
+										<div id="optionTxt" class="txt"><span>option text</span></div>
+									</div>
+								</div>
+							</div>
+
+							<div id="mcmsNextBtn" class="nextBtn floatRht">Next</div>
+							<div id="mcmsSubmitBtn" class="submitBtn floatRht">Submit</div>
+						</div>
+						<!-- <div id="mcmsNextBtn" class="nextBtn floatRht">
+					<input type="button" value="Next">
+				</div>
+				<div id="mcmsSubmitBtn" class="submitBtn floatRht">
+					<input type="button" value="Submit">
+				 </div> -->
+
+						<div id="mcmsFeedbackBox" class="feedBackPopup">
+							<div class="feedBackContent">
+								<div id="feedbackHeader" class="titleTxt">
+									<span>Feedback</span>
+									<div id="feedbackClose" class="popupClose"></div>
+								</div>
+								<div id="feedbackContent" class="feebackText">Answer A is correct.</div>
+							</div>
+						</div>
+					</div>
+					<div class="clear"></div>
+				</div>
+				<div class="clear"></div>
+			</div>
+		</section>
+	</div>
+
+</body>
+
+</html>

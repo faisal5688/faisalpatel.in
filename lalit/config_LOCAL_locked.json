@@ -1,0 +1,84 @@
+{
+
+
+  "configData": {
+
+    "course": {
+
+      "courseID": "01",
+
+      "courseFolder": "course_01",
+ 
+      "courseDataType":"json",
+ 
+      "showIntro": "true",
+
+      "language": "en",
+
+      "navigationMode": "linear",
+
+      "courseCompliance": "local"
+
+    },
+
+    "features": {
+
+      "showHelp": "true",
+
+      "showExit": "true",
+
+      "showGlossary": "true",
+
+      "showAudio": "true",
+
+      "showAudioSlider": "true",
+
+      "showTranscript": "true",
+
+      "showProgressBar": "true",
+
+      "showNotepad": "true",
+
+      "showResources": "false",
+
+      "showSynopsis": "false",
+
+	  
+      "showFavorite": "true",
+	  
+	  
+	  
+
+      "showIntro": "true",
+
+      "pageCounterMode": "topic",
+
+      "showPageTransition": "true",
+
+      "allowSwipe": "true"
+
+    },
+
+    "assessment": {
+
+      "available": "false",
+
+      "passingPercent": "70",
+
+      "allowRetake": "true",
+
+      "maxAttempts": "2",
+
+      "randomizeQuestions": "true",
+
+      "showRemedial": "true"
+
+    },
+	
+	"shortcutFilePath": {
+		"shortcutUrl": "../../"
+	}
+
+  }
+
+}

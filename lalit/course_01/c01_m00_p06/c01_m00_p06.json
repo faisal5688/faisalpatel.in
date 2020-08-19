@@ -1,0 +1,17 @@
+{
+    "data": {
+        "basePath": "./course_01/c01_m00_p06/",
+        "downloadAndroidImages": "",
+        "downloadIpadImages": "",
+        "downloadImages": "c01_m00_p06.png",
+        "textImageData": {
+            "content": "<div class='custom-width1' style='text-align:center;'></div>",
+            "image": ""
+        },
+        "animContent": {
+            "video": "",
+            "isAbsolute": true,
+            "videoDimension": "600,338"
+        }
+    }
+}

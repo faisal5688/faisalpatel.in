@@ -1,0 +1,76 @@
+@charset "utf-8";
+
+/* CSS Document */
+
+
+/* Static Text/Image/Video */
+
+#sectionHolder {
+    /* background: #f0f0f0; */
+    height: 474px;
+    /*  margin-top: 30px;*/
+}
+
+.imageHolder {
+    margin: 0;
+    width: 450px;
+    padding: 0;
+    margin: 0 auto;
+    position: relative;
+}
+
+
+/* start circle 1 animation*/
+
+/* .mainContent .section {
+    display: none;
+} */
+
+.courseNavigation {
+    position: absolute;
+    top: 2px;
+    left: 86px;
+    z-index: 1;
+}
+
+#PageContent {
+    clear: both;
+    max-height: 100%;
+    height: calc(100% - 62px - 11px);
+    overflow: hidden;
+    padding: 0;
+    position: relative;
+    z-index: 1;
+}
+
+.course_inst {
+    max-width: 526px;
+    background: #004e98;
+    padding: 10px 15px;
+    position: absolute;
+    color: #fff;
+    right: 15px;
+    top: 80px;
+    z-index: 9;
+}
+
+.course_inst p {
+    margin-bottom: 10px
+}
+
+.course_inst a {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.course_inst a:hover {
+    opacity: 0.8;
+}
+
+.yellow_heighlightd {
+    background: rgba(255, 199, 44, 0.7);
+    color: #000;
+    display: inline-block;
+    padding-left: 2px;
+    padding-right: 2px;
+}

@@ -1,0 +1,140 @@
+/* global class overrite for the height */
+.iosSlider .item{
+    top: 0;
+    bottom: 0;
+}
+.bg_image{
+    background: url("../images/retina/Bg_Imges.png") no-repeat center center
+}
+#contentHolder{
+	background-color: transparent;
+}
+#contentHolder {
+    background: #fff;
+    width: 815px;
+    height: 431px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    overflow-x: hidden;
+	overflow-y: hidden;
+	box-shadow: 0px 2px 4px 1px rgba(0,0,0,0.3);
+}
+.contentwrapper {
+	position: relative;
+	width: 100%;
+	padding: 25px 30px 25px 30px;
+	box-sizing: border-box;
+}
+.textImageShadow{
+    position: relative;
+	height: 100%;
+	width: 100%;
+}
+.que_txt{
+    background: #1b75bc;
+    padding: 15px;
+    color: #fff;
+    /* margin-bottom: 10px; */
+}
+.insta_txt{
+    width: 100%;
+    padding: 0px;
+    color: #f68e39;
+    margin-bottom: 10px;
+	font-style:italic;
+}
+#instructionTxt > span {
+	font-size: 16px;
+	font-style:italic;
+}
+/* static txt content */
+.static_txt{
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+p.que_txt1::before {
+    content: "";
+    position: absolute;
+    top: -1px;
+    left: 0;
+    width: 781px;
+    /* height: 1px;
+    background: #ccc; */
+    border: 1px solid #ccc;
+}
+
+.que_txt1 {
+    /* margin-bottom: 10px; */
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  td, th {
+    text-align: left;
+    padding: 8px;
+    color: #51585a;
+  }
+  tr:first-child {
+    border-top: 1px solid #b5b5c0;
+  }
+  table tr td {
+	padding: 7px 11px 7px 11px;
+	width: 23.33%;
+	margin: 0;
+	vertical-align: middle;
+	padding-right: 0;
+}
+table tr td:first-child {
+    padding-left: 0;
+	width: 53.34%;
+}
+.showAnswerBtn input[type="button"],
+.submitBtn input[type="button"],
+.nextBtn input[type="button"],
+.resetBtn input[type="button"],
+.resetBtn button,
+.submitBtn button,
+.showAnswerBtn button,
+.nextBtn button {
+    min-width: 82px;
+	height: auto; 
+    border: none;
+    color: #FFF;
+    margin: 0px; 
+    padding: 5px;
+    font: 14px/24px arial;
+    cursor: pointer;
+    background: #00338D;
+    z-index: 9;
+    font-weight: bold;
+}
+.dnd_v2Holder {
+    height: 40px;
+    margin-top: 15px;
+    width: 100%;
+}
+.feedBackContent {
+	width: 350px;
+}
+.feebackText {
+    height: 120px;
+    margin:0; 
+    font-size: 14px;
+    padding: 10px;
+    line-height: 18px;
+}
+.dragabble_area{
+	width: 910px;
+    height: 420px;
+    position: absolute;
+		
+}

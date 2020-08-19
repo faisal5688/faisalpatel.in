@@ -1,0 +1,90 @@
+<!DOCTYPE HTML>
+
+<html lang="en">
+
+<head>
+
+    <meta http-equiv="content-type" content="charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta http-equiv="Content-Type" content="text/html" charset="utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+
+    <title></title>
+    <link rel="stylesheet" href="assets/css/jPlayer/css/jplayer.css" type="text/css" />
+    <link rel="stylesheet" href="assets/css/templates/video_page.css" type="text/css" />
+
+</head>
+
+<body>
+    <div class="wrapper">
+        <section class="mainContent">
+            <div class="txtimgWrap">
+                <div id="contentHolder" class="txtHolder"></div>
+
+                <!--<div id="video_in_page_source_inspector"></div>-->
+                <div id="jp_container_1" class="jp-video jp-video-360p" role="application" aria-label="media player">
+                    <div class="jp-type-single">
+                        <div id="jquery_jplayer_video_page" class="jp-jplayer"></div>
+                        <div class="jp-video-play">
+                            <button class="jp-video-play-icon" role="button" tabindex="0">play</button>
+                        </div>
+                        <div class="jp-gui">
+                            <div class="jp-interface">
+                                <div class="jp-controls-holder">
+                                    <div class="jp-controls">
+                                        <button class="jp-play" role="button" tabindex="0">play</button>
+                                    </div>
+                                    <div class="jp-progress">
+                                        <div class="jp-seek-bar">
+                                            <div class="jp-play-bar"></div>
+                                        </div>
+                                    </div>
+                                    <div class="jp-volume-controls">
+                                        <button class="jp-mute" role="button" tabindex="0">mute</button>
+                                        <div class="jp-volume-bar">
+                                            <div class="jp-volume-bar-value"></div>
+                                        </div>
+                                        <button class="jp-volume-max" role="button" tabindex="0">max volume</button>
+                                    </div>
+                                    <div class="jp-toggles">
+                                        <button class="jp-full-screen" role="button" tabindex="0">full screen</button>
+                                    </div>
+                                    <div class="videoTimer">
+                                        <div class="jp-current-time" role="timer" aria-label="time">&nbsp;</div>/
+                                        <div class="jp-duration" role="timer" aria-label="duration">&nbsp;</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="jp-no-solution">
+                            <span>Update Required</span> To play the media you will need to either update your browser to a recent version or update your <a href="http://get.adobe.com/flashplayer/" target="_blank">Flash plugin</a>.
+                        </div>
+                    </div>
+                </div>
+                <div id="loadingContainer" style="display:none">Loading...</div>
+            </div>
+        </section>
+    </div>
+
+    <script src="libs/jplayer/jquery.jplayer.js"></script>
+
+    <script type="text/javascript" src="js/controller/Templates/TextImageController1.js"></script>
+
+    <script type="text/javascript" src="js/controller/Templates/common/video_page.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            var jdata = DataManager.templateXMLData.data;
+            videoObject.initScreen(jdata);
+        });
+
+        function pageAudioHandler(currTime, totTime) {
+            videoObject.pageAudioHandler(currTime, totTime);
+        }
+    </script>
+</body>
+
+
+
+</html>

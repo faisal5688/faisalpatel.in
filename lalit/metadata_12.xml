@@ -1,0 +1,158 @@
+﻿<?xml version="1.0"?>
+<lom xmlns="http://www.imsglobal.org/xsd/imsmd_rootv1p2p1"
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+     xsi:schemaLocation="http://www.imsglobal.org/xsd/imsmd_rootv1p2p1 imsmd_rootv1p2p1.xsd">
+   <general>
+      <title>
+         <langstring>Ethical Decision-Making and the Science of (Dis)Honesty</langstring>
+      </title>
+      <catalogentry>
+         <catalog>Ethical Decision-Making and the Science of (Dis)Honesty</catalog>
+         <entry>
+            <langstring>1000-02-02</langstring>
+         </entry>
+      </catalogentry>
+      <language>en</language>
+      <description>
+         <langstring>Ethical Decision-Making and the Science of (Dis)Honesty</langstring>
+      </description>
+	  
+		<keyword>
+		 <langstring>Ethical Decision-Making and the Science of (Dis)Honesty</langstring>
+		</keyword>
+            
+        <aggregationlevel>
+         <source>
+            <langstring xml:lang="x-none">LOMv1.0</langstring>
+         </source>
+         <value>
+            <langstring xml:lang="x-none">1</langstring>
+         </value>
+      </aggregationlevel>
+   </general>
+   <lifecycle>
+      <version>
+         <langstring>1.1</langstring>
+      </version>
+      <status>
+         <source>
+            <langstring xml:lang="x-none">LOMv1.0</langstring>
+         </source>
+         <value>
+            <langstring xml:lang="x-none">Final</langstring>
+         </value>
+      </status>
+      <contribute>
+         <role>
+            <source>
+               <langstring xml:lang="x-none">LOMv1.0</langstring>
+            </source>
+            <value>
+               <langstring xml:lang="x-none">Author</langstring>
+            </value>
+         </role>
+         <centity>
+            <vcard>BEGIN:vCard ORG:ADL Co-Lab END:vCard</vcard>
+         </centity>
+         <date>
+            <datetime>2009-07-23</datetime>
+         </date>
+      </contribute>
+   </lifecycle>
+   
+   <metametadata>
+      <metadatascheme>ADL SCORM 1.2</metadatascheme>
+   </metametadata>
+   <technical>
+       <format>Flash/Html</format>
+	<size>10043679</size>
+      <location type="URI">http://www.delta.com</location>
+      <requirement>
+         <type>
+            <source>
+               <langstring xml:lang="x-none">LOMv1.0</langstring>
+            </source>
+            <value>
+               <langstring xml:lang="x-none">Browser</langstring>
+            </value>
+         </type>
+         <name>
+            <source>
+               <langstring xml:lang="x-none">LOMv1.0</langstring>
+            </source>
+            <value>
+               <langstring xml:lang="x-none">Microsoft Internet Explorer</langstring>
+            </value>
+         </name>
+      <minimumversion>5.0</minimumversion>
+      </requirement>
+      <requirement>
+         <type>          
+            <source>
+               <langstring xml:lang="x-none">ADL</langstring>
+            </source>
+            <value>
+               <langstring xml:lang="x-none">Browser Plug-in</langstring>
+            </value>
+         </type>
+         <name>         
+            <source>
+               <langstring xml:lang="x-none">ADL</langstring>
+            </source>
+            <value>
+               <langstring xml:lang="x-none">Flash Plug-in</langstring>
+            </value>
+         </name>
+      </requirement>
+   </technical>
+   <educational>
+      <learningresourcetype>
+         <source>
+            <langstring xml:lang="x-none">LOMv1.0</langstring>
+         </source>
+         <value>
+            <langstring xml:lang="x-none">Narrative Text</langstring>
+         </value>
+      </learningresourcetype>
+      <typicallearningtime>
+         <datetime>2008-10-24T18:00:00</datetime>
+      </typicallearningtime>
+   </educational>
+   <rights>
+      <cost>
+         <source>
+            <langstring xml:lang="x-none">LOMv1.0</langstring>
+         </source>
+         <value>
+            <langstring xml:lang="x-none">no</langstring>
+         </value>
+      </cost>
+      <copyrightandotherrestrictions>
+         <source>
+            <langstring xml:lang="x-none">LOMv1.0</langstring>
+         </source>
+         <value>
+            <langstring xml:lang="x-none">no</langstring>
+         </value>
+      </copyrightandotherrestrictions>
+   </rights>
+   <classification>
+      <purpose>
+         <source>
+            <langstring xml:lang="x-none">LOMv1.0</langstring>
+         </source>
+         <value>
+            <langstring xml:lang="x-none">Educational Objective</langstring>
+         </value>
+      </purpose>
+     
+       <description>
+         <langstring>Ethical Decision-Making and the Science of (Dis)Honesty</langstring>
+      </description>
+
+				<keyword>
+                    <langstring>Ethical Decision-Making and the Science of (Dis)Honesty</langstring>
+           </keyword>
+     
+   </classification>
+</lom>

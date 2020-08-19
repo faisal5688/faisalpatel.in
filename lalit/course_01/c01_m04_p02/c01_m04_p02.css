@@ -1,0 +1,149 @@
+@charset "utf-8";
+
+/* CSS Document */
+
+/* .wrapper .page_title {
+    opacity: 0;
+} */
+
+#PageContent * {
+    box-sizing: border-box;
+}
+
+.txtimgWrap {
+    margin: 0 auto;
+}
+
+.dataContainer {
+    width: 100%;
+    float: left;
+}
+
+.txtHolder {
+    font-size: 14px;
+    padding: 0;
+    text-align: left;
+}
+
+.mainCont {
+    background: #FFF;
+    height: 520px;
+}
+
+.timeLine {
+    opacity: 0;
+    transition: opacity 1s linear;
+}
+
+.timeLine.fadeIn {
+    opacity: 1;
+}
+
+.txtHolder p {
+    margin: 0;
+    padding: 0 0 14px;
+}
+
+.content-txt {
+    background: #00a3a1;
+    padding: 24px;
+    max-width: 317px;
+    position: absolute;
+    right: 24px;
+    bottom: 120px;
+}
+
+.content-txt p {
+    color: #fff;
+}
+
+.white_border {
+    cursor: pointer !important;
+}
+
+.carousel-center {
+    cursor: default !important;
+}
+
+#popup_Container {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 217px;
+    left: 400px;
+}
+
+#carousel {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    margin: 0;
+}
+
+#carouselHolder .shadow_wrapper {
+    opacity: 0 !important;
+}
+
+#popup_Container .popupContent,
+#popup_Container .popupContent #carouselHolder {
+    height: 100%;
+    margin-top: 20px;
+}
+
+#instHolder {
+    font-style: italic;
+    margin: -9px auto 0 75px;
+    width: 100%;
+}
+
+.instText {
+    color: #f68e39;
+}
+
+.button-nav {
+    position: absolute;
+    width: 20px;
+    height: 42px;
+    background-color: transparent;
+    z-index: 7;
+}
+
+.button-nav .icon {
+    width: 18px;
+    height: 40px;
+    position: relative;
+    display: block;
+    background-size: contain;
+    top: calc(50% - 20px);
+    left: 0;
+}
+
+.button-prev {
+    margin-top: -102px;
+    margin-left: -380px;
+    cursor: pointer;
+}
+
+.button-next {
+    margin-top: -102px;
+    margin-left: 460px;
+    cursor: pointer;
+}
+
+.button-prev .icon {
+    background: url(../c01_m04_p02/next_back_Sprite.png) -38px top;
+}
+
+.button-next .icon {
+    background: url(../c01_m04_p02/next_back_Sprite.png) -21px top;
+}
+
+
+.dummyDivBtn {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+
+    z-index: 999;
+}

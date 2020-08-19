@@ -1,0 +1,373 @@
+/* Page 27 CSS */
+
+.mcms1 .optionText .txt span {
+    vertical-align: top;
+}
+
+
+.mcms1 .optionContainer {
+    width: 100%;
+    height: 100%;
+    min-height: 170px;
+}
+
+.mcms1 .mcmsContainer .optionContainer:after {
+    left: auto;
+    background: url(images/mcms1_02.jpg) no-repeat;
+    background-position: 0 0;
+    background-size: 346px 347px;
+    margin: 5px;
+    right: 0;
+    width: 346px;
+    height: 348px;
+}
+
+.mcms1 .mcmsQuestion .questSec {
+    padding: 7px 0 0 0px;
+    width: 100%;
+}
+
+.mcms1 #mcmsContainer .submitBtn,
+.mcms1 #mcssContainer .submitBtn {
+    left: 27px;
+}
+
+.mcms1 .imgSec {
+    display: none;
+}
+
+.mcms1 .mcmsQuestion .questSec p {
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.mcms1 .mcssInstruction {
+    padding-left: 0;
+    padding-bottom: 0;
+}
+
+.mcms1 .optionText {
+    padding: 12px 0 0 28px;
+}
+
+.mcms1 .optionIcons .checkBox,
+.mcms1 .optionIcons .radio {
+    margin: 11px 0 0 0;
+}
+
+.mcms1 .mcmsContainer .optionContainer .row {
+    left: 25px;
+    top: 10px;
+    width: 515px;
+}
+
+.mcms1 .tickIco {
+    left: -22px;
+}
+
+.mcms1 .section {
+    display: none;
+}
+
+.mcms1 .section_01 {
+    display: block;
+}
+
+
+.mcms1 .content {
+    width: 100%;
+    position: relative;
+}
+
+.mcms1 .content p {
+    font-size: 16px;
+    line-height: 18px;
+    margin-bottom: 20px;
+}
+
+.mcms1 .content p:last-child {
+    margin-bottom: 0;
+}
+
+.mcms1 #mcmsContainer {
+    width: 962px;
+    height: 514px;
+    background: #fff;
+    margin: 0 auto;
+    padding: 30px 10px 30px 50px;
+    box-sizing: border-box;
+    padding-top: 0px;
+}
+
+.mcms1 .mcmsContainer,
+.mcms1 .mcssContainer {
+    float: inherit;
+    width: 100%;
+    padding: 0;
+    box-sizing: border-box;
+    position: relative;
+    min-height: 100%;
+}
+
+.mcms1 .optionText .txt ol {
+    display: table-cell;
+    padding-left: 10px;
+    line-height: 21px;
+}
+
+.mcms1 #mcmsFeedbackBox,
+.mcms1 #mcssFeedbackBox {
+    background-color: rgb(255, 255, 255) !important;
+    border: 3px solid #00a3a1;
+    position: absolute;
+    width: 86%;
+    top: 0px;
+    right: 0px;
+    margin: auto;
+    bottom: 0;
+    left: 0;
+    height: 210px;
+}
+
+.mcms1 #feedbackContent {
+    overflow: hidden;
+}
+
+.mcms1 #feedbackContent p {
+    margin-bottom: 10px;
+}
+
+.mcms1 #feedbackContent p:last-child {
+    margin-bottom: 10px;
+}
+
+.mcms1 .tickIco {
+    top: 14px;
+    left: -20px;
+}
+
+.mcms1 .optionText .txt span.optno {
+    font-weight: normal;
+    display: table-cell;
+    font-size: 16px;
+}
+
+.mcms1 .optionText .txt ol {
+    display: table-cell;
+    padding-left: 10px;
+    line-height: 21px;
+    font-size: 16px;
+}
+
+.mcms1 #feedbackContent {
+    height: 100%;
+	max-height: 220px;
+    overflow: auto;
+}
+
+.mcmsWrap {
+    width: 901px;
+    margin: 0 auto;
+    padding: 30px 10px 30px 50px;
+    font-size: 13px;
+    position: absolute;
+    height: 400px;
+    padding-top: 3px;
+    left: 0;
+    top: 48px;
+    background: rgba(255, 255, 255, 0.9);
+    right: 0;
+    bottom: 0;
+}
+
+.mcmsQuestion {
+    position: absolute;
+    background: rgb(109, 32, 119);
+    width: 775px;
+    height: 400px;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    padding: 20px 30px;
+    box-sizing: border-box;
+}
+
+.qusWrapper {
+    font-size: 16px;
+    color: rgb(255, 255, 255);
+    position: relative;
+    display: block;
+    width: 100%;
+}
+
+#mcmsQuestionTxt {
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+#mcmsContainer .submitBtn .btn_submit,
+#mcssContainer .submitBtn .btn_submit {
+    background-color: rgb(226, 210, 228);
+    padding: 8px;
+    width: 70px;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+    float: left;
+    border-radius: 0 !important;
+    -webkit-border-radius: 0 !important;
+    color: #717171;
+}
+
+#mcmsContainer .submitBtn .btn_submit:hover {
+    background: rgb(0, 163, 162);
+    color: #fff;
+}
+
+#mcmsSubmitBtn.disabled .btn_submit,
+#mcmsSubmitBtn.disabled:hover .btn_submit {
+    color: #bfbfbf;
+    cursor: default;
+}
+
+#mcmsFeedbackBox #header,
+.header {
+    padding: 10px;
+    background-color: rgb(0, 163, 161);
+    color: rgb(255, 255, 255);
+}
+
+/* Build up animation CSS */
+.page_title {
+    padding: 16px 16px 16px 0
+}
+
+.colorText {
+    font-weight: bold;
+    color: #4d2278;
+}
+
+.ImageTextContainer {
+    width: 100%;
+    min-height: 465px;
+    display: block;
+    background: url("../images/line_bg.png") no-repeat;
+    background-position: center center;
+    margin-top: -15px;
+}
+
+.block {
+    position: relative;
+    width: 50%;
+    float: left;
+    margin-bottom: 5px;
+    height: 245px;
+}
+
+.block_01 {
+    background: url("../images/icon_01.png") no-repeat;
+    background-size: 88px 227px;
+    background-position: 16px 22px;
+}
+
+.block_02 {
+    background: url("../images/icon_02.png") no-repeat;
+    background-size: 88px 227px;
+    background-position: 27px 21px;
+    display: none;
+}
+
+.block_03 {
+    background: url("../images/icon_03.png") no-repeat;
+    background-size: 88px 227px;
+    background-position: 313px -19px;
+    width: 430px;
+    display: none;
+}
+
+.block_04 {
+    background: url("../images/icon_04.png") no-repeat;
+    background-size: 88px 227px;
+    background-position: 326px -22px;
+    width: 470px;
+    display: none;
+}
+
+.block .block_heading {
+    position: absolute;
+    font-weight: 700;
+    color: #470a68;
+}
+
+.block .block_info {
+    position: absolute;
+    background: rgb(71, 10, 104);
+    padding: 10px;
+    width: 305px;
+    height: 55px;
+    color: rgb(255, 255, 255);
+    margin-bottom: 0;
+    line-height: 18px;
+    box-sizing: border-box;
+}
+
+.block_01 .block_heading {
+    top: 50px;
+    left: 125px;
+}
+
+.block_01 .block_info {
+    top: 135px;
+    left: 120px;
+    width: 250px;
+    height: 58px;
+}
+
+.block_02 .block_heading {
+    color: rgb(0, 94, 184);
+    top: 50px;
+    left: 136px;
+    width: 280px;
+}
+
+.block_02 .block_info {
+    background: rgb(0, 94, 184);
+    top: 145px;
+    left: 138px;
+    width: 312px;
+}
+
+.block_03 .block_heading {
+    color: rgb(0, 51, 141);
+    top: 41px;
+    left: 15px;
+}
+
+.block_03 .block_info {
+    background: rgb(0, 51, 141);
+    top: 145px;
+    left: 6px;
+    width: 288px;
+}
+
+.block_04 .block_heading {
+    color: rgb(72, 54, 152);
+    top: 41px;
+    left: 10px;
+}
+
+.block_04 .block_info {
+    background: rgb(72, 54, 152);
+    top: 145px;
+    left: 0px;
+}
+
+.closeBtn {
+    cursor: pointer;
+}
+
+.disabled {
+    cursor: default;
+}

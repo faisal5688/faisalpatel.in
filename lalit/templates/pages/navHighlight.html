@@ -1,0 +1,32 @@
+	<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html" charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+<title>Text Image template</title>
+
+<link rel="stylesheet" href="assets/css/templates/navHighlight.css">
+<link rel="stylesheet" href="" changetheme='true'>
+
+<script src="js/controller/Templates/navHighlightController.js"></script>
+<script>	
+	var navHighlightData	={};
+	$(function(){
+		navHighlightData = Parser.loadNavHighlightDataFn(DataManager.templateXMLData);	
+		NavHighlightController.init(navHighlightData);		
+	});
+		
+	</script>
+</head>
+
+<body>
+	<div class="wrapper">	
+	<section class="mainContent">			
+			<div class="middleContainer">
+					<div id="imageHighlightContainer" class="imageHolder"></div>
+			</div>					
+			<div class="clear"></div>
+	</section>	
+</div>
+</body>
+</html>

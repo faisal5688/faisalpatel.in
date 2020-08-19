@@ -1,0 +1,21 @@
+{
+    "data": {
+        "basePath": "./course_01/c01_m04_p03/",
+        "downloadAndroidImages": "",
+        "downloadIpadImages": "",
+        "downloadImages": "c01_m04_p03.jpg",
+        "image": {
+            "use_image_tag": "true",
+            "desktop": "",
+            "ipad": {
+                "landscape": "",
+                "portrait": ""
+            }
+        },
+        "audio": {
+            "path": "course_01/c01_m04_p03/c01_m04_p03",
+            "isAbsolute": true
+        },
+        "content": ""
+    }
+}

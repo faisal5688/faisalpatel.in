@@ -1,0 +1,17 @@
+{
+    "data": {
+        "basePath": "./course_01/c01_m00_p04/",
+        "downloadAndroidImages": "",
+        "downloadIpadImages": "",
+        "downloadImages": "../../images/course_navigation.png",
+        "image": {
+            "use_image_tag": "false",
+            "desktop": "",
+            "ipad": {
+                "landscape": "",
+                "portrait": ""
+            }
+        },
+        "content": ""
+    }
+}

@@ -1,0 +1,1057 @@
+.menuContainer header {
+    background-color: #00338d;
+    border-bottom: 1px solid #ffffff;
+    height: 38px;
+    width: 100%;
+    font-family: "KPMG_App";
+}
+
+.menuContainer header h2 {
+    color: #ffffff;
+    float: left;
+    font-size: 28px;
+    font-weight: normal;
+    padding: 1px 12px;
+}
+
+.menuContainer div.close {
+    /* background: url("../images/popup_buttons.png") no-repeat scroll 0 0; */
+    /*  color: #fff;
+    cursor: pointer;
+    font-family: arial;
+    font-size: 18px;
+    height: 20px;
+    padding-top: 0;
+    position: absolute;
+    right: 7px;
+    text-align: center;
+    top: 8px;
+    width: 18px;
+    text-indent: -9999px; */
+    cursor: pointer;
+    float: right;
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    right: 6px;
+    top: 6px;
+    text-align: center;
+    padding: 4px;
+    box-sizing: border-box;
+    cursor: pointer;
+    background: url(../../course_01/images/popup_close.png) no-repeat;
+    background-position: center center;
+    text-indent: 99999px;
+}
+
+.res_tab {
+    width: 50%;
+    float: left;
+    cursor: pointer;
+    padding: 10px;
+    box-sizing: border-box;
+    color: #fff;
+    font-weight: normal;
+    font-size: 14px;
+}
+
+.res_tab:hover {
+    opacity: 0.7;
+}
+
+.res_tab:nth-child(1) {
+    background: #005eb8;
+}
+
+.res_tab:nth-child(2) {
+    background: #005eb8;
+}
+
+.res_tab:nth-child(1).active_tab {
+    background: #006298;
+}
+
+.res_tab:nth-child(2).active_tab {
+    background: #006298;
+}
+
+.res_tab.active_tab {
+    cursor: default;
+    background: #006298;
+}
+
+.menuContainer div.close:hover {
+    /* background:url(../images/popup_buttons_hover.png) no-repeat 0 0; */
+    color: #006298;
+}
+
+#menuView {
+    width: 607px;
+    height: 484px;
+    /* min-height: 450px; */
+    margin: auto;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    /* border: 3px solid #d9d9dd; */
+    background-color: #edebeb;
+    z-index: 30000;
+    border: 2px solid #00338d;
+}
+
+#menuViewContent {
+    left: 0px;
+    position: relative;
+    float: left;
+    /* top: 38px; */
+    /*  width:607px; */
+    width: 100%;
+    height: 444px;
+    overflow-x: hidden !important;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    z-index: 1;
+}
+
+#menuViewContent.popupContent ul li {
+    padding-bottom: 0px;
+}
+
+#menuViewContent ul {
+    float: left;
+    width: 100%;
+    list-style: none outside none;
+}
+
+#menuViewContent ul li {
+    background: #f0f0f0 none repeat scroll 0 0;
+    border-bottom: 1px solid #fff;
+    box-sizing: border-box;
+    color: #fff;
+    display: block;
+    float: left;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 16px;
+    margin: 0;
+    /* padding: 9px 0 9px 0px; */
+    text-decoration: none;
+    width: 100%;
+}
+
+.menu_page_title {
+    font-size: 14px;
+    font-weight: bold;
+    position: absolute;
+    top: 31px;
+    left: 30px;
+}
+
+#menuViewContent ul li.completed {
+    color: #000;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+#menuViewContent ul .subMenus .completed {
+    background: #a2afba !important;
+}
+
+
+/* .disabled{ background:#disabled !important;} */
+
+#menuViewContent .toggleMenu {
+    cursor: pointer;
+    background: #4e4e4e;
+    font-weight: normal;
+}
+
+#menuViewContent .toggleMenu:hover {
+    color: #fff;
+    font-weight: bold;
+}
+
+#menuViewContent ul li a {
+    color: #000;
+}
+
+#menuViewContent ul li a.current {
+    /* background-color: #97dad9;*/
+    color: #000 !important;
+    cursor: default !important;
+    font-weight: bold;
+    padding-bottom: 9px;
+    padding-left: 25px;
+    padding-top: 9px;
+}
+
+#menuViewContent ul.page-menu.hide-menu-item li a,
+#menuViewContent ul.topic-menu.hide-menu-item li span {
+    font-size: 14px;
+    border-top: 1px solid #fff;
+    padding: 6px 6px 6px 32px;
+}
+
+#menuViewContent ul.topic-menu.hide-menu-item li span {
+    color: #000;
+    display: block;
+    padding-bottom: 9px;
+    padding-left: 25px;
+    padding-top: 9px;
+    background-color: #97dad9;
+}
+
+#menuViewContent ul.topic-menu.hide-menu-item li a span {
+    background-color: transparent;
+    display: inline;
+}
+
+#menuViewContent ul.topic-menu.hide-menu-item {
+    margin-left: -25px;
+    width: 607px;
+}
+
+#menuViewContent ul.module-menu li.main-menu-item.menu-item {
+    padding-bottom: 0px;
+    padding-left: 0;
+    padding-top: 9px;
+}
+
+.main-menu-item.menu-item>span {
+    display: block;
+    padding-bottom: 9px;
+    padding-left: 21px;
+}
+
+.main-menu-item.menu-item:current>span {
+    font-weight: bold;
+}
+
+#menuViewContent .module-menu .topic-menu.hide-menu-item li {
+    border-bottom: 0px !important;
+}
+
+#menuViewContent .module-menu .topic-menu.hide-menu-item li:last-child {
+    border-bottom: 0px !important;
+}
+
+#menuViewContent ul li.completed a {
+    cursor: pointer;
+    /* color: #fff; */
+    color: #000;
+}
+
+#menuViewContent ul li a.disabled {
+    color: #8d8d8d;
+    cursor: default;
+}
+
+#menuViewContent ul li a:not(.disabled):hover {
+    color: #00338c;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+#menuViewContent ul li a.disabled:hover {
+    color: #8d8d8d;
+    cursor: default;
+}
+
+.subMenus ul li ul {
+    height: 2px;
+}
+
+.subMenus ul li ul li {
+    float: none !important;
+}
+
+.subMenus ul li ul li.lineBreak,
+.lineBreak {
+    background: url("../../assets/images/btmBorder.jpg") no-repeat 0 0;
+    height: 2px;
+    margin: 6px 0 0;
+    padding: 0 !important;
+    width: 100%;
+}
+
+#menuViewContent .menu-item {
+    color: white;
+    cursor: pointer;
+}
+
+#menuViewContent .main-menu-item {
+    background-color: #006298;
+}
+
+#menuViewContent .main-menu-item:hover {
+    opacity: 0.8
+}
+
+#menuViewContent .topic-menu-item {
+    background-color: #f0f0f0;
+}
+
+#menuViewContent .page-menu-item {
+    background-color: #bbbbbb;
+}
+
+#menuViewContent .show-menu-item {
+    display: block;
+}
+
+#menuViewContent .hide-menu-item {
+    display: none;
+}
+
+
+/*favourite css*/
+
+#favoritesView {
+    background: none repeat scroll 0 0 #172A3A;
+    border: 4px solid #6593BE;
+    display: block;
+    height: 293px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 340px;
+    z-index: 99999;
+}
+
+#favoritesViewContent {
+    height: 97%;
+    left: 1px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    position: relative;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+#favoritesView .rightPopup {
+    height: 100%;
+    width: 100%;
+}
+
+#favoritesViewContent ul li {
+    background: none repeat scroll 0 0 #172A3A;
+    float: left;
+    width: 98%;
+}
+
+#favoritesViewContent ul li a {
+    background: none repeat scroll 0 0 #172A3A;
+    color: #FFFFFF;
+    font-weight: normal;
+    line-height: 17px;
+    padding: 9px 0 9px 35px;
+}
+
+#favoritesViewContent ul li a:hover {
+    color: #FFCC00;
+}
+
+#favoritesViewContent ul li.lineBreak {
+    background: url("../../assets/images/btmBorder.jpg") no-repeat;
+    height: 2px;
+    margin: -4px 15px 0;
+    width: 270px;
+}
+
+.currentFav {
+    cursor: default !important;
+    color: #ffcc00 !important;
+}
+
+
+/*For GAAP*/
+
+#GaapView {
+    background: #172A3A;
+    border: 4px solid #6593BE;
+    color: #FFFFFF;
+    font-size: 14px;
+    height: 141px;
+    position: absolute;
+    text-align: center;
+    width: 146px;
+    z-index: 99999;
+}
+
+.mainNav ul li .gaap_PDF a {
+    width: 68px;
+    height: 72px;
+    cursor: pointer;
+    position: absolute;
+    left: 40px;
+    /*  top: 10px; */
+    top: 19px;
+    background: url("../../assets/images/pdf_icon.png") no-repeat;
+}
+
+.mainNav ul li .gaap_PDF a:hover {
+    background: url("../../assets/images/pdf_icon.png") no-repeat;
+}
+
+.mainNav ul li #GAAP_PDF_content {
+    margin-left: 0px;
+    /*    margin-top: 82px;  */
+    margin-top: 88px;
+    word-wrap: break-word;
+    font-size: 12px;
+    margin-right: 5px;
+    line-height: 16px;
+}
+
+
+/* #GAAP_PDF a{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    top: 0;
+} */
+
+
+/*Glossary*/
+
+.resourceContainer {
+    width: 570px;
+    height: 355px;
+    margin: auto;
+    padding-bottom: 3px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    border: 2px solid #00338d;
+    background-color: #fff;
+    z-index: 9999;
+}
+
+.glossaryContainer {
+    width: 820px;
+    height: 474px;
+    margin: auto;
+    padding-bottom: 3px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    border: 2px solid #00338d;
+    background-color: #fff;
+    z-index: 9999;
+}
+
+.glossaryContainer header,
+.resourceContainer header {
+    background-color: #00338d;
+    border-bottom-color: #ffffff;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    font-family: "KPMG_App";
+    height: 38px;
+    width: 100%;
+}
+
+.glossaryContainer header h2,
+.resourceContainer header h2 {
+    color: #ffffff;
+    float: left;
+    font-size: 28px;
+    font-weight: normal;
+    padding-bottom: 1px;
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-top: 1px;
+}
+
+.glossaryContainer div.close,
+.resourceContainer div.close,
+.helpContainer div.close {
+    cursor: pointer;
+    float: right;
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    right: 6px;
+    top: 6px;
+    text-align: center;
+    padding: 4px;
+    box-sizing: border-box;
+    cursor: pointer;
+    background: url(../../course_01/images/popup_close.png) no-repeat;
+    background-position: center center;
+    text-indent: 99999px;
+}
+
+.glossaryContainer div.close:hover,
+.resourceContainer div.close:hover {
+    /* background:url(../images/popup_buttons_hover.png) no-repeat 0 0; */
+    color: #006298;
+}
+
+.glossaryContent {
+    margin: 41px 0 0 4px;
+}
+
+.resourceContent {
+    margin: 41px 4px 0;
+    background: #EFEFEF;
+}
+
+.descriptionHeader {
+    width: 97%;
+    color: #000;
+    padding: 8px 0 7px 15px;
+    background: #fff;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+.GlossaryPageIndexFrame {
+    border-top: 1px solid #ccc;
+    height: 157px;
+    margin-top: 22px;
+    /* overflow-x: hidden;
+    overflow-y: auto; */
+}
+
+.pageIndexList {
+    height: 137px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+.pageIndexList ul {
+    height: 128px;
+    clear: both;
+}
+
+.pageIndexList ul li {
+    width: 100%;
+    min-height: 21px;
+    color: #00338e;
+    padding: 4px 0;
+    margin: 1px 0;
+    background: #fff;
+    font-size: 14px;
+}
+
+.pageIndexList ul li a {
+    display: block;
+    padding: 0 0 0 15px;
+    line-height: 18px;
+}
+
+.pageIndexList ul li:hover a span {
+    cursor: pointer;
+    color: #fff;
+}
+
+.pageIndexList ul li a.currentPageIndex span {
+    cursor: default;
+}
+
+#GlossaryPageIndexFram #pageIndexContent .currentPageIndex span {
+    color: #FFCC00;
+}
+
+.resourceInst,
+.detailsInst {
+    font-size: 14px;
+    line-height: normal;
+    padding: 12px 0 12px 8px;
+    background: #FFF;
+    width: 80%;
+    float: left;
+}
+
+.detailsInst {
+    color: #f68d2e;
+    font-size: 14px;
+    font-style: italic;
+}
+
+/* #bottomNav_pause a span {
+    margin-top: 7px;
+    display: block;
+    color: #fff;
+    text-align: center;
+    width: 52px;
+    font-size: 12px;
+} */
+
+.pdfresource,
+.pdfdetails {
+    float: left;
+    margin-bottom: 0;
+    margin-left: 8px;
+    margin-right: 0;
+    margin-top: 7px;
+    width: 142px;
+    display: block;
+}
+
+.resourceMain,
+.detailsMain {
+    width: 100%;
+    float: left;
+    background: #fff;
+}
+
+.resourceTxt,
+.detailsTxt {
+    float: left;
+    min-height: 304px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 4px;
+    width: 783px;
+}
+
+.resourceTxt{
+    height: 280px;
+    width: 543px;
+    overflow-y: scroll;
+    min-height: inherit;
+}
+.resourceTxt ul,
+.detailsTxt ul {
+    list-style: none;
+    padding: 0;
+}
+
+.resourceTxt ul li,
+.detailsTxt ul li {
+    margin: 7px 0;
+    padding-left: 15px;
+    background: url("../../assets/images/green_bullets.jpg") no-repeat scroll 0 6px;
+}
+
+.resourceTxt ul li {
+    background: url("../../assets/images/globe_icon.png") no-repeat 0px 11px;
+    list-style: none outside none;
+    padding: 10px;
+    line-height: 20px;
+    padding-left: 38px;
+    margin: 0;
+}
+
+.resourceTxt ul li a,
+.detailsTxt ul li a {
+    display: inline-block;
+    font-size: 14px;
+    text-decoration: underline;
+}
+
+.resourceTxt ul li a:hover {
+    color: #007dba;
+}
+
+.resourceTxt ul li a {
+    color: #333;
+}
+
+.resourceTxt ul li a {
+    color: #333;
+}
+
+.resourceTxt ul li a:hover,
+.detailsTxt ul li a:hover {
+    color: #0085ff;
+}
+
+pNavigation {
+    clear: right;
+    float: left;
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 6px;
+    border-bottom: 1px solid #ccc;
+    width: 100%;
+}
+
+
+/* #pageIndexContent ul li:hover{
+	background: #008da8;
+	color: #fff;
+
+} */
+
+#pageIndexContent ul li.liEnabled:hover {
+    background: #006298;
+    color: #fff;
+    cursor: pointer;
+}
+
+#pageIndexContent ul li.liEnabled {
+    cursor: pointer;
+}
+
+ol,
+ul {
+    list-style: none outside none;
+}
+
+.topNavigation .glsRow {
+    clear: right;
+    float: left;
+    width: 652px;
+    display: table;
+    text-align: center;
+}
+
+.pdfDetails {
+    float: left;
+    margin-left: 10px;
+    position: absolute;
+    right: 29px;
+    top: 7px;
+    width: 126px;
+}
+
+.pdf {
+    float: left;
+    margin-left: 10px;
+    width: 126px;
+}
+
+.pdficon {
+    width: 22px;
+    height: 22px;
+    background: url(../images/pdf_icon.png) no-repeat 0 0;
+    float: left
+}
+
+.pdfTxt {
+    color: #00338e;
+    float: left;
+    font-size: 15px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 5px;
+    width: auto;
+}
+
+.pdfTxt a {
+    color: #00338e;
+    text-decoration: none
+}
+
+.pdfTxt a:hover {
+    color: #00338e;
+    text-decoration: underline
+}
+
+.topNavigation .glsRow ul {
+    margin: 0 auto;
+}
+
+.topNavigation li {
+    float: left;
+    margin: 0 1px 4px 0;
+    width: 24px;
+}
+
+.topNavigation li a {
+    background: #fff;
+    color: #d0d1d1;
+    display: block;
+    font-weight: normal;
+    font-size: 16px;
+    padding: 5px 6px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.topNavigation li a.visited {
+    background: #006298 !important;
+    color: #fff !important;
+    cursor: default;
+}
+
+.topNavigation li a.active {
+    background: #fff;
+    color: #00338e;
+}
+
+.leftSubNavigation {
+    float: left;
+    width: 29%;
+    min-height: 360px;
+    margin-right: 0.2%;
+    overflow: auto;
+    background: #fff;
+    z-index: 2;
+}
+
+.leftSubNavigation li {
+    background: #fff;
+    margin-bottom: 1px;
+}
+
+.leftSubNavigation li.active {
+    background: #006298;
+    color: #fff;
+    cursor: default !important;
+}
+
+.leftSubNavigation li.active a span {
+    color: #fff;
+}
+
+.leftSubNavigation li:hover,
+.leftSubNavigation li.selected {
+    background: #006298;
+    color: #FFF !important;
+}
+
+.leftSubNavigation li:hover a {
+    color: #fff;
+    cursor: pointer;
+}
+
+.leftSubNavigation li span:hover,
+.leftSubNavigation li.selected {
+    color: #FFF;
+}
+
+.leftSubNavigation li {
+    color: #999999;
+    text-decoration: none;
+    display: block;
+    padding: 8px 10px 7px 15px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.leftSubNavigation li a {
+    color: #00338e;
+    cursor: default;
+}
+
+.leftSubNavigation li a span:hover {
+    color: #FFF !important;
+}
+
+.leftSubNavigation li a:hover {
+    cursor: pointer;
+}
+
+.leftSubNavigation li.active a {
+    cursor: default;
+}
+
+.glossaryDisplay {
+    float: left;
+    width: 70.3%;
+    min-height: 395px;
+    overflow: hidden;
+    background: #fff;
+    border-left: 1px solid #ccc;
+}
+
+.glossaryDisplayContent {
+    width: auto;
+    height: 165px;
+    overflow: auto;
+    word-wrap: break-word;
+    text-align: left;
+    padding: 0 15px 10px;
+    -webkit-overflow-scrolling: touch;
+}
+
+.glossaryDisplayContent p {
+    color: #000000;
+    /* float: left; */
+    font-family: Arial;
+    font-size: 15px;
+    line-height: 19px;
+    padding: 1px 0;
+}
+
+.glossaryDisplayContent .glsContent {
+    max-height: 99%;
+    height: 98%;
+    color: #000000;
+    /* float: left; */
+    text-align: left;
+    font-family: Arial;
+    font-size: 14px;
+    line-height: 19px;
+    padding: 1px 0;
+}
+
+.glossaryDisplayContent .glsContent ul {
+    padding-bottom: 5px;
+}
+
+.glossaryDisplayContent .glsContent ul li {
+    list-style: outside disc;
+    margin-left: 15px;
+    padding-bottom: 2px;
+    padding-top: 2px;
+}
+
+.glossaryDisplayContent .glsContent p {
+    padding: 0 0 5px;
+}
+
+.glossaryDisplayContent .glsContent p a {
+    color: blue;
+    text-decoration: underline
+}
+
+.glossaryDisplayContent .glsContent p a:hover {
+    color: blue;
+    text-decoration: underline
+}
+
+.either_list {
+    margin-left: 25px;
+    font-size: 14px;
+    height: 138px;
+    list-style-type: lower-alpha;
+}
+
+
+/*for subnaviogation screen shot preview*/
+
+#screenshot {
+    position: absolute;
+    border: 1px solid #ccc;
+    background: #333;
+    padding: 5px;
+    display: none;
+    color: #fff;
+    z-index: 9999999;
+}
+
+
+/* iPads (Landsacpe) */
+
+@media screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {}
+
+
+/* iPads (Portrait) */
+
+@media screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+    .glossaryContainer.showPopupCSS {
+        width: 82.5%;
+    }
+}
+
+
+/* for Note 8 Potrait*/
+
+@media only screen and (min-device-width: 800px) and (max-device-width: 1280px) and (device-aspect-ratio: 5/8) and (-webkit-min-device-pixel-ratio: 1.33) and (orientation: portrait) {
+    .glossaryContainer.showPopupCSS {
+        width: 78.5%;
+        margin: -150px auto 0;
+    }
+    .glossaryContainer,
+    .resourceContainer {
+        top: -30%;
+    }
+    .leftSubNavigation {
+        min-height: 305px;
+    }
+    .glossaryDisplay {
+        min-height: 200px;
+        border-left: solid 1px #FFF;
+    }
+    .glossaryDisplayContent {
+        height: 105px;
+    }
+    .GlossaryPageIndexFrame {
+        height: 154px;
+    }
+}
+
+
+/* for Note 8 landscape*/
+
+@media only screen and (min-device-width: 800px) and (max-device-width: 1280px) and (device-aspect-ratio: 8/5) and (-webkit-min-device-pixel-ratio: 1.33) and (orientation: landscape) {
+    .glossaryContainer,
+    .resourceContainer {
+        top: -50%;
+    }
+    .glossaryContainer,
+    .resourceContainer {
+        width: 79.2%;
+        margin: -185px auto 0;
+    }
+    .leftSubNavigation {
+        min-height: 300px;
+    }
+    .glossaryDisplay {
+        min-height: 200px;
+    }
+    .glossaryDisplayContent {
+        height: 105px;
+    }
+    .GlossaryPageIndexFrame {
+        height: 154px;
+    }
+    #menuView {
+        height: 340px;
+    }
+    #menuViewContent {
+        height: 320px;
+    }
+}
+
+#resourceContent .linkVisited {
+    color: blue;
+}
+
+.detailsTxt ul li {
+    margin: 7px 0;
+    padding-left: 15px;
+    background: url(../../assets/images/bulletIco.jpg) no-repeat scroll 0 6px;
+}
+
+#helpView {
+    height: 596px;
+    margin: auto;
+    padding: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 900px;
+    z-index: 9999;
+}
+
+@media screen and (-ms-high-contrast: active),
+(-ms-high-contrast: none) {
+    .exitButtons {
+        padding-top: 3px;
+    }
+    .popupHeader .popupTitle,
+    .helpTitle .helptxt,
+    .glossaryContainer header h2,
+    .resourceContainer header h2,
+    .menuContainer header h2 {
+        padding-top: 5px
+    }
+    .helpContainer .helpTitle {
+        height: 30px;
+    }
+    #transcriptPopup #transcriptHeaderPanel {
+        height: 36px;
+    }
+    .exitPopup .popupHeader {
+        height: 36px;
+    }
+}

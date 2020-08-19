@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html" charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+<title>KPMG IFRS</title>
+<!-- <link rel="stylesheet" href="../../assets/css/styles.css"> -->
+
+<link rel="stylesheet" href="../../assets/css/templates/DNDOneToOne.css">
+<link rel="stylesheet" href="" changetheme='true'>
+
+<script type="text/javascript" src="../../libs/core/jquery-1.10.2.js"></script>
+<script type="text/javascript" src="../../libs/core/jquery-ui.js"></script>
+<script type="text/javascript" src="../../libs/core/jquery.ui.touch-punch.min.js"></script>
+<script type="text/javascript" src="../../js/utils/JSONParser.js"></script>
+<script src="../../js/controller/Templates/DragNDrop_Classification.js"></script> 
+<script>
+	var dndData = {};
+	$(document).ready(function(){
+		$.ajax(
+        {
+        	url:'../../course1/data/course_data/dnd_classification.json',
+            async:false,
+            dataType:"json",
+            success:function(data){                	
+            	dndData = JSONParser.parseDNDClassificationData(data);
+            	DNDClassification.initialize(dndData);            	    				        				        				
+			},
+            error:function(){
+            	alert("DND Data Loading Failed");
+            }
+        });	
+	});
+	function trace(str){
+		/*if(console.log)
+			console.log(str)*/
+	}
+</script>
+<style>
+	.tempDragOption, .tempFeedback{
+		display: none;
+	}
+	.disabled{
+		opacity:0.4;
+		cursor: default;
+	} 
+</style>
+<!--[if IE]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+</head>
+<body>
+
+<div class="wrapper">
+	<header>	
+		<div class="lftSec">
+			<img src="../../assets/images/logo_kpmg.png" alt="KPMG" />
+		</div>
+		<div class="rhtSec">
+			<div class="companyTitle">KPMG IFRS: Project Title</div>
+			<h1 id="moduleTitle" class="courseTitle">Welcome</h1>
+			
+			<div class="exitBtn">EXIT</div>
+			<div class="audioIndicator off"></div>
+		</div>
+	</header>
+	
+	<section class="mainNavHolder">
+		<nav class="mainNav">
+			<ul>
+				<li class="menu"><a href="javascript:void(0);" title="Menu" onclick="navElementClick('menu')"></a></li>	
+				<li class="GAAP"><a href="javascript:void(0);" title="GAAP" onclick="navElementClick('GAAP')"></a></li>	
+				<li class="favorites"><a href="javascript:void(0);" title="favorites" onclick="navElementClick('favouritePopup')"></a></li>
+			</ul>
+		</nav>
+	</section>
+	
+	<section class="mainContent">
+		<div id="dndContainer" class="dragDropWrap">
+			<div class="innerContent">
+				<div class="lftColumn">
+					<div id="dragHolder" class="dragWrap">
+						<div id="instructionTxt" class="info">
+							<span>Drag and Drop Instruction text will be come here</span>
+						</div>
+					</div>
+				</div>
+				<div class="rhtColumn">
+					<div id="dropHolder1" class="dropWrap">
+						<div class="title">PP&amp;E</div>
+						<div class="dropBox"></div>
+						<div class="dropBox"></div>
+						<div class="dropBox"></div>
+						<div class="dropBox"></div>
+						<div class="dropBox"></div>
+						<div class="dropBox"></div>
+					</div>
+				</div>
+				<div id="submitBtn" class="submitBtn">
+					<input type="button" value="Submit">
+				</div>
+				
+				<div id="dndFeedbackBox" class="feedbackWrap">
+					<div id="dndFeedbackContent" class="contentSec">
+						<div class="row tempFeedback">
+							<div id="imgHolder" class="imgBlock">
+								<img src="../../assets/images/drag_img_2.jpg" alt="" />
+							</div>
+							<div id="contentHolder" class="txtBlock">
+								<div id="label" class="ttl">Coffee bean roaster</div>
+								<div id="content" class="feedbackTxt">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="clear"></div>
+			</div>
+			
+			
+			<div class="clear"></div>
+			<div class="dragItem tempDragOption">
+				<div class="textStripe">TAB 01 TAB 01</div>
+			</div>
+		</div>
+		<div class="clear"></div>
+	</section>
+	
+	<footer>
+		<nav class="bottomNav">
+			<div class="leftNav">
+				<ul>
+					<li class="help">
+						<a href="javascript:void(0);" title="Help"></a>
+					</li>
+					<li class="seperator"></li>
+					
+					<li class="glossary">
+						<a href="javascript:void(0);" title="Glossary"></a>
+					</li>
+					<li class="seperator"></li>
+					
+					<li class="transcript">
+						<a href="javascript:void(0);" title="Transcript"></a>
+					</li>
+					<li class="seperator"></li>
+					
+					<li class="audio">
+						<a href="javascript:void(0);" title="Audio"></a>
+					</li>			
+					<li class="seperator"></li>
+					
+					<li class="calculator">
+						<a href="javascript:void(0);" title="Calculator"></a>
+					</li>
+					<li class="seperator"></li>
+					
+					<li class="replay">
+						<a href="javascript:void(0);" title="Replay"></a>
+					</li>
+					<li class="seperator"></li>
+					
+					<li class="pause">
+						<a href="javascript:void(0);" title="PlayPause"></a>
+					</li>
+					<li class="seperator"></li>
+					
+					<li class="bookmark added">
+						<a href="javascript:void(0);" title="Bookmark"></a>
+					</li>
+				</ul>
+				
+				<div class="midNav">
+					<ul>
+						<li class="moduleNo">Module 1</li>					
+						<li class="quickNav">
+							<a href="javascript:void(0);">1</a>
+							<a href="javascript:void(0);">2</a>
+							<a href="javascript:void(0);">3</a>
+							<a class="active" href="javascript:void(0);">4</a>
+							<a href="javascript:void(0);">5</a>
+							<a href="javascript:void(0);">6</a>
+						</li>
+					</ul>
+				</div>				
+			</div>
+			
+			<div class="rightNav">
+				<ul>
+					<li class="btnBack disabled"><a href="javascript:void(0);" title="Back"></a></li>
+					<li>
+						<div class="modulePagination">
+							<span class="pageCount">01/13</span>
+						</div>
+					</li>
+					<li class="btnNext"><a href="javascript:void(0);" title="Next"></a></li>
+				</ul>
+				<div class="clickNextInfo">Click <B>Next</B> to continue.</div>
+			</div>
+		</nav>
+	</footer>
+</div>
+
+</body>
+</html>

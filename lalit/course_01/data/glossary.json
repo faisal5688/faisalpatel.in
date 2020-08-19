@@ -1,0 +1,268 @@
+﻿{
+    "glossary_alphabets": [{
+            "id": "1",
+            "glossary_alphabet": "A",
+            "terms": []
+        },
+        {
+            "id": "2",
+            "glossary_alphabet": "B",
+            "terms": []
+        },
+        {
+            "id": "3",
+            "glossary_alphabet": "C",
+            "terms": [{
+                    "title": "Common reasons people choose not to speak up: Fear",
+                    "description": "<p>Being afraid of negative impact to yourself or to others can make it feel unsafe to speak up. Part of a Speak Up culture involves addressing these concerns and ensuring everyone feels both safe and encouraged to raise concerns.</p>",
+                    "index": "9,13,28",
+                    "audio": ""
+                },
+				{
+                    "title": "Common reasons people choose not to speak up: Rationalization",
+                    "description": "<p>There is a human tendency to rationalize unethical behavior, and we sometimes fail to act in line with our values. For example, the belief that everyone else is engaging in the same behavior may mean that not only do we fail to raise ethical concerns, but we may also willingly engage in unethical behavior.</p>",
+                    "index": "9,29,30",
+                    "audio": ""
+                },
+				{
+                    "title": "Common reasons people choose not to speak up: Response",
+                    "description": "<p>Believing that nothing will be done if you speak up is a barrier for some people to raise concerns.  Having an effective Ethics and Compliance program is proven to increase trust within an organization and help people see that speaking up will have a positive impact.</p>",
+                    "index": "8,13,29",
+                    "audio": ""
+                },
+				{
+                    "title": "Common reasons people choose not to speak up: Skills",
+                    "description": "<p>Research shows that practicing or rehearsing how to speak up in advance increases our likelihood of raising concerns when they arise in the workplace and that is the focus of this course. As part of this course, you will begin to build ethical muscle memory and practice voicing your concerns through an approach called Giving Voice to Values (GVV).</p>",
+                    "index": "5,9,10,12,13,14",
+                    "audio": ""
+                },
+				{
+                    "title": "Choice",
+                    "description": "<p>Choice is the third pillar in GVV, and it asks you to examine your own track record of speaking up to demonstrate that there is often a choice, even when you think there isn’t one. GVV also suggests recognizing, respecting, and appealing to the capacity for choice in others. The key with choice is to identify what has enabled and disabled you in the past.</p>",
+                    "index": "12,17,23,24",
+                    "audio": ""
+                }]
+        },
+        {
+            "id": "4",
+            "glossary_alphabet": "D",
+            "terms": [{
+                    "title": "Disablers",
+                    "description": "<p>Individual and contextual levers that make it much harder.</p>",
+                    "index": "22",
+                    "audio": ""
+                }]
+        },
+        {
+            "id": "5",
+            "glossary_alphabet": "E",
+            "terms": [{
+                    "title": "Enablers",
+                    "description": "<p>Strengths, communication styles, and external levers that help us act on our values even when it feels challenging.</p>",
+                    "index": "8,22,23",
+                    "audio": ""
+                }]
+        },
+        {
+            "id": "6",
+            "glossary_alphabet": "F",
+            "terms": []
+        },
+        {
+            "id": "7",
+            "glossary_alphabet": "G",
+            "terms": [{
+                    "title": "Giving Voice to Values",
+                    "description": "<p>Giving Voice to Values (GVV) is an evidence-based approach to ethics and integrity that builds ethical skills to help you to speak up when it matters most.</p>",
+                    "index": "9,10,12,13",
+                    "audio": ""
+                }]
+        },
+        {
+            "id": "8",
+            "glossary_alphabet": "H",
+            "terms": []
+        },
+        {
+            "id": "9",
+            "glossary_alphabet": "I",
+            "terms": []
+        },
+        {
+            "id": "10",
+            "glossary_alphabet": "J",
+            "terms": []
+        },
+        {
+            "id": "11",
+            "glossary_alphabet": "K",
+            "terms": [{
+                    "title": "KPMG’s commitment to Purpose",
+                    "description": "<p>Our people lack clarity with, and connection to, the firm’s purpose.</p><p><b>We will:</b> Clearly articulate KPMG’s purpose so that we drive clarity, consistency, and engagement in everyone’s work at the firm.</p>",
+                    "index": "9,17,21",
+                    "audio": ""
+                },
+                {
+                    "title": "KPMG’s commitment to Values",
+                    "description": "<p>Our Values are not fully understood in the context of the day-to-day. </p><p><b>We will:</b> Integrate KPMG’s Values more clearly into our strategy and day-to-day decisions and actions.</p>",
+                    "index": "3,5,6,8",
+                    "audio": ""
+                },
+                {
+                    "title": "KPMG’s commitment to Culture",
+                    "description": "<p>Culture and Values are important to everyone and key to our long-term success. </p><p><b>We will:</b> Establish a long-term sustainable culture to embed desired attributes in all aspects of our organization.</p>",
+                    "index": "5,6,8",
+                    "audio": ""
+                },
+                {
+                    "title": "KPMG’s commitment to Rewards",
+                    "description": "<p>There is a perception that our Values do not inform performance and promotion discussions.</p><p><b>We will:</b> Better align ethical and cultural expectations with assessment and rewards.</p>",
+                    "index": "8",
+                    "audio": ""
+                },
+                {
+                    "title": "KPMG’s commitment to Compliance",
+                    "description": "<p>Our response to issues is perceived as inconsistent and not transparent.</p><p><b>We will:</b> Evolve our compliance program and strengthen transparency.</p>",
+                    "index": "8,9",
+                    "audio": ""
+                },
+				{
+                    "title": "KPMG’s commitment to Governance",
+                    "description": "<p>Our board can take a more active role across KPMG.</p><p><b>We will:</b> Review the board’s role and expectations to take full advantage of the board and its expertise.</p>",
+                    "index": "8",
+                    "audio": ""
+                },
+                {
+                    "title": "KPMG’s commitment to Environment",
+                    "description": "<p>KPMG’s high-pressure environment can create vulnerabilities.</p><p><b>We will:</b> Equip our people to openly discuss and navigate pressures together.</p>",
+                    "index": "6,8,20,33,35",
+                    "audio": ""
+                },
+                {
+                    "title": "KPMG’s commitment to Candor",
+                    "description": "<p>There is a reluctance to speak up, challenge, and provide divergent perspectives.</p><p><b>We will:</b> Foster an environment where constructive challenge is highly valued.</p>",
+                    "index": "8",
+                    "audio": ""
+                },
+                {
+                    "title": "KPMG’s commitment to Accountability",
+                    "description": "<p>Leaders vary in the way they model our Values and can also be more accessible.</p><p><b>We will:</b> Equip our leaders with clear Values-based standards and hold them accountable.</p>",
+                    "index": "8",
+                    "audio": ""
+                }
+            ]
+        },
+        {
+            "id": "12",
+            "glossary_alphabet": "L",
+            "terms": []
+        },
+        {
+            "id": "13",
+            "glossary_alphabet": "M",
+            "terms": []
+        },
+        {
+            "id": "14",
+            "glossary_alphabet": "N",
+            "terms": [{
+                    "title": "Normalization",
+                    "description": "<p>Normalization is the fourth pillar in GVV, and it helps you recognize values conflicts will arise over the course of your career and that you <i><b>can</b></i> approach them calmly and competently. Consider some of the most common types of conflicts that you may experience in your work in order to minimize the disabling effect that surprise can have.</p>",
+                    "index": "17",
+                    "audio": ""
+                }]
+        },
+        {
+            "id": "15",
+            "glossary_alphabet": "O",
+            "terms": []
+        },
+        {
+            "id": "16",
+            "glossary_alphabet": "P",
+            "terms": [{
+                    "title": "Purpose",
+                    "description": "<p>Purpose is the second pillar in GVV. By defining your personal and professional purposes explicitly and broadly before conflicts arise, GVV helps you anchor your decisions and actions in a wider context than your current work environment. Similarly, GVV helps you to appeal to a sense of purpose in others.</p>",
+                    "index": "8,17,21",
+                    "audio": ""
+                }]
+        },
+        {
+            "id": "17",
+            "glossary_alphabet": "Q",
+            "terms": []
+        },
+        {
+            "id": "18",
+            "glossary_alphabet": "R",
+            "terms": [{
+                "title": "Reasons and Rationalizations",
+                "description": "<p>The reasons and rationalizations pillar is the last of seven in GVV. By anticipating typical reasons given for ethically questionable behavior and identifying counterarguments, you can develop and practice useful questions, arguments, and ways to frame roles and purpose in order to respond persuasively.</p>",
+                "index": "9,10,30",
+                "audio": ""
+            }]
+        },
+        {
+            "id": "19",
+            "glossary_alphabet": "S",
+            "terms": [{
+                "title": "Speak Up culture",
+                "description": "<p>Speak Up culture is one that supports <i>employee voice</i>, meaning that people raise concerns, share information about problems, challenge the status quo, and offer new ideas to someone who can action them. It’s an environment where people generally feel that their input is <i>welcomed and valued.</i> A Speak Up culture helps overcome <i>employee silence</i>, which is when people withhold ideas or concerns or feel they do not want to share their input in their workplace.</p>",
+                "index": "5,6,9,10,36",
+                "audio": ""
+            },
+			{
+                "title": "Self-Knowledge",
+                "description": "<p>Self-knowledge is the fifth pillar in GVV, and it asks you to generate a self-story about voicing and acting on your values that is consistent with who you are and that builds on your strengths. This approach shows that there are many ways to align your strengths and style with your values.</p>",
+                "index": "",
+                "audio": ""
+            }]
+        },
+        {
+            "id": "20",
+            "glossary_alphabet": "T",
+            "terms": []
+        },
+        {
+            "id": "21",
+            "glossary_alphabet": "U",
+            "terms": []
+        },
+        {
+            "id": "22",
+            "glossary_alphabet": "V",
+            "terms": [{
+                    "title": "Values",
+                    "description": "<p>The Values pillar is the first of seven pillars in GVV. When an ethical issue arises, Giving Voice to Values encourages you to appeal to a short list of widely shared values in order to identify common goals that could help to resolve the issue. KPMG’s Values of Integrity, Excellence, Courage, Together and For Better are a great place to start in finding common ground.</p>",
+                    "index": "5,15,8,36",
+                    "audio": ""
+                },
+				{
+                    "title": "Voice",
+                    "description": "<p>Voice in the sixth pillar in GVV. GVV is unique in giving you a platform to voice your values and practice what you could say to resolve an ethical issue in front of respected peers, using the style of expression with which you are the most skillful and which is most appropriate to the situation. By inviting coaching and feedback, you are building ethical muscle memory. You are likely to say those words that you have pre-scripted for yourself and have already heard yourself express.</p>",
+                    "index": "6,7,12,13",
+                    "audio": ""
+                }]
+        },
+        {
+            "id": "23",
+            "glossary_alphabet": "W",
+            "terms": []
+        },
+        {
+            "id": "24",
+            "glossary_alphabet": "X",
+            "terms": []
+        },
+        {
+            "id": "25",
+            "glossary_alphabet": "Y",
+            "terms": []
+        },
+        {
+            "id": "26",
+            "glossary_alphabet": "Z",
+            "terms": []
+        }
+    ]
+}

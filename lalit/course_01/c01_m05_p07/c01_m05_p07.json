@@ -1,0 +1,21 @@
+{
+    "data": {
+        "basePath": "./course_01/c01_m05_p07/",
+        "downloadAndroidImages": "",
+        "downloadIpadImages": "",
+        "downloadImages": "c01_m05_p07.jpg,icon_01.png,icon_02.png,icon_03.png,icon_04.png,section_2_bg.jpg",
+        "image": {
+            "use_image_tag": "true",
+            "desktop": "",
+            "ipad": {
+                "landscape": "",
+                "portrait": ""
+            }
+        },
+        "audio": {
+            "path": "course_01/c01_m05_p07/c01_m05_p07",
+            "isAbsolute": true
+        },
+        "content": ""
+    }
+}

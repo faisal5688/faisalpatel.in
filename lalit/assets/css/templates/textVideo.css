@@ -1,0 +1,102 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* Static Text/Image/Video */
+
+.txtimgWrap {
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+    width: 860px;
+	height: 484px;
+	position: relative;
+}
+
+.txtHolder {
+    font-size: 14px;
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    /* padding-bottom: 10px; */
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+    width:100%;
+}
+
+.txtHolder ul li {
+	display:list-item;
+	list-style:none;
+	margin:2% 0;
+    padding-left: 20px;	
+	background:url(../../images/bulletIco.jpg) no-repeat left 5px;
+}
+.videoHolder{
+	float:none;
+    margin:0 auto !important;
+    width:820px;
+	padding:0;
+	/* border-bottom:1px solid #01328e;
+	padding-bottom:4px; */
+}
+.videoHolder_middle{
+	margin:0 auto !important;
+    width:450px;
+	float: none;
+	padding:0;
+
+}
+.imageHolder {
+    float: left;
+    margin: 1% 0 0 4%;
+    width: 23%;
+	text-align:right;
+}
+.imageHolder > img {
+    max-width: 100%;
+    height: auto;
+}
+.txtimgContainer.bgImage {
+	/*background:url("../../images/ladyImageBig.png") no-repeat scroll right bottom #B0D9E6;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader( src='arrow-big-right.png', sizingMethod='scale');
+    -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader( src='arrow-big-right.png', sizingMethod='scale')";
+	background-size:auto 93%;*/
+}
+
+.middleContainer{
+	min-height:290px;
+}
+#buttons_holder{
+  float: left;
+    left: 108px;
+    padding-top: 10px;
+    position: absolute;
+    top: 221px;
+    width: auto;
+}
+
+#details_button{
+	background: rgba(0, 0, 0, 0) url("../../../course_01/images/details_button.jpg") no-repeat scroll 0 0 / 55px 55px;
+    display: block;
+    float: right;
+    height: 55px;
+    width: 55px;
+}
+#fof_button{
+	background: rgba(0, 0, 0, 0) url("../../../course_01/images/fof_button.jpg") no-repeat scroll 0 0 / 55px 55px;
+    display: block;
+    float: right;
+    height: 55px;
+    width: 55px;
+}
+/* iPads (Landsacpe) */
+@media screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape){
+
+}
+

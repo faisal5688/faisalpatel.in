@@ -1,0 +1,144 @@
+{
+  "data": {
+    "meta": {
+        },
+    "body": {
+      "-offest": "10",
+      "bodyText": {
+        "-xPos": "455",
+        "-yPos": "240",
+        "-width": "564",
+        "text": [
+          "In a moment you will be taking the final scored assessment covering the material from all the lessons of this course. This is the time to go back and review the course content before you begin the assessment.",
+          "In a moment you will be taking the final scored assessment covering the material from all the lessons of this course. This is the time to go back and review the course content before you begin the assessment.",
+          "You have already completed this assessment with a score of ",
+          " %.",
+          "Remaining attempts: ",
+          "Course Level 22 In a moment you will be taking the final scored assessment covering the material from all the lessons of this course. This is the time to go back and review the course content before you begin the assessment.",
+          "In order to receive CPE credit, you must score a ",
+          "% or higher on the final assessment."
+        ]
+      },
+      "instructionText": {
+        "-xPos": "455",
+        "-yPos": "380",
+        "-width": "621",
+        "#cdata-section": "Click Start to take the final assessment and see how much you have learned."
+      },
+      "additionalText": {
+        "-xPos": "455",
+        "-yPos": "425",
+        "-width": "512",
+        "#cdata-section": "Good Luck!!"
+      },
+      "item": [
+        {
+          "-type": "text",
+          "-xPos": "0",
+          "-yPos": "0",
+          "-height": "0",
+          "-width": "0",
+          "#cdata-section": "<B>On Screen Text 1</B>"
+        },
+        {
+          "-type": "text",
+          "-xPos": "0",
+          "-yPos": "0",
+          "-height": "0",
+          "-width": "0",
+          "#cdata-section": "<B>On Screen Text 2</B>"
+        },
+        {
+          "-type": "text",
+          "-xPos": "0",
+          "-yPos": "0",
+          "-height": "0",
+          "-width": "0",
+          "#cdata-section": "<B>On Screen Text 3</B>"
+        },
+        {
+          "-type": "text",
+          "-xPos": "0",
+          "-yPos": "0",
+          "-height": "0",
+          "-width": "0",
+          "#cdata-section": "<B>On Screen Text 4</B>"
+        },
+        {
+          "-type": "text",
+          "-xPos": "0",
+          "-yPos": "0",
+          "-height": "0",
+          "-width": "0",
+          "#cdata-section": "<B>On Screen Text 5</B>"
+        },
+        {
+          "-type": "images",
+          "-xPos": "0",
+          "-yPos": "0",
+          "-height": "0",
+          "-width": "0",
+          "#cdata-section": "path"
+        },
+        {
+          "-type": "audio",
+          "-xPos": "0",
+          "-yPos": "0",
+          "-height": "0",
+          "-width": "0",
+          "#cdata-section": "path"
+        },
+        {
+          "-type": "video",
+          "-xPos": "0",
+          "-yPos": "0",
+          "-height": "0",
+          "-width": "0",
+          "#cdata-section": "path"
+        }
+      ]
+    },
+    "links": {
+      "item": [
+        {
+          "-type": "internal",
+          "#cdata-section": "../resources/reference.doc"
+        },
+        {
+          "-type": "external",
+          "#cdata-section": "http://www.google.com"
+        }
+      ]
+    },
+    "AssessmentResult": {
+      "Assessment": {
+        "pageTitle": "<b>Assessment Result</b>",
+        "ResultText": "<b>Result</b>",
+        "ScoreText": "<b>Score</b>",
+        "PercentText": "<b>%</b>",
+        "QuestionText": "<b>Questions</b>",
+        "CorrectText": "<b>Correct</b>",
+        "InCorrectText": "<b>Incorrect</b>",
+        "PassText": {
+          "CongtateText": "Congratulations! You have scored <span id='userScore'></span>% and successfully completed this module. Select Exit to close this course and select any other module/course.",
+          "InstructionText": "Click on the <b>EXIT</b> button to exit this course and return to the main menu.",
+          "audio": "blank"
+        },
+        "FailText": {
+          "FailSubTitle": "Sorry! You score <span id='userScore'>Y</span>% and could not complete this course successfully. You are recommended to go through this module and attempt the assessment again. <p>All the best!</p>",
+          "audio": "blank",
+          "Retake": {
+            "RetakeInstructionText": "Click <b>Retake Assessment</b> to reattempt the assessment, or click <b>Exit</b> to exit this course and return to the main menu.",
+            "RetakeButtonLabel": "Retake Assessment"
+          }
+        }
+      }
+    },
+    "transcripts": {
+      "transcript": {
+        "-id": "0",
+        "#cdata-section": "transcript content"
+      }
+    }
+  }
+}

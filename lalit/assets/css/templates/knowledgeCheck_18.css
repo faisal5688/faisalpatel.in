@@ -1,0 +1,404 @@
+
+/* MCSS / MCMS */
+#mcmsContainer{
+	padding: 10px 25px;
+}
+#mcmsContainer .page_title{padding-bottom: 10px;}
+.cloneOption, .hiddenOption{
+	display: none;
+}
+
+.list_alpha{
+	float:left;
+	height:auto !important;
+	margin-right:5px;
+}
+.feedbackContainment{
+	width:99%;
+	width:99.4%\9;
+	height:100%;
+	position:absolute;
+	top:0;
+	left:0;
+}
+.mcssWrap{
+	width:100%;
+	margin: 0 auto;
+	padding: 0;
+	font-size: 13px;
+	position: relative;
+}
+.mcssWrap .scenarioTxt{
+    /*margin-top: 26px;*/
+	color: #E88729;
+    font-size: 22px;
+    text-align: center;
+}
+
+.mcssQuestion{
+    width: 100%;
+    min-height: 88px;
+    color: #FFF;
+    position: relative;
+    background: #00a3a1;
+}
+.mcssQuestion .imgSec{
+	background-color: #00338d;
+    background-image: url(../../images/quetion_bg.png);
+    background-repeat: no-repeat;
+	background-position: center center;
+    width: 85px;
+    height: 100%;
+    position: absolute;
+    right: 0;
+}
+.mcssQuestion .imgSec span{
+	/*background-color: #00338d;*/
+    color: #d4d4d4;
+    float: left;
+    font-family: 'KPMG_App';
+    font-size: 80px;
+    font-weight: normal;
+    height: 88px;
+    line-height: 80px;
+    text-align: center;
+    width: 46px;
+}
+
+/*-----------IE11 hack---------------*/
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active){
+.mcssQuestion .imgSec span{
+	line-height:102px;
+}
+
+}
+
+/*-----------IE11 hack---------------*/
+
+
+
+ .btn{
+	margin-top: -34px;
+    position: absolute;
+    right: 3px;
+    z-index: 1
+} 
+.mcssQuestion .questStatus{
+	font:12px/normal Arial;
+}
+.mcssQuestion .questSec{
+	min-height: 68px;
+	padding: 10px 85px 10px 20px;
+	/* background-color:#019190; */
+}
+.mcssQuestion .questSec .question{	
+    height: 68px;
+    display: table-cell;
+    font: 16px/18px Arial;
+    color: #FFF;
+    padding: 0 8px 0 10px;
+    vertical-align: middle;
+	font-weight:bold;	
+}
+
+#mcmsInstructionTxt p{
+color:#00338d;
+font-size:14px;
+}
+.optionContainer{
+    /* width: 100%; */
+}
+.optionContainer .row{
+	float: left;
+    position: relative;
+    width: 100%;
+}
+.optionIcons{
+	float: left;
+    width: 50px;
+    height: 34px;
+}
+.tickIco {
+    display: block;
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    top: 7px;
+    left: 6px;
+    background: url(../../images/kc_assets1.png) no-repeat -106px -26px;
+}
+.tickIco.correct {
+	background-position: -80px -11px;
+	left:5px;
+}
+.tickIco.mcssCross {
+    background-position: -109px -11px;
+	left:5px;
+}
+.optionIcons .checkBox, .optionIcons .radio {
+	background: rgba(0, 0, 0, 0) url("../../images/kc_assets1.png") no-repeat scroll -11px -11px;
+    cursor: pointer;
+    height: 20px;
+    margin: 7px 0 0 30px;
+    position: absolute;
+    width: 21px;
+}
+.optionIcons .checkBox.MCMSbulletPointsSelected{
+	background: rgba(0, 0, 0, 0) url("../../images/kc_assets1.png") no-repeat scroll -47px -11px;
+}
+
+.optionIcons .checkBox.MCMSBulletPointsDisabled{
+	cursor:default;
+}
+.optionIcons .radio{
+	background-position: -22px -24px;	
+}
+.optionIcons .radio.MCSSbulletPointsSelected{
+	background-position: -57px -24px;	
+	cursor:default;
+}
+.optionIcons .radio.MCSSbulletPointsDisable{
+	cursor:default;
+}
+
+.optionText{
+	height:auto !important;
+    margin:0;
+	font: 14px/18px Arial;
+    min-height: 21px;
+    padding-bottom: 7px;
+    padding-left: 12px;
+    padding-right:0;
+    padding-top: 7px;
+    width:89%;
+	float:left;
+}
+.optionText .txt{
+	display:table;
+}
+.optionText .txt span{
+	display:table-cell;
+	height:auto;
+	vertical-align:middle;
+}
+.mcssInstruction {
+ 	font: 14px/18px Arial;
+    padding-left: 30px;
+    padding-top: 10px;
+	padding-bottom:10px;
+	font-style: italic;
+}
+#mcmsInstructionTxt p a {
+    color: blue;
+    text-decoration: underline;
+}
+.floatlft{
+    float: left;	
+}
+.floatRht{
+    float: right;
+}
+
+#mcmsContainer .submitBtn{
+	bottom: 0px;
+    color: #ffffff;
+    cursor: pointer;
+    float: right;
+    position: absolute;
+    right: 0;
+}
+#mcmsContainer .disabled  .btn_submit{
+	background-color: #838383 !important;
+	color:#d3d3d3;
+    margin: 0;
+	font-size:bold;
+}
+#mcmsContainer .submitBtn  .btn_submit{
+	background-color: #00338d;
+    height: 28px;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    width: 89px;
+	font-size: 14px;
+    line-height: 26px;
+	text-align:center;
+	float: left;
+	border-radius:0!important;
+	-webkit-border-radius:0 !important;
+}
+
+#mcmsContainer .submitBtn  .btn_submit:hover{
+ background:#00a3a1;
+}
+#mcmsContainer .disabled{
+    color: #CCC;
+	cursor:default;
+}
+#mcmsContainer .disabled:hover{
+
+    color: #CCC;
+	cursor:default;
+}
+
+#mcssHolder .imgSection{
+	/* background: url(../../../course_01/images/kcImage.jpg) no-repeat 0 0  ; */
+	background-size:100% 100%;
+	border:2px solid #b5bedd;
+   width:378px;
+   height:321px;
+   float:left;
+}
+.mcmsContainer {
+    float: left;
+    width:100%;
+}
+
+.mcmsOption_with_image{
+	border-bottom: 2px solid #00a3a1;
+    float: left;
+    padding-bottom: 30px;
+    position: relative;
+    width: 100%;
+}
+
+.imageHolder {
+    float: right;
+    width: 35%;
+	display: none;
+}
+.imageHolder img{
+	max-width:100%;
+	height:auto;
+	}
+
+.msgquestion_long p{padding-bottom:5px;}
+
+#mcmsFeedbackBox{
+	background-color: #d1dcf0 !important;
+    box-sizing: border-box;
+    font-size: 14px;
+    padding: 10px;
+	z-index:1;
+}
+
+#mcmsFeedbackBox #correctAnswerContent ul li{
+  	background: rgba(0, 0, 0, 0) url("../../images/correct_answer.png") no-repeat scroll left 2px;
+    padding-bottom: 10px;
+    padding-left: 25px;
+}
+
+#mcmsFeedbackBox #headerContent{
+  	display: block;
+    font-weight: bold;
+    padding-bottom: 12px;
+    position: relative;
+}
+
+#feedbackClose{
+	color: #00338e;
+    cursor: pointer;
+    font-size: 18px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+#feedbackClose:hover{
+	color: #00a3a0;
+	cursor:pointer;
+
+}
+
+#feedbackContent{
+ 	border-top: 2px solid #00338d;
+    padding-top:7px;
+}
+
+#feedbackContent p{
+padding-bottom:7px;
+}
+
+#feedbackContent span{color:#f68d2e;}
+
+
+#buttons_holder{
+  	float: none;
+    padding-top: 0;
+    width: 60px;
+    margin: 0 auto 0 auto;
+}
+
+#details_button{
+	background: rgba(0, 0, 0, 0) url("../../images/details_button.jpg") no-repeat scroll 0 0 / 55px 55px;
+    display: block;
+    float: left;
+    height: 47px !important;
+    width: 45px !important;
+    background-size: 100% 100% !important;
+}
+
+#fof_button{
+	background: rgba(0, 0, 0, 0) url("../../images/fof_button.jpg") no-repeat scroll 0 0 / 55px 55px;
+    display: block;
+    float: right;
+    height: 47px !important;
+    width: 47px !important;
+    background-size: 100% 100% !important;
+}
+
+.fof_note{
+	color: #f68d2e;
+	font-style: italic;
+    float: right;
+    font-size: 14px;
+    line-height: 16px;
+    padding-right: 0px;
+	padding-left: 7px;
+    padding-top: 10px;
+    width: 225px;
+}
+#fof_button_holder{
+	float: right;
+    margin-top: 5px;
+}
+
+/* FOF Button Popup Style Code */
+#fof_popup
+{
+	background-color: #fff;
+    box-sizing: border-box;
+    left: 0;
+	padding:20px;
+    position: absolute;
+    top: 0;
+	border:1px solid;
+	font-family: monospace;
+    font-size: 13px;
+	color:#333333;
+	height: 100%;
+    width: 100%;
+}
+
+#fof_popup .closeBtnpop
+{
+    background: url("../../images/fof_close.jpg") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+	background-size:63px 14px;
+	height:14px;
+	width:63px;
+	padding:0;
+	margin:0;
+	position: absolute;
+    right: 10px;
+    top: 10px;	
+}
+
+#fof_popup  #fof_popupContent p
+{padding-bottom:5px;}
+
+#fof_popup #fof_popupHeader
+{color: #000101;
+    font-weight: bold;
+    padding-bottom: 10px;}
+
+

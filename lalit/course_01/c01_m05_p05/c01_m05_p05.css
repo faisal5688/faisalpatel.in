@@ -1,0 +1,94 @@
+@charset "utf-8";
+
+/* CSS Document */
+
+.page_title {
+    padding: 16px 16px 16px 0
+}
+
+.colorText {
+    font-weight: bold;
+    color: #4d2278;
+}
+
+.TextRightContainer .textCont {
+    position: relative;
+}
+
+.mainContent .section {
+    display: none;
+}
+
+.mainsection {
+    overflow: hidden;
+    max-height: 468px;
+}
+
+.noteBtn {
+    width: 312px;
+    height: 48px;
+    background: #470a68;
+    position: relative;
+    top: 25px;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+.noteIcon {
+    background: #00338d url(btnIcon.png) no-repeat;
+    width: 48px;
+    height: 48px;
+    float: left;
+    background-position: 12px center;
+}
+
+.noteTxt {
+    font-family: 'KPMG_App';
+    color: #fff;
+    font-size: 30px;
+    padding: 5px 0 5px 66px;
+    line-height: 36px;
+}
+
+@media screen and (min-width:0\0) {
+    .noteTxt {
+        line-height: 43px;
+    }
+    
+}
+.noteBtn.active {
+    width: 450px;
+    position: relative;
+    left: -15px;
+    /* transition: all 0.5s ease-in-out 0s; */
+}
+
+.noteBtn .closeBtn {
+    display: none;
+}
+
+.noteBtn.active .closeBtn {
+    display: block;
+}
+
+.noteBtn .closeBtn {
+    right: 11px;
+    top: 13px;
+    background: url(../images/comaaonClose.png) no-repeat 0 0;
+    position: absolute;
+    float: right;
+    font-size: 0px;
+    height: 24px;
+    width: 23px;
+    transition: all 0.7s ease 0s;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.notePopup {
+    width: 100%;
+    height: 200px;
+    display: none;
+    top: 40px;
+    position: relative;
+}

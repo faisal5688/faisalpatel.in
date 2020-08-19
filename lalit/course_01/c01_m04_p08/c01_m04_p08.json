@@ -1,0 +1,46 @@
+{
+    "data": {
+        "basePath": "./course_01/c01_m04_p08/",
+        "audios": [{
+                "path": "blank"
+            },
+            {
+                "path": "blank",
+                "isPopup": true
+            },
+            {
+                "path": "blank",
+                "isPopup": true
+            },
+            {
+                "path": "blank",
+                "isPopup": true
+            }
+        ],
+        "downloadAndroidImages": "",
+        "downloadIpadImages": "",
+        "downloadImages": "charactr_bg.jpg",
+        "content": {
+            "backgroundAudio": "blank.mp3",
+            "ins_text": "<p class='InstrutationText'>Select each toggle, original response or the respective enabler, to see how the character could have used the enabler to address the ethical issue.</p>",
+            "click_1": "<div class='imageBlock'></div><div class='textBlock'> <h3>Any person  </h3> </div>",
+            "click_2": "<div class='imageBlock'></div><div class='textBlock'> <h3>Knowing </h3> </div>",
+            "click_3": "<div class='imageBlock'></div><div class='textBlock'> <h3>Common red flags </h3> </div>",
+            "click_1_text": "<div class='popupContentParent popup_1'> <div class='closeBtn'></div><div class='popup_title'>Knowing</div><div class='popup_content'> <div class='popup_leftpart'> <p><b>Lead by example:</b> When others are watching, your actions are likely to set their standard, too. If the partner does not want the team cutting corners in client work, she needs to be sure her actions support quality, excellence, and integrity in all of their work, including internal requirements. Reflecting on the actions you role model can help to enable good decision-making.</p><p><b>Frame the situation differently:</b> Reflecting on other ways to interpret the situation can also help. For example, if the partner reframes the test sharing as a clear instance of cheating, it may not only prevent poor decisions from being made but also address the rationalization such behavior as appropriate by members of the team.</p></div><div class='popup_rightpart '><p><b>Rewind response</b>: <i>If I use the answers that someone sent me to complete this exam, I’m basically telling my team that it’s ok to cut corners in their work and that’s not what I want them doing. I need to talk to them directly and ensure they understand the risk to themselves and the firm if they share answers for the exam. Do they even realize they could lose their CPA license if they cheat?!</i></p> <p class='popup_inst'>Click the <b>X</b> to close the text box.</p></div></div></div>",
+            "click_1_popup": "<h2>Original response:</h2><p>Meeting my client’s deadline is more important than this internal training requirement, and sharing the answers saves me and my team time.</p>",
+
+            "click_2_text": "<div class='popupContentParent popup_2'> <div class='closeBtn'></div><div class='popup_title'>Knowing</div><div class='popup_content'> <div class='popup_leftpart'> <p><b>Search more information:</b> Gathering more data or insight can help improve decision-making. In this case, the manager assumed that everyone was using the exam answers, but outreach to a few close colleagues showed that assumption was not correct.</p><p><b>Seek allies:</b> Not having to face a difficult situation alone can make it easier to act. In this case, other managers were willing to help ensure the right action was taken. This manager also could have used the firm’s channels of communication to raise her hand and seek support in this situation</p></div><div class='popup_rightpart '> <p><b>Rewind response</b>: <i>I checked with a few managers from other teams, and they pointed out that sharing the exam answers is cheating and they’re not ok with that. I guess not everyone is doing it. A few also said they’d help me raise the issue with others on my team if I need help to get the message across, and I’m going to take them up on that offer.</i></p> <p class='popup_inst'>Click the <b>X</b> to close the text box.</p></div></div></div>",
+
+            "click_2_popup": "<h2>Original response:</h2><p>Everyone on the team is using the answers, so why wouldn’t I? And even if I don’t use them when I take the exam, it’s not like I’m going to report the people on my team – they would never want to work with me again.</p>",
+
+            "click_3_text": "<div class='popupContentParent popup_3'> <div class='closeBtn'></div><div class='popup_title'>Knowing</div><div class='popup_content'> <div class='popup_leftpart'> <p>“Won’t the exam going to be straightforward if we just learn the material in the course? Isn’t there a reason we need to learn what’s in the course? I know we have a lot of work right now, but I think we can get this done fairly quickly and get back to the deliverable without much of an impact on the deadline.”</p><p><b>Ask questions: </b> It can help to ask questions of the person asking you to take questionable actions if asserting or arguing your perspective feels challenging. For example, the associate could ask why taking the course and exam in the normal way feels problematic for the manager. In doing so, he is raising the issue with the manager while avoiding a direct rejection of the manager’s direction. not correct.</p></div><div class='popup_rightpart '> <p><b>Evaluate what’s at stake for the person you want to persuade: </b> Reflecting on what may be motivating another person’s actions can help you get to the heart of the issue. Often the person is not invested in an unethical action but instead is having a misguided response to pressure, stress, or other issues. If the associate perceives that the manager is concerned about time pressures and the client deadline, he could try to address that motivator to resolve the issue.</p><p><b>Rewind response</b>: <i>Won’t the exam going to be straightforward if we just learn the material in the course? Isn’t there a reason we need to learn what’s in the course? I know we have a lot of work right now, but don’t you think we can get this done fairly quickly and get back to the deliverable without much of an impact on the deadline?</i></p> <p class='popup_inst'>Click the <b>X</b> to close the text box.</p></div></div></div>",
+
+            "click_3_popup": "<h2>Original response:</h2><p>My manager told me to use the answers to pass the course so I can get back to my client work. Who knows what she’ll do if I say no or question what she told me to do.</p>",
+
+            "transcript_1": "<p>Any person could include a variety of third parties and intermediaries acting on an individual or entity's behalf.</p>",
+            "transcript_2": "<p>Knowing does not require actual awareness, but rather includes deliberate ignorance or willful blindness.</p>",
+            "transcript_3": "<p>Be alert to these indicators of potential wrongdoing by third parties.</p>"
+
+        }
+    }
+}

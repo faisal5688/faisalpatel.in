@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html" charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+			<title>Text Image template</title>
+			<link rel="stylesheet" href="assets/css/templates/textImage_DND.css"  type="text/css"/>
+			<link rel="stylesheet" href="course_01/css/m04_p01.css" type="text/css">
+			
+				<!--templates js imported-->
+				<!-- <script src="js/controller/Templates/m01_p22.js"></script> -->
+				<!--End-->
+				<script type="text/javascript" src="js/controller/Templates/common/Feedback_DND.js"></script>
+				<script src="course_01/js/c01_m06_p02.js"></script>
+				<script>
+	var textImageData = "";
+	var t3withDND;
+	$(document).ready(function(){
+		if (DataManager.templateXMLData.data.textImageData) {
+			textImageData = DataManager.templateXMLData.data.textImageData;
+			$(".RightContHead").html(textImageData.clicktext);
+			  t3withDND = new T3withDNDController(textImageData);
+			  t3withDND.init();
+		};
+		
+		setTimeout(function() {
+			MainController.initializeTemplateInShell();
+			$(".proLitDragBoxes").css('cursor', 'default');
+		}, MainController.pageInterval);
+	});
+	
+	function pageAudioHandler(currTime, totTime) {
+		m04_p01.pageAudioHandler(currTime, totTime);
+	}
+	
+</script>
+			</head>
+			<body>
+				<div class="wrapper">
+					<section class="mainContent">
+						<div class="mainBG">
+							<div id="textImageContainer" class="textImageShadow">
+								<div id="contentHolder" class="textImageMain">
+									<div class="clickIntMain">
+										<div id="clickContainer" class="clickIntHolder01">
+											<div class="topcontent">
+												<p class="instruction_text_above F-size24">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+												<div class="Questiontxt">
+													<p>Drag and drop the correct definition onto its associated term.</p>
+												</div>
+											</div>
+											<div class="ContentHeader"><div ></div>
+											</div>
+											<!-- <div id="proLitDrag" class="dragBox"></div> -->
+											<div class="containment_dnd"></div>
+											<div class="ContentDND">
+												
+                                            	<div class="instruction_text">
+                                                <p>Instruction text will appear here</p>
+                                                </div>  
+												<table id="DNDcontent">
+                                                	
+													<tr id="heading_titles">
+															<td class="drag_heading"><p>Lorem Ipsum</p></td>
+															<td class="drop_heading"><p>Lorem Ipsum</p></td>
+													</tr>
+													<tr id="dragRow">
+														<td class="drag_td">drag</td>
+                                                          <td class="drop_td">
+															<div id="proLitDrop_1" class="dndDropSection dropItem">
+																<div class="dndDropBoxes proDnd-ui-droppable" target="1"></div>
+																<div id="proDndAns1" class="dndAnswerContainer"></div>
+																<!-- <div class="solText">
+																	<div class="SolTextDiv">
+																		<p>Bullying</p>
+																	</div>
+																</div>  -->
+                                                              </div>
+														</td>
+													</tr>
+													<tr id="dragRow">
+														<td class="drag_td">drag</td>
+														<td class="drop_td">
+															<div id="proLitDrop_2" class="dndDropSection dropItem">
+																<div class="dndDropBoxes proDnd-ui-droppable" target="2"></div>
+																<div id="proDndAns2" class="dndAnswerContainer"></div>
+																<!-- <div class="solText">
+																	<div class="SolTextDiv">
+																		<p>Sexual harassment</p>
+																	</div>
+																</div>  -->
+															</div>
+														</td>
+													
+													</tr>
+													<tr id="dragRow">
+														<td class="drag_td">drag</td>
+														<td class="drop_td">
+															<div id="proLitDrop_3" class="dndDropSection dropItem">
+																<div class="dndDropBoxes proDnd-ui-droppable" target="3"></div>
+																<div id="proDndAns3" class="dndAnswerContainer"></div>
+																<!-- <div class="solText">
+																	<div class="SolTextDiv">
+																		<p>Discrimination</p>
+																	</div>
+																</div> -->
+															</div>
+														</td>
+													
+													</tr>
+													<tr id="dragRow">
+														<td class="drag_td">drag</td>
+														<td class="drop_td">
+															<div id="proLitDrop_4" class="dndDropSection dropItem">
+																<div class="dndDropBoxes proDnd-ui-droppable" target="4"></div>
+																<div id="proDndAns4" class="dndAnswerContainer"></div>
+																<!-- <div class="solText">
+																	<div class="SolTextDiv">
+																		<p>Harassment</p>
+																	</div>
+																</div> -->
+															</div>
+														</td>
+														
+													</tr>
+													<tr id="dragRow">
+														<td class="drag_td">drag</td>
+														<td class="drop_td">
+															<div id="proLitDrop_5" class="dndDropSection dropItem">
+																<div class="dndDropBoxes proDnd-ui-droppable" target="5"></div>
+																<div id="proDndAns5" class="dndAnswerContainer"></div>
+																<!-- <div class="solText">
+																	<div class="SolTextDiv">
+																		<p>Protected traits</p>
+																	</div>
+																</div> -->
+															</div>
+														</td>
+													
+													</tr>
+													<tr id="dragRow">
+														<td class="drag_td">drag</td>
+														<td class="drop_td">
+															<div id="proLitDrop_6" class="dndDropSection dropItem">
+																<div class="dndDropBoxes proDnd-ui-droppable" target="6"></div>
+																<div id="proDndAns6" class="dndAnswerContainer"></div>
+																<!-- <div class="solText">
+																	<div class="SolTextDiv">
+																		<p>Retaliation</p>
+																	</div>
+																</div> -->
+															</div>
+														</td>
+														
+													</tr>
+												</table> 
+												<!-- <div id="dropContainer" class="dropContainer"></div> -->
+											</div>
+											<div class="BtnContainer">
+												<div  class="submitBtn disabled" id="buttonSub">Submit</div>
+												<!-- <div  class="submitBtn" id="buttonReset">Reset</div> -->
+												<div class="submitBtn disabled" id="buttonSolution">Solution</div>
+												<div class="SolutionText">Select the <strong>Solution</strong> button to view the correct answers.
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="Clickmain">
+										<div class="HeadTxt01">Determining Entity Classification</div>
+										<div id='closeImgPopup'>X</div>
+										<div class="ClickImg"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+				</div>
+			</body>
+		</html>

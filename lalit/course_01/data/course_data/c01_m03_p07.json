@@ -1,0 +1,59 @@
+﻿{
+    "data": {
+        "audio": "",
+        "scenarioText": "",
+        "question": "<p>Which of the following best describes an enabler?</p>",
+        "instructionText": "<p>Select the best response and click <b>Submit</b>.</p>",
+        "downloadAndroidImages": "",
+        "downloadImages": "c01_m03_p07.jpg, ../../images/comaaonClose.png",
+        "MCQ": {
+            "responseType": "specific",
+            "maxAttempts": "1",
+            "correctAnswer": "3",
+            "options": {
+                "option": [
+                    "<span class='optno'>A.</span> Individual and contextual levers that make it harder to speak up and act on your values.",
+                    "<span class='optno'>B.</span> An action that creates ethical dilemmas through lack of practice <br/>and reflection.",
+                    "<span class='optno'>C.</span> Individual and contextual levers that help us speak up and <br/>act on our values.",
+                    "<span class='optno'>D.</span> An action that resolves ethical dilemmas through practice and reflection."
+                ]
+            },
+            "feedback": {
+                "genericResponse": {
+                    "incorrect": {
+                        "audio": "",
+                        "content": ""
+                    },
+                    "solution": {
+                        "audio": "",
+                        "content": ""
+                    },
+                    "correct": {
+                        "audio": "",
+                        "content": "That is correct."
+                    }
+                },
+                "specificResponse": {
+                    "response": [{
+                            "audio": "blank",
+                            "content": "<p><b>That is incorrect.</b>  Enablers are the just the opposite - levers that make it easier (not harder) to speak up and act on your values.</p>"
+                        },
+                        {
+                            "audio": "blank",
+                            "content": "<p><b>That is incorrect.</b>  Enablers are not actions that create ethical dilemmas. Instead, they are levers that make it easier to speak up and act on your values.</p>"
+                        },
+                        {
+                            "audio": "blank",
+                            "content": "<p><b>That is correct.</b>  Enablers are levers that make it easier to speak up and act on your values.</p>",
+							"showAnswer":"<p><b>The correct answer is C.</b> Enablers are levers that make it easier to speak up and act on your values.</p>"
+                        },
+                        {
+                            "audio": "blank",
+                            "content": "<p><b>That is incorrect.</b>  Enablers are not actions that resolve ethical dilemmas. Instead, they are levers that make it easier to speak up and act on your values.</p>"
+                        }
+                    ]
+                }
+            }
+        }
+    }
+}

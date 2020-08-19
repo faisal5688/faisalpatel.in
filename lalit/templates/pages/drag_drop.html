@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html" charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+<title>Drag N Drop - Classification</title>
+
+<link rel="stylesheet" href="assets/css/templates/dragNdrop.css">
+<link rel="stylesheet" href="" changetheme='true'>
+
+<script src="js/controller/Templates/common/SubmitButton.js"></script>
+<script src="js/controller/Templates/DragNDrop/DragNDrop_Classification.js"></script>
+<script>
+	var dndData = {};
+	$(document).ready(function(){
+		dndData = Parser.loadDnDClassificationDataFn(DataManager.templateXMLData);
+        DNDClassification.initialize(dndData); 	
+	});
+	
+</script>
+</head>
+<body>
+
+<div class="wrapper">
+	<section class="mainContent">
+		<div id="dndContainer" class="dragDropWrap">
+			<div class="innerContent">
+				<div class="lftColumn">
+					<div id="dragHolder" class="dragWrap">
+						<div id="instructionTxt" class="info">
+							<span>Drag the images into the correct category.</span>
+						</div>
+					</div>
+				</div>
+				<div class="rhtColumn">
+					<div id="dropHolder1" class="dropWrap">
+						<div class="title">PP&amp;E</div>						
+					</div>
+					<div id="dropHolder2" class="dropWrap">
+						<div class="title">Inventory</div>											
+					</div>
+				</div>
+
+				<div id="dndFeedbackBox" class="feedbackWrap">
+					<div id="dndFeedbackContent" class="contentSec">
+						<div class="row tempFeedback">
+							<div id="imgHolder" class="imgBlock">
+								<img src="assets/images/drag_img_2.jpg" alt="" />
+							</div>
+							<div id="contentHolder" class="txtBlock">
+								<div id="label" class="ttl">Coffee bean roaster</div>
+								<div id="content" class="feedbackTxt">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="clear"></div>
+
+			</div>
+				<div id="submitBtn" class="submitBtn">
+					<input type="button" value="Submit">
+				</div>
+			<div class="clear"></div>
+			<div class="dragItem tempDragOption">
+				<img src="../../assets/images/drag_img_1.jpg" alt="" />
+				<div id="dragContent" class="textStripe">
+					<span>A Mocha Liquid Building</span>
+				</div>
+			</div>
+		</div>
+		<div class="clear"></div>
+	</section>
+</div>
+
+</body>
+</html>

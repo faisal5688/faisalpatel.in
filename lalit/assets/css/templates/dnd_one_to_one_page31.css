@@ -1,0 +1,302 @@
+/* Drag N Drop V2 */
+
+.clear{
+	clear:both;
+}
+/* .dragDropWrap{
+	max-width:100%;
+    min-height: auto;	
+	margin:0 auto;
+	padding:0;
+	position:relative;
+} */
+.dragDropWrap .innerContent{
+	margin:0 20px;
+	position:relative;
+	}
+.lftColumn{
+	float:left;
+	width:306px;
+	min-height:459px;
+	padding:8px 8px 0;
+	background: url(assets/images/lft_col_bg.png) repeat 0 0;
+}
+.lftColumn .info, .dragItem {
+    width: 135px;
+    height: 135px;
+    position: relative;
+    border: solid 1px #949494;
+	background: #edebeb;
+	border: 0;
+}
+.dragItem{
+	cursor: default;	
+}
+.dragItem.ui-draggable{
+	cursor: move;	
+}
+.dropItem.doppedComplete .dragItem.ui-draggable-disabled{
+	cursor: default;
+}
+
+.lftColumn .info{
+	display:table;
+	width:114px;
+	padding:0 8px;
+	border-top:none;
+	border-right:none;
+	border-bottom:none;
+	border-left:solid 5px #e4801b;
+}
+.lftColumn .info span{
+	display:table-cell;
+	height:135px;
+	font:normal 15px/18px Arial;
+	color:#004e96;
+	vertical-align:middle;
+}
+.dragItem img{
+	width:auto;
+}
+.dragItem .textStripe{
+	display:table;
+	width:100%;
+	height:38px;
+	padding:0;
+	position:absolute;
+	bottom:0;
+	left:0;
+}
+.dragItem .textStripe span{
+	display:table-cell;
+	width:100%;
+	height:38px;
+	font:14px/14px Arial;
+	color:#FFF;
+	text-align:center;
+	vertical-align:middle;
+	padding:0 10px;
+	background:#008da8;
+}
+.rhtColumn{
+	float:right;
+	min-height:459px;
+	padding:0 8px;
+	background: url(assets/images/rht_col_bg.png) repeat 0 0;
+}
+.rhtColumn .dropWrap{
+	float:left;
+	width:172px;
+	min-height:479px;
+	margin:8px;
+	border:solid 1px #a2a2a2;
+	background:#FFF;	
+}
+.dropWrap .title{
+	font:bold 14px/24px Arial;
+	color:#FFF;
+	text-align:center;
+	background:#333;
+}
+.dropWrap .dragItem{
+	float:none;
+    margin:8px auto 0;
+	border:solid 3px transparent;
+}
+.dropWrap .dragItem.correct{
+	border-color:#8dc63f;
+}
+.dropWrap .dragItem.incorrect{
+	border-color:#b5101c;
+}
+.dnd_v2Holder .submitBtn {
+    float: left;
+	margin-right: 10px;
+}
+.dnd_v2Holder .resetBtn {
+    float: left;
+    margin-right: 3px;
+}
+.dragDropWrap .resetBtn input{
+	margin:0 !important;
+}
+.dragDropWrap .submitBtn input{
+	margin:0 !important;
+}
+.DNDclose{
+    cursor: pointer;
+	font-size:0;
+    float: right;
+    width: 36px;
+    height: 35px;
+    position: absolute;
+    right: 10px;
+    top: 0;
+	background:url("../../../assets/images/popup_buttons.png") no-repeat -16px -76px;
+	}
+/* .popupClose{
+	top: 9px !important;
+    right: 8px !important;
+} */
+.DNDclose:hover{
+	background-position:-16px -112px;
+}
+.disabled:hover{
+	background-position:-16px -148px;
+}
+.feedbackWrap{
+    background: none repeat scroll 0 0 hsl(0, 0%, 20%);
+    height:auto;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width:327px;
+    overflow: hidden;
+	display:none;
+}
+.feedbackWrap .contentSec {
+    height:307px;
+    margin:35px 0 10px;
+	overflow:auto;
+}
+.feedbackWrap .row {
+    border-bottom: 1px solid #D17C1F;
+    color: #FFFFFF;
+    margin: 0 0 12px;
+    overflow: hidden;
+    padding: 0 0 12px;
+}
+.feedbackWrap .row .imgBlock {
+    float: left;
+}
+.feedbackWrap .row .txtBlock {
+    padding: 0 8px 0 81px;
+}
+.feedbackWrap .row .txtBlock .ttl {
+    color: #D17C1F;
+    font: bold 14px Arial;
+    padding: 0 0 8px;
+}
+.feedbackWrap .row .txtBlock .feedbackTxt {
+    font: 13px Arial;
+}
+.feedbackWrap .row:last-child{
+	margin:0;
+	border:none;
+}
+.tempDragOption, .tempFeedback{
+	display: none;
+}
+.disabled{
+	cursor: default;
+}
+.dnd_v2_dropContent {
+    width: 28%;
+    max-width: 48%;
+    min-height: 309px;
+    background: #cfcfcf;
+    position: absolute;
+    right: 0;
+    top: 100px;
+}
+.dnd_v2_correct{
+	background-color:green !important;
+	}
+.dnd_v2_incorrect{
+
+	background-color:red !important;
+
+	}
+.dnd_v2_dragContent {
+	width: 28%;
+    max-width: 48%;
+    display: table;
+    padding: 3px;
+    position: absolute;
+    left: 300px;
+    top: 100px;
+}
+.dnd_v2_dropContent .title {
+	font:bold 16px/24px Arial;
+	color:#FFF;
+	text-align:left;
+    margin:10px 10px 0;
+	padding:13px 22px;
+    background:#4e4e4d;
+}
+.dnd_v2Holder {
+    height: 40px;
+    margin-top: 13px;
+    width: 100%;
+}
+.dnd_v2_dragContent .info {
+	height:50px;
+	line-height:50px;
+	padding:2px;
+	color: #E4801B;
+	font-style: italic;
+    border-left:5px solid #E4801B;
+	background: none repeat scroll 0 0 #EDEBEB;
+}
+#instructionTxt > span {
+    display: table-cell;
+    padding-left: 0px;
+    vertical-align: middle;
+	font-size: 14px;
+    line-height: 16px;
+    padding-top: 9px;
+}
+/* #dnd_2Container #dnd_Content { }
+#dnd_Content .dragItem:focus {
+	outline: 1px solid yellow;
+} */
+#dnd_Content .dragItem {
+    width: 100%!important;
+	height:39px;
+    color: #fff;
+    text-align: center;
+    background: #04a39f;
+    -moz-box-shadow: 0px 2px 3px 1px rgba(0, 0, 0, 0.5);
+    -ms-box-shadow: 0px 2px 3px 1px rgba(0, 0, 0, 0.5);
+    box-sizing: border-box;
+    /* display: table-cell; */
+    vertical-align: middle;
+    padding: 11px;
+}
+#dnd_Content .dragCloneItem {
+    width: 100%;
+    height: 39px;
+    color: #fff;
+    text-align: center;
+    display: none;
+    position: relative;
+    background: #bcbec0;
+    padding: 11px 0px;
+    box-sizing: border-box;
+}
+#dnd_Content .dropItem {
+    height: 38px;
+    text-align: center;
+    width: 100%;
+    border: 1px solid #bcbec0!important;
+	background: #EDEBEB;
+	border: 0;
+}
+/* .DND_OneToOne_correct{
+	box-shadow: 0px 2px 3px 1px #008000 !important;
+	-webkit-box-shadow: 0px 2px 3px 1px #008000 !important;
+	-moz-box-shadow: 0px 2px 3px 1px #008000 !important;
+	-o-box-shadow: 0px 2px 3px 1px #008000 !important;
+	-ms-box-shadow: 0px 2px 3px 1px #008000 !important;	
+	border:2px solid #008000;
+
+}
+.DND_OneToOne_incorrect{
+	box-shadow: 0px 2px 3px 1px #FF0000 !important;
+	-webkit-box-shadow: 0px 2px 3px 1px #FF0000 !important; 
+	-moz-box-shadow: 0px 2px 3px 1px #FF0000 !important;
+	-o-box-shadow: 0px 2px 3px 1px #FF0000 !important;
+	-ms-box-shadow: 0px 2px 3px 1px #FF0000 !important;
+	border:2px solid #FF0000;
+
+} */

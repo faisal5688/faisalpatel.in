@@ -1,0 +1,178 @@
+.infoSec, .instructionTxt p {
+    background: none repeat scroll 0 0 #FFF;
+    color: #e4701f;
+    float: left;
+    font: 14px/31px Arial;
+    margin: 0 0 1px;
+    padding: 0 1%;
+    width: 98%;
+	border-left:0;
+}
+.cnl_v2_Wrap {
+    margin: 0 auto;
+    max-width:910px;
+    padding: 0;
+}
+ul.cnl_v2_Nav {
+    overflow: hidden;
+    width: 100%;
+}
+ul.cnl_v2_Nav li.ui-tabs-active {
+    border: medium none;
+}
+ul.cnl_v2_Nav li {
+    float: left;
+    list-style-type: none;
+    margin: 0 0 3px;
+    position: relative;
+    width: 24%;
+}
+ul.cnl_v2_Nav li a {
+    background: none repeat scroll 0 0 #ad75b2;
+    color: #ffffff;
+    display: block;
+    font: bold 13px/24px Arial;
+    height: 23px;
+    padding: 10px;
+    text-align: left;
+	border:1px solid #ad75b2;
+}
+ul.cnl_v2_Nav li.ui-tabs-active a {
+    background:#FFF;
+    border-color:#ad75b2 -moz-use-text-color #ad75b2 #ad75b2;
+    border-image:none;
+    border-style:solid none solid solid;
+    border-width:1px medium 1px 1px;
+    color:#ad75b2;
+    cursor:default;
+    height:23px;
+}
+.cnl_v2Panel {
+    background: none repeat scroll 0 0 #FFF;
+    border:1px solid #ad75b2;
+    margin-left: 239px;
+    max-width: 80%;
+	max-height: 196px;
+    padding: 20px;
+    position: relative;
+    z-index: 9;
+	height: 195px;
+}
+
+#contentImageWrapper {
+    background: none repeat scroll 0 0 #e0e0e2;
+    float: left;
+}
+#firstContent {
+    float: left;
+    font-size: 14px;
+    height: auto;
+    padding: 15px 10px 10px 15px;
+    width: 46%;
+}
+#firstContent ul{ margin-bottom:5px;
+}
+#firstContent ul li {
+    background: url(../../../course_01/images/bulletIco.jpg) no-repeat scroll left 5px;
+    padding-left: 16px;
+	padding-bottom: 5px;
+}
+#firstContent p{ padding-bottom:5px;}
+
+#firstimage {
+    background: url("../../../course_01/images/m01_p28.jpg") no-repeat scroll 0 0 / 100% 100% rgba(0, 0, 0, 0);
+    border: 2px solid #e0e0e2;
+    float: right;
+    height: 260px;
+    width: 49%;
+}
+.cnl_v2_tickShow {
+    background: url(../../../course_01/images/Icon_true.png) no-repeat 0 0;
+    float: right;
+    height:14px;
+    position: absolute;
+    right: 8px;
+    top: 14px;
+    width:16px;
+}
+#cnl_v2_Holder {
+    clear: both;
+	position:relative;
+}
+.clickText {
+    float:left;
+    height:193px;
+    overflow-x:hidden;
+    overflow-y:auto;
+    padding-right:0;
+    width:100%;
+	font-size:14px;
+}
+.imageHolder {
+    float: right;
+    text-align: right;
+    width: 34.5%;
+}
+.imageHolder > img {
+	float: right;
+    display: block;
+    max-width: 100%;
+}
+.rightDataContainer {
+    overflow: hidden;
+}
+.ui-tabs-vertical {
+}
+.ui-tabs-vertical .ui-tabs-nav {
+    float: left;
+    position: relative;
+    width: 20em;
+    z-index: 10;
+}
+.ui-tabs-vertical .ui-tabs-nav li {
+    border-bottom-width: 1px !important;
+    border-right-width: 0 !important;
+    clear: left;
+    width:98%;
+}
+.ui-tabs-vertical .ui-tabs-nav li a {
+    display: block;
+}
+.ui-tabs-vertical .ui-tabs-nav li.ui-tabs-active {
+    border-right-width: 1px;
+    padding-bottom: 0;
+    padding-right: 0.1em;
+    width: 100%;
+}
+.ui-tabs-vertical .ui-tabs-nav li.ui-tabs-active .cnl_v2_tickShow {
+    right: 13px;
+}
+.ui-tabs-vertical .ui-tabs-panel {
+    float: right;
+    padding: 1em;
+}
+.BlankImg{height: 237px;
+    left: 239px;
+    position: absolute;
+    top: 0;
+    width: 671px;
+    z-index: 100;background:url(../../../course_01/images/m01_p28_landscape.jpg) no-repeat 0 0;}
+/* iPads (Landsacpe) */
+@media screen and (min-width : 768px) and (max-width : 1024px) and (orientation : landscape){
+
+}
+/* iPads (Portrait) */
+@media screen and (min-width : 768px) and (max-width : 1024px) and (orientation : portrait){ 
+.BlankImg{background:url(../../../course_01/images/m01_p28_protrait.jpg) no-repeat 0 0;height: 237px;
+    left: 239px;
+    position: absolute;
+    top: 0px;
+    width: 429px;
+    z-index: 100;}
+
+.cnl_v2_Wrap {
+    margin: 0 auto;
+    max-width: 87%;
+	width:87%;
+}
+}

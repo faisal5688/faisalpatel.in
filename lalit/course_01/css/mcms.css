@@ -1,0 +1,215 @@
+/* Page 27 CSS */
+
+.mcms .optionText .txt span {
+    vertical-align: top;
+}
+
+.mcms .qusWrapper {
+    width: 100%;
+    background: #f3f1f1;
+    height: 360px;
+}
+
+.mcms .optionContainer {
+    width: 100%;
+    height: auto;
+    min-height: 360px;
+}
+
+.mcms .mcmsContainer .optionContainer:after {
+    left: auto;
+    background: url(../images/mcms_02.jpg) no-repeat;
+    background-position: 0 0;
+    background-size: 346px 347px;
+    margin: 5px;
+    right: 0;
+    width: 346px;
+    height: 348px;
+}
+
+.mcms .mcmsQuestion .questSec {
+    padding: 7px 0 0 0px;
+    width: 100%;
+}
+
+.mcms #mcmsContainer .submitBtn,
+.mcms #mcssContainer .submitBtn {
+    left: 29px;
+}
+
+.mcms .imgSec {
+    display: none;
+}
+
+.mcms .mcmsQuestion .questSec p {
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.mcms .mcssInstruction {
+    padding-left: 0;
+    padding-bottom: 15px;
+}
+
+.mcms .optionText {
+    padding: 10px 0 0 28px;
+}
+
+.mcms .optionIcons .checkBox,
+.mcms .optionIcons .radio {
+    margin: 11px 0 0 0;
+}
+
+.mcms .mcmsContainer .optionContainer .row {
+    left: 25px;
+    top: 10px;
+    width: 515px;
+}
+
+.mcms .tickIco {
+    left: -22px;
+}
+
+.mcms .section {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    font-size: 13px;
+    position: relative;
+    height: 100%;
+    margin-top: 3px;
+    display: none;
+}
+
+.mcms .section_01 {
+    background: url(../images/mcms_01.jpg) no-repeat;
+    background-position: 0 0;
+    background-size: 100% auto;
+    display: block;
+}
+
+.mcms .closeBtn,
+.mcms .closeBtn:hover {
+    right: 10px;
+    top: 11px;
+    background: url(../images/comaaonClose.png) no-repeat 0 0;
+    position: absolute;
+    float: right;
+    font-size: 0px;
+    height: 24px;
+    width: 23px;
+    transition: all 0.7s ease 0s;
+    cursor: pointer;
+}
+
+.mcms .closeBtn.disabled,
+.mcms .closeBtn.disabled:hover {
+    cursor: default;
+}
+
+.mcms .block_01 {
+    background: #016299;
+    width: 72%;
+    position: absolute;
+    bottom: 48px;
+    padding: 30px 30px 20px 20px;
+    color: #fff;
+    left: 115px;
+    box-sizing: border-box;
+}
+
+.mcms .content {
+    width: 100%;
+    position: relative;
+}
+
+.mcms .content p {
+    font-size: 16px;
+    line-height: 18px;
+    margin-bottom: 20px;
+}
+
+.mcms .content p:last-child {
+    margin-bottom: 0;
+}
+
+.mcms #mcmsContainer {
+    width: 962px;
+    height: 514px;
+    background: #fff;
+    margin: 0 auto;
+    padding: 30px 10px 30px 50px;
+    box-sizing: border-box;
+    padding-top: 0px;
+}
+
+.mcms .mcmsContainer,
+.mcms .mcssContainer {
+    float: left;
+    width: 100%;
+    min-height: 255px;
+    padding: 0;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.mcms .optionText .txt ol {
+    display: table-cell;
+    padding-left: 10px;
+    line-height: 21px;
+}
+
+.mcms #mcmsFeedbackBox,
+.mcms #mcssFeedbackBox {
+    background-color: #fff !important;
+    position: absolute;
+    width: 86%;
+    top: 0px;
+    right: 0px;
+    margin: auto;
+    bottom: 0;
+    left: 0;
+    height: 210px;
+}
+
+.mcms #feedbackContent {
+    overflow: hidden;
+}
+
+.mcms #feedbackContent p {
+    margin-bottom: 10px;
+}
+
+.mcms #feedbackContent p:last-child {
+    margin-bottom: 10px;
+}
+
+.mcms .tickIco {
+    top: 10px;
+    left: -20px;
+}
+
+.mcms #mcmsContainer .submitBtn .btn_submit,
+.mcms #mcssContainer .submitBtn .btn_submit {
+    position: relative;
+    left: 420px;
+    bottom: 41px;
+    width: 80px;
+}
+
+.mcms .optionText .txt span.optno {
+    font-weight: 700;
+    display: table-cell;
+    font-size: 16px;
+}
+
+.mcms .optionText .txt ol {
+    display: table-cell;
+    padding-left: 10px;
+    line-height: 21px;
+    font-size: 16px;
+}
+
+.mcms #feedbackContent {
+    height: 282px;
+}

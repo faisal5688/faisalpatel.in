@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html" charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+<title>Tab Activity</title>
+<link rel="stylesheet" href="assets/css/templates/tabActivity.css">
+<link rel="stylesheet" href="" changetheme='true'>
+
+<script src="js/controller/Templates/ClickNLearn/TabController.js"></script>
+ <script>
+	var tabData = {};
+	$(document).ready(function(){
+       tabData = Parser.loadTabDataFn(DataManager.templateXMLData);	   
+       TabObj_v1.initTabs(tabData);
+	});
+</script>
+<!--script>
+$(document).ready(function(){
+
+    $('.dataSection').each(function(){  
+
+        var highestBox = 0;
+        $('.column', this).each(function(){
+
+            if($(this).height() > highestBox) 
+               highestBox = $(this).height(); 
+        });  
+
+        $('.column',this).height(highestBox);
+
+	});  
+});
+</script-->
+</head>
+<body>
+
+<div class="wrapper">	
+	<section class="mainContent">
+		<div id="tabContainer" class="tabsWrap">
+			<div class="headTxt">Types of Disposals</div>
+			<div class="infoSec">Select the highlighted tabs to learn how these disposals are recognized and measured in the financial statements.</div>
+			<div id="tabHolder" class="tabsHolder">
+				<ul class="tabsNav"></ul>
+				<div id="blockPanel" class="tabsPanel"></div>				
+			</div>						
+			<div class="clear"></div>
+			<li class="tempTab"><a href="#tab_1">Tab - 1</a><div class=""></div></li>
+			<div id="tab_1" class="tempTabPanel tabsPanel"></div>
+		</div>
+		<div class="clear"></div>
+	</section>
+</div>
+
+</body>
+</html>

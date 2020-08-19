@@ -1,0 +1,286 @@
+/* Drag - Drop */
+.clear{
+	clear:both;
+}
+.tempFeedback{
+	display: none;
+}
+
+.dragDropWrap{
+	max-width:828px;
+	margin:0 auto;
+	/*padding:44px 0 0;*/
+	position:relative;
+}
+.dragDropWrap .innerContent{
+	margin:0 20px;
+	min-height:530px;
+	position:relative;
+}
+.lftColumn{
+	float:left;
+	width:306px;
+	min-height:459px;
+	padding:8px 8px 0;
+	background:#d9d9d9;
+	/* background: url(../../assets/images/lft_col_bg.png) repeat 0 0; */
+}
+.lftColumn .info, .dragItem{
+	float:left;
+	width:135px;
+	height:135px;
+	margin:8px 8px 18px;
+	position:relative;
+	border:solid 1px #949494;
+	background:#edebeb;
+}
+.opacity{
+	opacity:0.3;
+	filter :alpha(opacity=40) !important;
+	/*  -ms-filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=30) !important; */
+}
+.dragItem{
+	cursor: move;	
+}
+.lftColumn .info{
+	display:table;
+	width:132px;
+	border-top:none;
+	border-right:none;
+	border-bottom:none;
+	border-left:solid 5px #e4801b;
+}
+.lftColumn .info span{
+	display:table-cell;
+	height:135px;
+	font:normal 15px/18px Arial;
+	color:#004e96;
+	vertical-align:middle;
+	padding-left:10px;
+}
+.dragItem img{
+	width:auto;
+}
+.dragItem .textStripe{
+	display:table;
+	width:100%;
+	height:38px;
+	padding:0;
+	position:absolute;
+	bottom:0;
+	left:0;
+}
+.dragItem .textStripe span{
+	display:table-cell;
+	width:100%;
+	height:38px;
+	font:14px/14px Arial;
+	color:#FFF;
+	text-align:center;
+	vertical-align:middle;
+	padding:0 10px;
+	background:#008da8;
+}
+.rhtColumn{
+	float:right;
+	min-height:459px;
+	padding:0 8px;
+	background:#D9D9D9;
+}
+.rhtColumn .dropWrap{
+	float:left;
+	width:172px;
+	min-height:479px;
+	margin:8px;
+	border:solid 1px #a2a2a2;
+	background:#FFF;	
+}
+.dropWrap .title{
+	font:bold 14px/24px Arial;
+	color:#FFF;
+	text-align:center;
+	background:#333;
+}
+.dropWrap .dragItem{
+	float:none;
+    margin:8px auto 0;
+	border:solid 3px transparent;
+}
+.dropWrap .dragItem.correct{
+	border-color:#8dc63f;
+}
+.dropWrap .dragItem.incorrect{
+	border-color:#b5101c;
+}
+.dragDropWrap .submitBtn{
+	position: absolute;
+    right:20px;
+	bottom: 0;
+}
+.dragDropWrap .submitBtn input{
+	margin:0 !important;
+}
+.feedbackWrap{
+	display:none;
+    width: 322px;
+    height: 497px;
+	position: absolute;
+	left: 0;
+	top: 0;
+	overflow: auto;
+	background: #333;
+}
+.feedbackWrap .contentSec{	
+    height: 497px;
+	margin: 8px 0;
+}
+.feedbackWrap .row {
+	overflow:hidden;
+	padding:0 0 12px;
+	margin:0 0 12px;
+	color:#FFF;
+	border-bottom:solid 1px #d17c1f;
+}
+.feedbackWrap .row:last-child{
+	margin:0;
+	border:none;
+}
+.feedbackWrap .row .imgBlock{
+	float: left;
+}
+.feedbackWrap .row .imgBlock img{
+	width:63px;
+	height:63px;
+	margin:3px 8px 0;
+	border:solid 1px #767676;
+}
+.feedbackWrap .row .txtBlock{
+	padding:0 8px 0 81px;
+}
+.feedbackWrap .row .txtBlock .ttl{
+	font:bold 14px/normal Arial;
+	color:#d17c1f;
+	padding:0 0 8px;
+}
+.feedbackWrap .row .txtBlock .feedbackTxt{
+	font:13px/normal Arial;
+}
+
+/* iPads (portrait) */
+@media screen and (max-width:768px) and (orientation:portrait){
+
+}
+
+/*Note8 Potrait Orientation Start*/
+@media only screen and (min-device-width : 800px) and (max-device-width : 1280px) and (device-aspect-ratio : 5/8) and (-webkit-min-device-pixel-ratio : 1.33) and (orientation : portrait){
+.item{
+	top:0 !important;
+}
+.dragDropWrap .innerContent{
+	margin:0;
+}
+.dragDropWrap{
+	min-height:700px;
+    max-width: inherit;
+    padding: 0;
+    margin-top:10px;
+	margin-left:62px;
+	margin-right:47px;
+}
+.lftColumn {
+    min-height: 292px;
+    padding: 11px 8px;
+    width: 435px;
+}
+.lftColumn .info{
+	padding:0 9px;
+    width: 136px;	
+}
+.lftColumn .info, .dragItem{
+    margin: 0 4px 5px;
+}
+.rhtColumn{
+    float: left;
+    min-height: 348px;
+    margin-top: 1px;
+	padding:0 8px;
+    width: 435px;
+}
+.rhtColumn .dropWrap {
+    margin: 4px 0 0;
+    min-height: 158px;
+    width: 100%;
+}
+.dragDropWrap .submitBtn {
+    bottom:6px;
+    position: absolute;
+    left: 0px;
+}
+.dropWrap .dragItem{
+	float:left;
+	margin:1px;
+}
+.feedbackWrap{
+	width:438px;
+    height: 300px;
+	margin-left:8px;
+	z-index:10001;
+}
+}
+
+/*Note8 Lansacpe Orientation Start*/
+@media only screen and (min-device-width : 800px) and (max-device-width : 1280px) and (device-aspect-ratio : 8/5) and (-webkit-min-device-pixel-ratio : 1.33) and (orientation : landscape){
+.dragDropWrap .innerContent{
+	margin:0;
+	min-height:200px;
+}
+.dragDropWrap{
+    height: 396px;
+    max-width: inherit;
+    padding: 0;
+    margin-top:5px;
+	margin-left:17px;
+	margin-right:47px;
+}
+.lftColumn {
+    min-height: 292px;
+    padding: 28px 8px;
+    width: 435px;
+}
+.lftColumn .info{
+	padding:0 9px;
+    width: 136px;	
+}
+.lftColumn .info, .dragItem{
+    margin: 0 4px 5px;
+}
+.rhtColumn{
+    float: right;
+    min-height: 348px;
+    margin-left: 1px;
+	padding:0 8px;
+    width: 429px;
+}
+.rhtColumn .dropWrap {
+    margin: 4px 0 0;
+    min-height: 158px;
+    width: 100%;
+}
+.dragDropWrap .submitBtn {
+    bottom: 17px;
+    position: absolute;
+    right: 363px;
+}
+.dropWrap .dragItem{
+	float:left;
+	margin:1px;
+}
+.feedbackWrap{
+	width:438px;
+    height:332px;
+	padding-bottom:10px;
+	top:5px;
+	margin-left:8px;
+	z-index:10001;
+}
+}

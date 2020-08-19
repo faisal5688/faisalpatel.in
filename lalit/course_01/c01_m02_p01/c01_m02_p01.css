@@ -1,0 +1,529 @@
+@charset "utf-8";
+
+section.mainContent,
+#contentHolder,
+#pageContainer,
+.wrapper,
+.content {
+    width: 100%;
+    height: 100%;
+    float: left;
+    box-sizing: border-box;
+}
+
+#transcriptView {
+    float: left;
+    width: 100%;
+}
+
+.mainContent div,
+.mainContent li,
+.mainContent ul,
+.mainContent span {
+    box-sizing: border-box;
+    display: block;
+    float: left;
+}
+
+.parentBlock {
+    margin-top: 5px;
+}
+
+#contentHolder {
+    position: relative;
+}
+
+.content {
+    position: relative;
+    height: calc(100% - 75px);
+}
+
+.textContainer {
+    border-top: 1px solid #d43647;
+    border-bottom: 1px solid #d43647;
+    background: none;
+    float: left;
+    height: auto;
+    position: relative;
+    width: auto;
+}
+
+.Instxt {
+    color: #f68e39;
+    font: italic 14px/32px Arial;
+}
+
+.row1_section {
+    position: absolute;
+}
+
+.ins_text {
+    margin: 20px auto;
+    text-align: left;
+}
+
+.ins_text p.InstrutationText {
+    display: inline-block;
+    font-style: italic;
+    color: #f18a2e;
+    background-color: #fff;
+}
+
+.overlay {
+    background: rgba(255, 255, 255, 0.9);
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 9;
+    display: block;
+}
+
+.mainContent .right_cont .popup_inst {
+    padding-top: 2px;
+    font-style: italic;
+    /* color: #ee8b2e; */
+    color: #fff;
+}
+
+.tab.active {
+    cursor: pointer;
+}
+
+
+
+span.tab span {
+    font-weight: normal;
+    color: #333;
+}
+
+
+/*---------------- Popup------------------- */
+
+.popupContainer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    box-sizing: border-box;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+}
+
+.popupContentWraper {
+    font: 16px arial;
+    padding: 0;
+    line-height: 22px;
+    width: 825px;
+    height: 345px;
+    margin: auto;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.popupContentParent {
+    height: 100%;
+    background: rgb(255, 255, 255);
+    border: 0;
+    width: 100%;
+}
+
+.popup_rightpart,
+.popup_leftpart {
+    width: 100%;
+    height: 100%;
+}
+
+.popup_leftpart {
+    float: left;
+}
+
+.popup_title {
+    background: #470a68;
+    font-family: 'KPMG_App';
+    font-size: 30px;
+    color: #fff;
+    line-height: 42px;
+    padding: 0 15px;
+    height: 45px;
+}
+
+.popup_content {
+    padding: 12px;
+    height: 100%;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.closeBtn {
+    right: 10px;
+    top: 11px;
+    background: url(../images/comaaonClose.png) no-repeat 0 0;
+    position: absolute;
+    float: right;
+    font-size: 0px;
+    height: 24px;
+    width: 23px;
+    transition: all 0.7s ease 0s;
+    opacity: 0.7;
+}
+
+.closeBtn.active {
+    cursor: pointer;
+    opacity: 1;
+}
+
+.closeBtn:hover {
+    color: #000;
+}
+
+.popupheader_text {
+    font-weight: normal;
+    margin-top: 0px;
+    margin-bottom: 10px
+}
+
+.mainContent .right_cont .content {
+    overflow-y: scroll;
+    height: 271px;
+    width: 100%;
+    padding-right: 20px;
+}
+
+.mainContent .right_cont p:first-child {
+    padding-right: 25px;
+}
+
+.mainContent .bg3 .right_cont {
+    padding-right: 0;
+}
+
+/*activity_container*/
+
+.activity_container {
+    background: #faf9f9;
+    float: left;
+    width: 100%;
+    position: relative;
+    padding: 4px 16px 6px 16px;
+}
+
+.activity_container table tr td {
+    border-bottom: none;
+    border-bottom: 1px solid #fff;
+    vertical-align: middle;
+    text-align: center;
+    padding: 7px 8px;
+}
+
+.activity_container table tr td:last-child {
+    padding-left: 6px;
+}
+
+.activity_container table tr td:first-child {
+    text-align: left;
+    padding-right: 30px;
+}
+
+.activity_container table tr td:nth-child(2),
+.activity_container table tr td:nth-child(3) {
+    width: 40px;
+}
+
+.activity_container table tr td:nth-child(2) input,
+.activity_container table tr td:nth-child(3) input {
+    cursor: pointer;
+}
+
+.activity_container .question {
+    background: url(question_icon.png) no-repeat 15px 6px;
+    padding-left: 45px;
+}
+
+.activity_container .tblheader td {
+    font-weight: bold;
+    color: #470a69;
+}
+
+.activity_container .tblheader td:first-child {
+    color: #333333;
+}
+
+.activity_container .btn_submit {
+    background: #838383;
+    font-weight: bold;
+    color: #fff;
+    position: absolute;
+    right: 110px;
+    font-size: 16px;
+    bottom: 50px;
+    font-weight: normal;
+    text-align: center;
+    padding: 4px 12px;
+}
+
+.activity_container .btn_submit.active {
+    background: #470a68;
+    cursor: pointer;
+}
+
+.activity_container .btn_submit:hover {
+    background: #00338c;
+}
+
+.btn_submit.disabled:hover,
+.btn_submit.disable:hover,
+.btn_submit.disabled,
+.btn_submit.disable {
+    background: #838383;
+    color: #d2d2d2;
+    cursor: default;
+}
+
+input [type="radio"]:not(:disabled) {
+    cursor: pointer;
+}
+
+input[type="radio"]:disabled {
+    cursor: default !important;
+}
+
+.activity_container .correct {
+    background: url(../../assets/images/Icon_true.png) no-repeat left center;
+    background-size: 16px;
+}
+
+.activity_container .incorrect {
+    background: url(../../assets/images/incorrect.png) no-repeat left center;
+    background-size: 16px;
+}
+
+.activity_feedback_wraper {
+    width: 300px;
+    min-height: 94px;
+    border: 1px solid #470a68;
+    position: absolute;
+    right: 10px;
+    bottom: 99px;
+    display: none;
+}
+
+.activity_feedback_title {
+    background: #470a68;
+    height: 31px;
+    color: #fff;
+    padding-left: 10px;
+    padding-top: 4px;
+}
+
+.activity_feedback_text {
+    padding: 10px;
+}
+
+.activity_title {
+    font-weight: bold;
+    font-weight: bold;
+    padding-left: 20px;
+}
+
+.activity_inst {
+    font-style: italic;
+    /* color: #f68d2e; */
+    color: #ee8b2e;
+    font-weight: normal;
+}
+
+.page_title {
+    padding: 16px 16px 16px 0
+}
+
+.colorText {
+    font-weight: bold;
+    color: #4d2278;
+}
+
+.TextRightContainer .textCont {
+    position: relative;
+}
+
+.mainsection {
+    overflow: hidden;
+    max-height: 468px;
+}
+
+.ImageTextContainer .imageCont {
+    align-self: flex-start;
+    width: 47%;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.TextRightContainer .textCont {
+    width: 100%;
+}
+
+.btn {
+    width: 435px;
+    height: 135px;
+    background: rgb(71, 10, 104);
+    position: relative;
+    margin: 0;
+    cursor: pointer;
+    font-family: Arial;
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+    padding: 5px;
+    text-align: center;
+    line-height: 35px;
+    cursor: default;
+    display: inline-block;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.sectionBlock p {
+    margin-bottom: 10px;
+}
+
+.sectionBlock .btn p {
+    margin-bottom: 0;
+    height: 100%;
+    padding-top: 16px;
+    box-sizing: border-box;
+}
+
+.btn p span {
+    font-size: 16px;
+    line-height: 21px;
+    padding-top: 5px;
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+    padding: 0 9%;
+}
+
+.sectionBlock .btn4 p {
+    padding-top: 9px;
+}
+
+.btn2 {
+    margin-right: 0;
+}
+
+.btn4 {
+    margin-right: 0;
+}
+
+
+.ImageTextContainer .textCont li {
+    list-style: none outside disc;
+    margin-bottom: 10px;
+    line-height: 19px;
+}
+
+#tab1,
+.bg1 .popupContentParent {
+    background: #6d2077;
+}
+
+#tab2,
+.bg2 .popupContentParent {
+    background: #f68d2e;
+}
+
+#tab3,
+.bg3 .popupContentParent {
+    background: #005eb8;
+}
+
+#tab4,
+.bg4 .popupContentParent {
+    background: #009a44;
+}
+
+#tab1.visited {
+    background: #6d2077 url(tick.png) no-repeat 412px 6px;
+}
+
+#tab2.visited {
+    background: #f68d2e url(tick.png) no-repeat 412px 6px;
+}
+
+#tab3.visited {
+    background: #005eb8 url(tick.png) no-repeat 412px 6px;
+}
+
+#tab4.visited {
+    background: #009a44 url(tick.png) no-repeat 412px 6px;
+}
+
+.popup_content .left_img {
+    width: 272px;
+    height: 321px;
+    border: 5px rgb(255, 255, 255) solid;
+    float: left;
+    margin-right: 15px;
+}
+
+.mainContent .right_cont {
+    width: calc(100% - 288px);
+    height: 100%;
+    padding-right: 10px;
+}
+
+.popup_content .left_img img {
+    max-width: 100%;
+    display: block;
+}
+
+.mainContent .right_cont p {
+    color: rgb(255, 255, 255);
+    margin-bottom: 12px;
+    line-height: 19px;
+}
+
+.mainContent .bg3 .right_cont p:first-child {
+    padding-right: 25px;
+}
+
+.mainContent .bg3 .right_cont .content p:first-child {
+    padding-right: 0;
+}
+
+.popup_1 .left_img {
+    background: url("c01_m02_p01_p01.jpg") no-repeat;
+}
+
+.popup_2 .left_img {
+    background: url("c01_m02_p01_p02.jpg") no-repeat;
+}
+
+.popup_3 .left_img {
+    background: url("c01_m02_p01_p03.jpg") no-repeat;
+}
+
+.popup_4 .left_img {
+    background: url("c01_m02_p01_p04.jpg") no-repeat;
+}
+
+@media screen and (min-width:0\0) {
+    .btn {
+        line-height: 44px;
+        cursor: default;
+    }
+
+    .popup_title {
+        line-height: 51px;
+    }
+
+    .closeBtn {
+        top: 11px;
+    }
+}

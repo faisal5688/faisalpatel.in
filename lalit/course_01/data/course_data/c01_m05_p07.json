@@ -1,0 +1,58 @@
+﻿{
+    "data": {
+        "audio": "",
+        "scenarioText": "",
+        "question": "<p>Which of the following best describes the concept of a ‘slippery slope’ as discussed in this module?</p>",
+        "instructionText": "<p>Select the best response and click <b>Submit</b>.</p>",
+        "downloadAndroidImages": "",
+        "downloadImages": "../../assets/images/kc_rightimg.png,../images/kc_assets1.png",
+        "MCQ": {
+            "responseType": "specific",
+            "maxAttempts": "1",
+            "correctAnswer": "4",
+            "options": {
+                "option": [
+                    "<span class='optno'>A.</span> A slippery slope occurs when you raise concerns but feel you may be retaliated against, as was the case for Tim Donaghy.",
+                    "<span class='optno'>B.</span> A slippery slope occurs when you tell one lie and you never retain your standing as an honest and trustworthy person, as was the case for Tim Donaghy.",
+                    "<span class='optno'>C.</span> A slippery slope is the idea that if everyone else is doing it, it is easy to rationalize unethical behavior, as was the case for Tim Donaghy.",
+                    "<span class='optno'>D.</span> A slippery slope occurs when one small act of dishonesty leads to more and larger acts of dishonesty, as was the case for Tim Donaghy."
+                ]
+            },
+            "feedback": {
+                "genericResponse": {
+                    "incorrect": {
+                        "audio": "",
+                        "content": ""
+                    },
+                    "solution": {
+                        "audio": "",
+                        "content": ""
+                    },
+                    "correct": {
+                        "audio": "",
+                        "content": "That is correct."
+                    }
+                },
+                "specificResponse": {
+                    "response": [{
+                            "audio": "blank",
+                            "content": "<p><b>A is incorrect.</b> Tim Donaghy may have feared retaliation but that is not the definition of a slippery slope. A slippery slope occurs when one small act of dishonesty leads to more and larger acts of dishonesty, as was the case for Tim Donaghy.</p>"
+                        },
+                        {
+                            "audio": "blank",
+                            "content": "<p><b>B is incorrect.</b> It is rare that a single act of dishonesty would result in a complete loss of trust in the workplace. A slippery slope occurs when one small act of dishonesty leads to more and larger acts of dishonesty, as was the case for Tim Donaghy.</p>"
+                        },
+                        {
+                            "audio": "blank",
+                            "content": "<p><b>C is incorrect.</b> Rationalizing unethical behavior because everyone else is doing it is one of the human tendencies that is described as a fudge factor in this course. A slippery slope occurs when one small act of dishonesty leads to more and larger acts of dishonesty, as was the case for Tim Donaghy.</p>"
+                        },
+                        {
+                            "audio": "blank",
+                            "content": "<p><b>D is correct.</b> Like in the case of Tim Donaghy, a slippery slope occurs when one small act of dishonesty leads to more and larger acts of dishonesty.</p>"
+                        }
+                    ]
+                }
+            }
+        }
+    }
+}

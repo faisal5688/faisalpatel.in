@@ -1,0 +1,67 @@
+{
+    "data": {
+        "downloadAndroidImages": "",
+        "downloadIpadImages": "",
+        "downloadImages": "c01_m04_p04_01.jpg, c01_m04_p04_02.jpg, ../../images/comaaonClose.png, ../../images/kc_assets1.png",
+        "image": {
+            "use_image_tag": "true",
+            "desktop": "",
+            "ipad": {
+                "landscape": "",
+                "portrait": ""
+            }
+        },
+        "content": "Fudge factors in action: Self-deception",
+		"audio": "../audio/en/t01_p01",
+	  "scenarioText": "scenario text for question",
+	  "question": "<p>Jess is working to secure a new project that has challenging deliverables and aggressive deadlines. In this context, which of the following are examples of potential self-deception that Jess should be sure to avoid?</p>",
+	  "instructionText": "Select all that apply. ",
+	  "downloadAndroidImages":"assets/images/ladyImage.jpg",
+	  "downloadImages":"",
+	  "MCQ": {
+		"responseType": "generic",
+		"maxAttempts": "1",
+		"correctAnswer": "1,4",
+		"options": {
+		  "option": [
+			  "<span><span class='optno'>A.</span> <ol class='one'><li>Agreeing to overly aggressive deadlines, despite knowing projects of similar size and scope have required more time</li><ol></span>",
+			  "<span><span class='optno'>B.</span> <ol class='one' start='2'><li>Estimating the hours needed to complete the project based on the team’s performance on dozens of similar projects</li><ol></span>",			  
+			  "<span><span class='optno'>C.</span> <ol class='one' start='2'><li>Ensuring that the resumes provided as part of the proposal are those of the people who are most likely to join the team that performs the work</li><ol></span>",
+			  "<span><span class='optno'>D.</span> <ol class='one' start='3'><li>Committing to work that is outside of the team’s experience and assuming that the team can deliver what is needed</li></ol></span>"
+		  ]
+		},
+		"feedback": {
+		  "genericResponse": {
+			"incorrect": {
+			  "audio": "../audio/t01_p01_incorrect",
+			  "content": "<p><b>That is incorrect.</b></p><p>Estimating hours based on a significant data source, as well as reflecting the resumes of team members available and likely to participate in the work are good decisions that do not reflect acts of self-deception. Agreeing to impossible deadlines and committing to work outside the scope and experience without acknowledging the repercussions are examples of potential self-deception.</p>"
+			},
+			"solution": {
+			  "audio": "../audio/t01_p01_solution",
+			 "content": "<p><b>That is incorrect.</b></p><p>Estimating hours based on a significant data source, as well as reflecting the resumes of team members available and likely to participate in the work are good decisions that do not reflect acts of self-deception. Agreeing to impossible deadlines and committing to work outside the scope and experience without acknowledging the repercussions are examples of potential self-deception.</p>"
+			},
+			"correct": {
+			  "audio": "../audio/t01_p01_correct",
+			  "content": "<p><b>That is correct.</b></p><p>Estimating hours based on a significant data source, as well as reflecting the resumes of team members available and likely to participate in the work are good decisions that do not reflect acts of self-deception. Agreeing to impossible deadlines and committing to work outside the scope and experience without acknowledging the repercussions are examples of potential self-deception.</p>"
+			}
+		  },
+		  "specificResponse": {
+			"response": [
+			  {
+				"audio": "../audio/t01_p01_feeback01",
+				"content": ""
+			  },
+			  {
+				"audio": "../audio/t01_p01_feeback02",
+				"content": ""
+			  },
+			  {
+				"audio": "../audio/t01_p01_feeback03",
+				"content": ""
+			  }
+			]
+		  }
+		}
+	  }
+    }
+}

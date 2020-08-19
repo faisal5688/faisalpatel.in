@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html" charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>MCSS</title>
+
+    <link rel="stylesheet" href="assets/css/templates/knowledgeCheck_mcss_with_thumb.css">
+
+    <link rel="stylesheet" href="assets/css/templates/knowledgeCheck_mcss_with_thumb.css" changetheme='true'>
+
+    <script type="text/javascript" src="js/controller/Templates/common/SubmitButton.js"></script>
+    <script type="text/javascript" src="js/controller/Templates/common/Feedback2.js"></script>
+    <script type="text/javascript" src="js/controller/Templates/common/Option.js"></script>
+    <script src="js/controller/Templates/common/Fof.js"></script>
+    <script src="js/controller/Templates/common/Detail.js"></script>
+
+    <script type="text/javascript" src="js/controller/Templates/MCSS/MCSSWithThumbController.js"></script>
+
+
+    <script>
+        var mcssData = {};
+        $(document).ready(function() {
+            mcssData = Parser.loadMCSSDataFn(DataManager.templateXMLData);
+            MCSS.initMCSS(mcssData);
+        });
+
+        function pageAudioHandler(currTime, totTime) {
+            MCSS.pageAudioHandler(currTime, totTime);
+
+        };
+    </script>
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <section id="mcssContainer" class="mainContent">
+            <div id="mcssHolder" class="mcssWrap clearfix">
+                <div class="mcssQuestion">
+                    <div class="imgSec">
+                        <div class="sub_txt">Q.</div>
+                    </div>
+                    <div class="questSec">
+                        <div id="mcssQuestionTxt" class="question"> Question </div>
+                    </div>
+                </div>
+
+                <div class="mcssOption_with_image">
+                    <div class="mcssContainer">
+                        <div id="mcssInstructionTxt" class="mcssInstruction">
+                            Select the correct option, and then click <strong>Submit</strong>.
+                        </div>
+                        <div id="mcssOptionContainer" class="optionContainer">
+                            <div class="cloneOption">
+                                <div class="optionIcons">
+                                    <div id="tickCross" class="tickIco"></div>
+                                    <div id="optionBox" class="radio">
+                                        <div class="sqNum option_lable"></div>
+                                        <img class="option_img" src="course_01/images/kc_img_opt01.jpg">
+
+                                        <div class="optionText">
+                                            <div id="optionTxt" class="txt">
+                                                <div>Options</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="mcssFeedbackBox">
+                            <div id='feedbackHeader' class='header'>
+                                <span id='headerContent'>Feedback</span>
+                                <span id='feedbackClose' class="closeIcon"></span>
+                            </div>
+                            <div id="correctAnswerContent"></div>
+                            <div id='feedbackContent'></div>
+                        </div>
+
+                        <!-- <div id="mcssFeedbackBox" class="feedBackPopup ">
+								<div class="feedBackContent">
+									<div id="feedbackHeader" class="titleTxt">
+										<span style="pointer-events: none;">Feedback</span>
+										<div id="feedbackClose" class="popupClose">X</div>
+									</div>
+									<div class="feebackTextmain">
+										<div id="feedbackContent" class="feebackText"><p></p><p>D is correct.<br>If your best client recommends your solution on a large potential opportunity you are working on, it means that the client has confidence in your solution.</p><p></p></div>
+									</div>
+								</div>
+							</div> -->
+                    </div>
+                    <div id="imageHolder" class="imageHolder"></div>
+                    <div id="mcssNextBtn" class="nextBtn floatRht">
+                        <input type="button" value="Next" class="btn_next">
+                    </div>
+                    <div id="mcssSubmitBtn" class="submitBtn floatRht">
+                        <div type="button" class="btn_submit">Submit</div>
+                    </div>
+
+                </div>
+
+                <!--<div  class="imgSection" ></div>
+					<div class="clear"></div>-->
+            </div>
+            <div id="buttons_holder">
+                <div id="fof_button_holder">
+                    <a href="#" id="fof_button"></a>
+                </div>
+                <div id="fof_note" class="fof_note">
+                    <p>
+                        Select the From our Files icon to read a real-life KPMG ethics case.
+                    </p>
+                </div>
+
+                <div id="details_button_area">
+                    <a href="#" id="details_button"></a>
+                </div>
+            </div>
+        </section>
+    </div>
+
+</body>
+
+</html>

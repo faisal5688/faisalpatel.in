@@ -1,0 +1,36 @@
+{
+  "configData": {
+    "course": {
+      "courseID": "01",
+      "courseFolder": "../folderPath",
+      "title": "course title",
+      "showIntro": "true",
+      "introLocation":"../folderpath",
+      "language": "en",
+      "navigationMode": "linear",
+      "courseCompliance": "scorm1_2"
+    },
+    "features": {
+      "showHelp": "true",
+      "showExit": "true",
+      "showGlossary": "true",
+      "showAudio": "true",      
+      "showTranscript": "true",
+      "showProgressBar": "true",
+      "showNotepad": "true",
+      "showResources": "true",      
+      "pageCounterMode": "course",
+      "showPageTransition": "true",
+      "allowSwipe": "true"
+    },
+    "assessment": {
+      "available": "true",
+      "passingPercent": "80",
+      "allowRetake": "true",
+      "maxAttempts": "999999",
+      "randomizeQuestions": "true",
+      "randomizeOptions":"true",
+      "showRemedial": "true"
+    }
+  }
+}

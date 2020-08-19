@@ -1,0 +1,31 @@
+{
+	"data": {
+		"downloadAndroidImages": "slide_1.jpg,slide_2.jpg,slide_3.jpg,slide_4.jpg,slide_5.jpg,slide_6.jpg,slide_7.jpg,slide_8.jpg,slide_9.jpg",
+		"downloadIpadImages": "slide_1.jpg,slide_2.jpg,slide_3.jpg,slide_4.jpg,slide_5.jpg,slide_6.jpg,slide_7.jpg,slide_8.jpg,slide_9.jpg",
+		"downloadImages": "slide_1.jpg,slide_2.jpg,slide_3.jpg,slide_4.jpg,slide_5.jpg,slide_6.jpg,slide_7.jpg,slide_8.jpg,slide_9.jpg",
+		
+		"audio": ["blank", "blank", "blank" ],
+		"image": {
+            "use_image_tag": "false",
+            "desktop": "m05_p02.jpg",
+            "ipad": {
+                "landscape": "m05_p02.jpg",
+                "portrait": ""
+            }
+        }
+	},
+	"pageContent": {
+		"intro_text":"<p class='F-size18'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque non tempor magna, a blandit eros. Cras ac sem in augue blandit ultrices. Morbi volutpat orci ipsum, vitae volutpat massa condimentum vel. Aliquam et posuere lectus. </p>",
+		
+		"ins_text": "<p class='instText'><i>Select each tab to learn more.</i></p>",		
+		
+		"carousel_content": "<img src='course_01/c01_m04_p02/slide_5.jpg' class='white_border' id='item-6' /><img src='course_01/c01_m04_p02/slide_6.jpg' class='white_border' id='item-3' /><img src='course_01/c01_m04_p02/slide_1.jpg' class='white_border' id='item-4' /><img src='course_01/c01_m04_p02/slide_2.jpg' class='white_border' id='item-5' /><img src='course_01/c01_m04_p02/slide_3.jpg' class='white_border' id='item-1' /><img src='course_01/c01_m04_p02/slide_4.jpg' class='white_border' id='item-2' />",
+		
+		"transcript_1": "",		
+		"transcript_2": "",		
+		"transcript_3": "",
+		
+		"bottom_text":""
+
+	}
+}

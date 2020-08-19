@@ -1,0 +1,17 @@
+{
+    "data": {
+        "basePath": "/c01_m02_p03/",
+        "downloadAndroidImages": "",
+        "downloadIpadImages": "",
+        "downloadImages": "",
+        "textImageData": {
+            "content": "<div class='custom-width1' style='text-align:center;'></div>",
+            "image": ""
+        },
+        "animContent": {
+            "video": "c01_m02_p03",
+            "isAbsolute": true,
+            "videoDimension": "600,338"
+        }
+    }
+}

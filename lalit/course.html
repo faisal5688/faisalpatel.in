@@ -1,0 +1,711 @@
+<!DOCTYPE HTML>
+
+<html lang="en">
+
+<head>
+
+    <meta http-equiv="content-type" content="charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta http-equiv="Content-Type" content="text/html" charset="utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+
+    <title></title>
+
+    <!-- All CSS for Application  -->
+    <link rel="stylesheet" href="assets/css/default.css" type="text/css" />
+    <link rel="stylesheet" media="screen" href="assets/css/common.css" type="text/css" />
+    <link rel="stylesheet" href="assets/css/styles.css" type="text/css" />
+    <link rel="stylesheet" href="assets/css/framework.css" type="text/css" />
+    <link rel="stylesheet" href="assets/css/calculator.css" type="text/css" />
+    <link rel="stylesheet" href="libs/mediaelement/mediaelementplayer.css" />
+    <link rel="stylesheet" type="text/css" href="libs/tooltipster/css/tooltipster.bundle.min.css" />
+
+</head>
+
+<body>
+
+    <div style="display:none">
+        <audio id="audioPlayerObj">
+            <source src="assets/audio/blank.mp3" type="audio/mpeg">
+            <source src="assets/audio/blank.ogg" type="audio/ogg">
+        </audio>
+    </div>
+    <div class="glossTooltip"></div>
+    <div class="main_cont1">
+        <div class="left_strip"></div>
+        <!--bookmark confirmation popup -->
+        <div id="bookMarkView" class="popupHolder hidePopupCSS">
+            <div class="exitPopup">
+                <div id="exitViewHeaderPanel" class="popupHeader">
+                    <div id="exitViewMainHeading" class="popupTitle">
+                        Bookmark
+                    </div>
+                </div>
+                <div id="exitViewContent" class="popupContent exitTxt">
+                    Do you want to launch the course from last bookmark location?
+                </div>
+                <div id="exitButtonsPanel" class="exitButtonPannel">
+                    <button id="yesBookmarkBtn" class="exitButtons">
+                        Yes
+                    </button>
+                    <button id="noBookmarkBtn" class="exitButtons">
+                        No
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- QUICK JUMP for debugging -->
+        <div id="quickJump" class="quickJump">
+            QUICK JUMP
+            <div id="debugPageNum" class="debugPageNum"></div>
+            <input type="number" id="quickJumpTxt" style="width:30px;" maxlength="3" />
+            <button onclick="quickJumpFunction()">
+                GO
+            </button>
+        </div>
+
+        <div class="wrapper" id="wrapperCont">
+            <header class="wrapper_header">
+
+                <div class="rhtSec">
+                    <div>
+                        <div id="shellCourseTitle" class="companyTitle"></div>
+
+                        <div id='homeMenuContainer'>
+                            <div id='moduleTitleContainer'>
+                                <span id='moduleTitle'></span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="TopTitleTxt">
+                    <div id='moduleColor' style='width: 97px;height:14px;float:left'></div>
+                    <div id="topicTitle"></div>
+                </div>
+                <div class="exitButton_holder">
+                    <div id="exitBtn" class="exitBtn">
+                        <div>Exit</div>
+                    </div>
+                </div>
+
+            </header>
+
+            <div class="popupOverlay"></div>
+
+            <!-- Trace Popup-->
+            <div id="tracePopup" class="tracepopupHolder hidePopupCSS">
+                <div id="traceViewContent" class="popupContent"></div>
+                <div class="tracepopupBox">
+                    <span id="traceViewMainClosebtn" title="Close" class="traceClose"></span>
+                </div>
+
+            </div>
+            <!-- Trace Popup ends-->
+
+            <div id="welcomeBox" class="welcomeBox">
+
+                <div class="wraptocenter">
+                    <div class="launch_wrapper">
+                        <div class='logokpmg'>
+                            <svg class='logosvg' version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="65px" height="27px" viewBox="0 0 65 27" enable-background="new 0 0 65 27" xml:space="preserve">
+                                <g>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" fill="#ffffff" d="M17.587,13.203V1.116H4.239v11.399h3.208l-1.719,5.729
+                                l5.328-5.729h4.354l-6.817,6.932l0.516,1.03h6.302L17.587,13.203z M41.359,20.478l1.032-4.812l-3.037,4.812H41.359z M23.888,16.583
+                                c0.229-0.765,0.248-1.261,0.057-1.49c-0.191-0.267-0.897-0.4-2.12-0.4h-1.203l-1.031,3.896h1.718
+                                C22.646,18.512,23.506,17.843,23.888,16.583z M31.049,20.478h1.489l-0.058-4.983L31.049,20.478z M33.226,12.458V1.116H19.82v11.343
+                                h2.693c2.291,0,3.723,0.324,4.296,0.974c0.573,0.687,0.726,1.756,0.458,3.208c-0.343,1.872-1.432,3.151-3.265,3.838h3.551
+                                l2.291-8.019H33.226z M54.307,23.973c0.841,0,1.585-0.077,2.233-0.229l0.688-2.75h-6.244C51.021,22.979,52.13,23.973,54.307,23.973
+                                z M47.031,19.332c0.343-1.413,0.936-2.692,1.775-3.838V1.116H35.46v19.362h0.344l5.099-8.019l5.613,0.057l-1.661,7.962h1.947
+                                L47.031,19.332z M50.525,13.661V0.6h14.437v20.393h-4.01l-1.203,4.927c-2.597,0.534-4.774,0.802-6.53,0.802
+                                c-2.254,0-3.915-0.496-4.985-1.489c-1.068-0.992-1.564-2.405-1.489-4.239h-2.005l-1.146,5.386H40.1l1.146-5.386h-2.234
+                                l-3.437,5.386h-2.979l-0.058-5.386h-1.604l-1.489,5.386h-3.609l1.604-5.386h-8.65l-1.661,5.442h-3.495l1.604-5.442h-5.9
+                                l2.578,5.442H8.02l-2.692-5.442H4.869l-1.604,5.442H0l3.724-12.259V0.6h14.378v11.915h1.203V0.6h14.436v11.858h1.203V0.6H49.38
+                                v14.207L50.525,13.661z M51.041,13.26c1.604-1.031,3.591-1.546,5.958-1.546c2.405,0,4.01,0.553,4.813,1.661
+                                c0.534,0.764,0.648,1.756,0.343,2.979h-4.01c0.114-1.261-0.554-1.891-2.005-1.891c-2.521,0-4.163,1.585-4.927,4.755l-0.172,0.803
+                                v0.457h3.266l0.573-2.233h6.759l-0.573,2.233h3.381V1.116H51.041V13.26z" />
+                                </g>
+                            </svg>
+                        </div>
+                        <div class='titlelaunch'></div>
+                        <div id="skipIntro" class="skipIntro">Launch</div>
+                    </div>
+                </div>
+            </div>
+
+            <section class="mainNavHolder">
+                <nav class="mainNav">
+                    <ul>
+                        <li class="favorites rightNav">
+                            <a class="navitem navHighlight" id="navigatorFavoritesBtn" title="favorites"> </a>
+                            <div id="favoritesView" class="popupHolder rightnavPopup hidePopupCSS">
+                                <div class="rightPopup">
+                                    <div id="favoritesViewContent" class="popupContent"></div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+            </section>
+            <div id="containment" class="containment"></div>
+            <section id="PageContent" class="mainContent">
+                <!--  Main Slider -->
+                <div class='iosSlider'>
+                    <!--  Container Slider -->
+                    <div class='slider'></div>
+                </div>
+            </section>
+            <div id="shellPopupContainer" class="clickIntOverlay" style="display:none">
+                <div class="clickIntPopup">
+                    <div class="clickIntHeader">
+                        <span id="popupHeader" class="clickIntHeadTxt">Cost of dismantlement removal, and
+                            restoration</span>
+                        <span id="popupClose" class="clickIntClose">X</span>
+                    </div>
+                    <div id="popupContent" class="clickIntpopupTxt">
+                        <p>
+                            popup Content will appear here
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div id="internalPopupOverlay" class="clickIntOverlay" style="display:none"></div>
+            <div id="helpView" class="popupHolder hidePopupCSS">
+                <div class="helpmain">
+                    <div class="helpopupBox">
+                        <div class="helptitle">Help</div>
+                        <div id="helpViewMainClosebtn" title="Close" class="helpClose closeIcon wht"></div>
+                    </div>
+                    <div id="helpViewContent" class="popupContent"></div>
+
+                </div>
+            </div>
+
+            <div id="menuView" class="popupHolder menuContainer hidePopupCSS">
+                <header>
+                    <h2>Menu</h2>
+                    <div id="menuViewMainClosebtn" class="close closeIcon wht" title="Close">
+                        X
+                    </div>
+                </header>
+                <div id="menuViewContent" class="popupContent"></div>
+            </div>
+
+            <div id="exitView" class="popupHolder hidePopupCSS">
+                <div class="exitPopup">
+                    <div id="exitViewHeaderPanel" class="popupHeader">
+                        <div id="exitViewMainHeading" class="popupTitle">
+                            Exit
+                        </div>
+                        <!-- <a id="exitViewMainClosebtn" class="closeBtn" title="Close">Close</a> -->
+                    </div>
+                    <div id="exitViewContent" class="popupContent exitTxt">
+                        Do you really want to exit this course?
+                    </div>
+                    <div id="exitButtonsPanel" class="exitButtonPannel">
+                        <button id="id_btnConfirmExit" class="exitButtons">
+                            Yes
+                        </button>
+                        <button id="id_btnCancelExit" class="exitButtons">
+                            No
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div id="bookmarkStatusView" class="popupHolder hidePopupCSS">
+                <div class="exitPopup">
+                    <div id="bookmarkHeaderPanel" class="popupHeader">
+                        <div id="bookmarkViewMainHeading" class="popupTitle">
+                            Bookmark Status
+                        </div>
+                        <a id="bookmarkViewMainClosebtn" class="closeBtn" title="Close">Close</a>
+                    </div>
+                    <div id="bookmarkViewContent" class="popupContent bookmarkTxt">
+
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- resource Container-->
+            <div id="resourceView" class="resourceContainer hidePopupCSS">
+                <header>
+                    <h2>Resources</h2>
+                    <div id="resourceViewMainClosebtn" class="close closeIcon wht" title="Close">
+
+                    </div>
+                </header>
+                <div id="resourceContentFrame" class="resourceContent">
+                    <div class="hori_tab">
+                        <div class="res_tab resource" target='resourceData'>Resources</div>
+                        <div class="res_tab deatils" target='detailsData'>Details</div>
+                    </div>
+                    <div class="resourceData tabpopup">
+                        <div class="resourceMain">
+                            <div class="resourceInst">
+                                KPMG is committed to helping you act with integrity. Here are some of the key resources, policies and help sheets you can consult.
+                            </div>
+                            <div class="pdfresource">
+                                <div class="pdficon"></div>
+                                <div class="pdfTxt"><a onClick="MainController.openPDF('course_01/resources/dummy.pdf','e_n_c_resources')" href="#">PDF Resources</a></div>
+                            </div>
+                        </div>
+                        <div id="resourceContent" class="resourceTxt"></div>
+                    </div>
+                    <div class="detailsData tabpopup">
+                        <div class="detailsMain">
+                            <div class="detailsInst">
+                                Select the links below for more guidance to help you act with integrity. You are encouraged to bookmark these links and discuss any questions you have with your Performance Manager/ Mentor.
+                            </div>
+                            <div class="pdfdetails">
+                                <div class="pdficon"></div>
+                                <div class="pdfTxt"><a onClick="MainController.openPDF('course_01/resources/Details.pdf','e_n_c_resources')" href="#">PDF Details</a></div>
+                            </div>
+                        </div>
+                        <div id="detailsContent" class="detailsTxt"></div>
+                    </div>
+                </div>
+            </div>
+            <!--End-->
+
+            <div id="glossaryView" class="glossaryContainer hidePopupCSS">
+                <header>
+                    <h2>Glossary</h2>
+                    <div id="glossaryViewMainClosebtn" class="close closeIcon wht" title="Close">X</div>
+                </header>
+                <div class="glossaryContent">
+                    <div id="GlossaryTopBanner" class="topNavigation">
+                        <div class="glsRow">
+                            <ul>
+                                <li>
+                                    <a id="g_tab_0">A</a>
+                                </li>
+                                <li>
+                                    <a id="g_tab_1">B</a>
+                                </li>
+                                <li>
+                                    <a id="g_tab_2">C</a>
+                                </li>
+                                <li>
+                                    <a id="g_tab_3">D</a>
+                                </li>
+                                <li>
+                                    <a id="g_tab_4">E</a>
+                                </li>
+                                <li>
+                                    <a id="g_tab_5">F</a>
+                                </li>
+                                <li>
+                                    <a id="g_tab_6">G</a>
+                                </li>
+                                <li>
+                                    <a id="g_tab_7">H</a>
+                                </li>
+                                <li>
+                                    <a id="g_tab_8">I</a>
+                                </li>
+                                <li>
+                                    <a id="g_tab_9">J</a>
+                                </li>
+                                <li>
+                                    <a id="g_tab_10">K</a>
+                                </li>
+                                <li>
+                                    <a id="g_tab_11">L</a>
+                                </li>
+                                <li>
+                                    <a id="g_tab_12">M</a>
+                                </li>
+                                <li>
+                                    <a id="g_tab_13">N</a>
+                                </li>
+                                <li>
+                                    <a id="g_tab_14">O</a>
+                                </li>
+                                <li>
+                                    <a id="g_tab_15">P</a>
+                                </li>
+                                <!-- </ul>
+						</div>
+						<div class="glsRow">
+							<ul> -->
+                                <li>
+                                    <a id="g_tab_16">Q</a>
+                                </li>
+                                <li>
+                                    <a id="g_tab_17">R</a>
+                                </li>
+                                <li>
+                                    <a id="g_tab_18">S</a>
+                                </li>
+                                <li>
+                                    <a id="g_tab_19">T</a>
+                                </li>
+                                <li>
+                                    <a id="g_tab_20">U</a>
+                                </li>
+                                <li>
+                                    <a id="g_tab_21">V</a>
+                                </li>
+                                <li>
+                                    <a id="g_tab_22">W</a>
+                                </li>
+                                <li>
+                                    <a id="g_tab_23">X</a>
+                                </li>
+                                <li>
+                                    <a id="g_tab_24">Y</a>
+                                </li>
+                                <li>
+                                    <a id="g_tab_25">Z</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="pdf">
+                            <div class="pdficon"></div>
+                            <div class="pdfTxt"><a onClick="MainController.openPDF('./course_01/resources/Glossary.pdf','e_n_c')" href="#">PDF Glossary</a></div>
+                        </div>
+                    </div>
+                    <div id="leftSubNavigation" class="leftSubNavigation">
+                        <div id="glossaryScroller">
+                            <div id="scroller2">
+                                <div id="GlossaryLeftFrame"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="glossaryDisplay">
+                        <div id="GlossaryDesFrame">
+                            <div id="descriptionHeader" class="descriptionHeader">
+                                Description
+                            </div>
+                            <div id="GlossaryContentFrame" class="glossaryDisplayContent">
+                                Content
+                            </div>
+                        </div>
+                        <!-- <div id="GlossaryContentFrame" class="glossaryDisplayContent"></div> -->
+                        <div id="GlossaryPageIndexFrame" class="GlossaryPageIndexFrame">
+                            <div id="pageIndexHeader" class="descriptionHeader">
+                                <B>Index</B>
+                                <I>(Note that links are not active until you visit the module related to the term.)</I>
+                            </div>
+                            <div id="pageIndexContent" class="pageIndexList">
+                                Content
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+
+            <div id="transcriptView" class="hidePopupCSS" style="z-index:100;">
+                <div id="transcriptPopup" class="popup">
+                    <div id="transcriptHeaderPanel" class="popupHeader">
+                        <div id="transcriptMainHeading" class="popupTitle">
+                            Transcript
+                        </div>
+                        <a id="transcriptViewMainClosebtn" class="closeBtn closeIcon wht" title="Close"></a>
+                    </div>
+                    <div id="transcriptViewContent" class="popupContent"></div>
+                </div>
+            </div>
+
+            <!--CALCULATOR POP UP STARTS -->
+
+            <div id="calculatorContainer" class="calculatorContainer hide">
+                <header></header>
+                <div id="calcContainer" class="calcContent">
+                    <FORM name="Keypad" action="">
+                        <TABLE>
+                            <TABLE id="calcTable" cellpadding="4">
+                                <TR>
+                                    <TD colspan='5' align='middle'>
+                                        <input style="text-align:right;" name="ReadOut" type="Text" size='12' value="0" width=100% readonly>
+                                    </TD>
+                                    </TD>
+                                </TR>
+                                <TR>
+                                    <TD style="width:30px">
+                                        <input class="calcClear" name="btnClear" type="Button" value=" C  " onclick="CalculatorController.clear()">
+                                    </TD>
+                                    <TD>
+                                        <input class="calcClear" name="btnClearEntry" type="Button" value="CE " onclick="CalculatorController.clearEntry()">
+                                    </TD>
+                                    <TD>
+                                        <input name="btnNeg" type="Button" value="+/- " onclick="CalculatorController.neg()">
+                                    </TD>
+                                    <TD>
+                                        <input name="btnPercent" type="Button" value="% " onclick="CalculatorController.percent()">
+                                    </TD>
+                                </TR>
+                                <TR>
+                                    <TD style="width:30px">
+                                        <input name="btnSeven" type="Button" value=" 7  " onclick="CalculatorController.numPressed(7)">
+                                    </TD>
+                                    <TD style="width:30px">
+                                        <input name="btnEight" type="Button" value=" 8  " onclick="CalculatorController.numPressed(8)">
+                                    </TD>
+                                    <TD>
+                                        <input name="btnNine" type="Button" value=" 9  " onclick="CalculatorController.numPressed(9)">
+                                    </TD>
+                                    <TD>
+                                        <input name="btnDivide" type="Button" value="  /   " onclick="CalculatorController.operation('/')">
+                                    </TD>
+                                </TR>
+                                <TR>
+                                    <TD>
+                                        <input name="btnFour" type="Button" value=" 4  " onclick="CalculatorController.numPressed(4)">
+                                    </TD>
+                                    <TD>
+                                        <input name="btnFive" type="Button" value=" 5  " onclick="CalculatorController.numPressed(5)">
+                                    </TD>
+                                    <TD>
+                                        <input name="btnSix" type="Button" value=" 6  " onclick="CalculatorController.numPressed(6)">
+                                    </TD>
+                                    <TD>
+                                        <input name="btnMultiply" type="Button" value="  *  " onclick="CalculatorController.operation('*')">
+                                    </TD>
+                                </TR>
+                                <TR>
+                                    <TD>
+                                        <input name="btnOne" type="Button" value=" 1  " onclick="CalculatorController.numPressed(1)">
+                                    </TD>
+                                    <TD>
+                                        <input name="btnTwo" type="Button" value=" 2  " onclick="CalculatorController.numPressed(2)">
+                                    </TD>
+                                    <TD>
+                                        <input name="btnThree" type="Button" value=" 3  " onclick="CalculatorController.numPressed(3)">
+                                    </TD>
+                                    <TD>
+                                        <input name="btnMinus" type="Button" value="  -   " onclick="CalculatorController.operation('-')">
+                                    </TD>
+                                </TR>
+                                <TR>
+                                    <TD>
+                                        <input name="btnZero" type="Button" value=" 0  " onclick="CalculatorController.numPressed(0)">
+                                    </TD>
+                                    <TD>
+                                        <input name="btnDecimal" type="Button" value="  .  " onclick="CalculatorController.decimal()">
+                                    </TD>
+                                    <TD>
+                                        <input name="btnEquals" type="Button" value=" =  " onclick="CalculatorController.operation('=')">
+                                    </TD>
+                                    <TD>
+                                        <input name="btnPlus" type="Button" value=" +  " onclick="CalculatorController.operation('+')">
+                                    </TD>
+                                </TR>
+                            </TABLE>
+                        </TABLE>
+                    </FORM>
+                </div>
+            </div>
+
+            <!--CALCULATOR POP UP ENDS -->
+
+            <div id='fof_detail_screen_lock_shell' style="position: absolute;left:0px;top:0px;width:100%;height:100%;z-index:10010;background-color: black;opacity: 0.5;display:none;">
+            </div>
+
+            <div id="fof_popup_shell" style="display: none;z-index:10014">
+                <div id="fof_popupBox">
+                    <div id="fof_popupHeader_shell"></div>
+                    <div id="fofPopupCloseBtn_shell" class="closeBtnpop" title="Close">X</div>
+                    <div class="clear"></div>
+                    <div id="fof_popupContent_shell"></div>
+                </div>
+            </div>
+
+            <div id="detail_popup_shell" style="display: none;z-index:10012">
+                <div id="detail_popupBox">
+                    <div id="detail_popupHeader_shell"></div>
+                    <div id="detailPopupCloseBtn_shell" class="closeBtnpop" title="Close">X</div>
+                    <div class="pdfDetails">
+                        <div class="pdficon"></div>
+                        <div class="pdfTxt"><a onClick="MainController.openPDF('course_01/resources/Details.pdf','e_n_c_details')" href="#">PDF Details</a></div>
+                    </div>
+                    <div class="clear"></div>
+                    <div id="detail_popupContent_shell"></div>
+                </div>
+            </div>
+
+            <!-- Tilemenu view start-->
+            <div id='tile_menu_screen_cover'></div>
+            <div id='tile_menu_container'>
+                <div id="level1_menu" class="tile-menu-item-container tile-menu-level1"></div>
+                <div id="back_to_menu" style="display:none;">Back to main menu</div>
+                <div id="level2_1_menu" class="tile-menu-item-container tile-menu-level2"></div>
+                <div id="level2_2_menu" class="tile-menu-item-container tile-menu-level2"></div>
+                <div id="level2_3_menu" class="tile-menu-item-container tile-menu-level2"></div>
+                <div id="level2_4_menu" class="tile-menu-item-container tile-menu-level2"></div>
+                <div id="level2_5_menu" class="tile-menu-item-container tile-menu-level2"></div>
+            </div>
+
+            <footer id="footer">
+                <nav id="bottomNav" class="bottomNav">
+                    <div class="leftNav leftNavset">
+                        <div id="iconNav_Sets" class="iconNav_Setmod">
+                            <ul>
+                                <li id="bottomNav_menu" class="menu">
+                                    <a id="navigatorMenuBtn" class="navHighlight"></a>
+                                </li>
+
+                                <li id="bottomNav_glossary" class="glossary">
+                                    <a id="navigatorGlossaryBtn" class="navHighlight"></a>
+                                </li>
+
+                                <li id="bottomNav_resource" class="resource">
+                                    <a id="navigatorRespurceBtn" class="navHighlight"></a>
+                                </li>
+
+                                <li id="bottomNav_help" class="help">
+                                    <a id="navigatorHelpBtn" class="navHighlight"></a>
+
+                                </li>
+                                <li id="bottomNav_transcript" class="transcript">
+                                    <a id="navigatorTranscriptBtn" class="navHighlight"></a>
+                                </li>
+                                <li id="bottomNav_audio" class="audio">
+                                    <a id="navigatorAudioBtn" class="navHighlight"></a>
+                                </li>
+
+                                <li id="bottomNav_pause" class="pause">
+                                    <a id="navigatorPlayPauseBtn" class="navHighlight"></a>
+                                </li>
+                                <li id="bottomNav_replay" class="replay">
+                                    <a id="navigatorReplayBtn" class="navHighlight"></a>
+                                </li>
+                                <li id="bottomNav_new_icon" class="new_icon">
+                                    <a id="navigator_new_icon" class="navHighlight tooltips">
+                                    </a>
+                                </li>
+
+                            </ul>
+                        </div>
+                        <div class="right_sec">
+                            <div id="clickNextInfo" style="display: none;">
+                                <span>Select <B>Next</B> to continue.</span><span class="arrowimg"></span>
+                            </div>
+                            <div class="r_rsec">
+                                <div class="btnBack disabled">
+                                    <a id="navigatorBackBtn"></a>
+                                </div>
+                                <div id="pageCount_Exit" class="pageCount_exitMod">
+                                    <div class="pageingDiv">
+                                        <div class="pageCounter_Fig">
+                                            <span class="pageCount"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="btnNext">
+                                    <a id="navigatorNextBtn"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="midNav" style="display:none;">
+                        <ul>
+                            <li class="moduleNo">
+                                <div id="moduleCount">
+                                    Module 1
+                                </div>
+                                <div class="tooltip"></div>
+                            </li>
+                            <li id="quickNav" class="quickNav navHighlight"></li>
+                        </ul>
+                    </div>
+
+                    <div class="rightNav"></div>
+                    <div id="clickGaapInfo" class="clickGaapInfo">
+                        Click
+                        <B>GAAP</B> to learn more.
+                    </div>
+                </nav>
+            </footer>
+        </div>
+        <div id="thumbnailContainer"></div>
+    </div>
+    <!-- Javascript files here -->
+    <!-- External Libraries include Area -->
+    <script type="text/javascript" src="libs/core/jquery-1.12.4.min.js"></script>
+    <script src="libs/core/jquery.touchwipe.min.js"></script>
+    <script src="libs/core/jquery.easing-1.3.js"></script>
+    <script src="libs/core/jquery.iosslider.js"></script>
+    <script type="text/javascript" src="libs/core/jquery-ui.js"></script>
+    <script type="text/javascript" src="libs/core/jquery.ui.touch-punch.min.js"></script>
+    <script type="text/javascript" src="libs/core/html5shiv.js"></script>
+    <script type="text/javascript" src="libs/core/soundmanager2.js"></script>
+    <script type="text/javascript" src="libs/core/jquery.tmpl.js"></script>
+
+    <!--  Media Elements -->
+    <script type="text/javascript" src="libs/mediaelement/mediaelement-and-player.min.js"></script>
+    <script type="text/javascript" src="libs/tooltipster/js/tooltipster.bundle.js"></script>
+
+    <!-- Course Level varaibles declaration -->
+    <script type="text/javascript" src="js/model/DataManager.js"></script>
+    <script type="text/javascript" src="js/events/EventManager.js"></script>
+
+    <script type="text/javascript" src="libs/services/ScormServiceWrapper.js"></script>
+    <script type="text/javascript" src="js/services/SCORMAPIService.js"></script>
+
+
+    <script type="text/javascript" src="js/utils/StaticLibrary.js"></script>
+    <script type="text/javascript" src="js/utils/FunctionLibrary.js"></script>
+
+    <!-- Service Locator and APIService Section -->
+    <script type="text/javascript" src="libs/services/ServiceLocator.js"></script>
+    <script type="text/javascript" src="js/services/APIService.js"></script>
+    <script type="text/javascript" src="js/utils/XMLParser.js"></script>
+    <script type="text/javascript" src="js/utils/JSONParser.js"></script>
+    <script type="text/javascript" src="js/utils/Parser.js"></script>
+    <script type="text/javascript" src="js/utils/DeviceHandler.js"></script>
+
+    <script type="text/javascript" src="js/controller/UIController.js"></script>
+    <script type="text/javascript" src="js/controller/NavigatorController.js"></script>
+    <script type="text/javascript" src="js/utils/AssetPreloader.js"></script>
+
+    <script src="js/controller/Templates/common/Image.js"></script>
+
+    <!-- Component Controllers Section -->
+    <script type="text/javascript" src="js/controller/TileMenuController.js"></script>
+    <script type="text/javascript" src="js/controller/MenuController.js"></script>
+    <script type="text/javascript" src="js/controller/AudioController.js"></script>
+    <script type="text/javascript" src="js/controller/CopyWriteController.js"></script>
+    <script type="text/javascript" src="js/controller/HelpController.js"></script>
+    <script type="text/javascript" src="js/controller/NextBackController.js"></script>
+    <script type="text/javascript" src="js/controller/PlayPauseController.js"></script>
+    <script type="text/javascript" src="js/controller/ReplayController.js"></script>
+    <script type="text/javascript" src="js/controller/TranscriptController.js"></script>
+    <script type="text/javascript" src="js/controller/GlossaryController.js"></script>
+    <script type="text/javascript" src="js/controller/FavoriteController.js"></script>
+    <script type="text/javascript" src="js/controller/CalculatorController.js"></script>
+    <script type="text/javascript" src="js/controller/SubNavMenuController.js"></script>
+    <script type="text/javascript" src="js/controller/VideoController.js"></script>
+    <script type="text/javascript" src="js/controller/GaapController.js"></script>
+    <script type="text/javascript" src="js/controller/ResourceController.js"></script>
+    <script type="text/javascript" src="js/controller/DetailsController.js"></script>
+    <script type="text/javascript" src="js/controller/InputFocusController.js"></script>
+
+    <script type="text/javascript" src="js/controller/MainController.js"></script>
+
+    <script language="javascript">
+        //document.onmousedown=disableclick;
+        /*status="Right Click Disabled";
+        function disableclick(event)
+        {
+          if(event.button==2)
+           {
+        	 alert(status);
+        	 return false;    
+           }
+        }*/
+        $('#wrapperCont').hide();
+        $('#bookMarkView').hide();
+
+        function showPageContentAfterPreload() {
+            $('#wrapperCont').show();
+        };
+    </script>
+</body>
+
+</html>

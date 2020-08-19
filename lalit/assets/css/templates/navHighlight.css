@@ -1,0 +1,71 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* Static Text/Image/Video */
+
+
+.middleContainer {
+	padding:5px 0;
+}
+
+.imageHolder {
+	margin:0 auto;
+    width:792px;
+	/* background:url("../../../IFRS_460/images/m01_p01_ipad_landscape.jpg") no-repeat 0 0; */
+	height:490px;
+}
+#imageHighlightContainer > img {
+    width: 100%;
+}
+
+/* iPads (Landsacpe) */
+@media (max-device-width: 1024px) and (orientation: landscape) {
+.imageHolder {
+    width:792px;
+	/* background:url("../../../IFRS_460/images/m01_p01_ipad_landscape.jpg") no-repeat 0 0; */
+	height:450px;
+}
+}
+
+/* iPads (Portrait) */
+/* @media (max-device-width: 768px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 4:3){ */
+@media (max-device-width: 768px) and (orientation: portrait) {
+.imageHolder {
+    width: 664px;
+	/* background:url("../../../IFRS_460/images/m01_p01_ipad_portrait.jpg") no-repeat 0 0; */
+/* 	background-size:100% 100%; */
+	height:630px;
+}
+}
+
+
+/*Note8 Potrait Orientation Start*/
+@media only screen and (min-device-width : 800px) and (max-device-width : 1280px) and (device-aspect-ratio : 5/8) and (-webkit-min-device-pixel-ratio : 1.33) and (orientation : portrait){
+.item {
+	top:0 !important;
+}
+.imageHolder {
+	/* background:url("../../../IFRS_460/images/m01_p01_note8_portrait.jpg") no-repeat 0 0; */
+	margin-top:0 !important;
+	/* background-size:90% 90%; 
+	margin-right:20px;*/
+    width:396px;	
+	height:725px !important;
+	
+}
+}
+
+
+/*Note8 Lansacpe Orientation Start*/
+@media only screen and (min-device-width : 800px) and (max-device-width : 1280px) and (device-aspect-ratio : 8/5) and (-webkit-min-device-pixel-ratio : 1.33) and (orientation : landscape){
+.imageHolder{
+	/* background:url("../../../IFRS_460/images/m01_p01_note8_landscape.jpg") no-repeat 0 0; */
+	height:355px;
+	width:792px;
+	margin-top:10px;
+}
+
+.item {
+	top:0 !important;
+}
+}

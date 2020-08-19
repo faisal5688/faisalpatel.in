@@ -1,0 +1,111 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html" charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+<title>Text Image with Video</title>
+<link rel="stylesheet" href="assets/css/templates/textVideo.css">
+<link rel="stylesheet" href="" changetheme='true'>
+
+<script src="js/controller/Templates/TextVideoController.js"></script>
+<script>	
+	var textVideoData = {};	
+	$(function(){
+        textVideoData = Parser.loadTextVideoDataFn(DataManager.templateXMLData);		
+		TextVideoObj.initSection(textVideoData);
+	});	
+</script>
+<style>
+.videoHolder{
+	width:300px;
+	margin: 0 auto;		
+}
+#sectionHolder {
+    float: left;
+    margin: 0 0 1% 4% !important;
+    width: auto !important;
+}
+.dataContainer {
+    float: right;
+    margin-right: 4% !important;
+    width: 300px !important;
+}
+.middleContainer {
+    min-height: inherit;
+    padding: 2% 0;
+}
+.txtHolder {
+    height: auto;
+    margin: 0 !important;
+    width: 100%;
+}
+@media screen and (max-device-width:1024px) and (orientation:landscape){
+	#sectionHolder{
+		margin-right: 4% !important;
+	}
+	.dataContainer {
+	    float: left;
+	    margin-left: 4% !important;
+    }
+}
+@media screen and (max-device-width:768px) and (orientation:portrait){
+	#sectionHolder{
+		margin-right: 4% !important;
+	}
+	.dataContainer {
+	    float: left;
+	    margin-left: 4% !important;
+    }
+}
+@media screen and (max-device-width:1280px) and (max-device-height:800px) and (device-aspect-ratio: 8/5){
+#sectionHolder {
+	width:54% !important;
+}
+.middleContainer{
+	min-height:267px;
+}
+}
+
+@media screen and (max-device-width:800px) and (max-device-height:1280px) and (device-aspect-ratio: 5/8){
+.txtimgWrap {
+	margin-top:24% !important;
+}
+}
+</style>
+</head>
+
+<body>
+	<div class="wrapper">	
+	<section class="mainContent">
+		<div class="txtimgWrap">
+			<div id="textVideoContainer" class="txtimgContainer">
+				<div class="txtimgHeader">
+					<p>Objectives</p>
+				</div>
+				<div class="middleContainer">
+					<div id="sectionHolder" class="dataContainer">
+						<div id="contentHolder" class="txtHolder">
+							<p>By the end of this course, you should be able to:</p>
+							<ul>
+								<li>Explain tangible and intangible assets.</li>
+								<li>Explain the recognition and measurement criteria for tangible and intangible assets.</li>
+								<li>Assess the appropriateness of accounting for subsequent costs related to tangible and intangible assets.</li>
+							</ul>
+						</div>
+					</div>
+					<div class="dataContainer">
+						<div class="videoHolder">
+							<video id="videoObj" controls width="300px" height="200px">
+					           <source src="assets/video/course_intro.mp4" type="video/mp4"></source>
+							   <source src='assets/video/course_intro.webm' type="video/webm"></source>
+					        </video>
+						</div>				
+					</div>
+					<div class="clear"></div>
+				</div>
+			</div>
+		</div>
+	</section>
+</div>
+</body>
+</html>

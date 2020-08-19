@@ -1,0 +1,44 @@
+@charset "utf-8";
+
+/* CSS Document */
+
+.page_title {
+    padding: 16px 16px 16px 0
+}
+
+.colorText {
+    font-weight: bold;
+    color: #4d2278;
+}
+
+.TextRightContainer .textCont {
+    position: relative;
+}
+
+.mainContent .section {
+    display: none;
+}
+
+.mainsection {
+    overflow: hidden;
+    max-height: 468px;
+}
+
+
+.ImageTextContainer .textCont p {
+    margin-bottom: 8px;
+    line-height: 22px;
+}
+.imageCont{
+	float:left;
+	width: 33.5%;
+}
+.textCont{
+	width: 66.4%;
+	height: 470px;
+	float:right;
+	background:url(../c01_m03_p01_1/c01_m03_p01_2.jpg)no-repeat;
+	color:#fff;
+	padding:90px 40px;
+	box-sizing: border-box;
+}

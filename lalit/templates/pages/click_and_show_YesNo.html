@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html" charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+<title>Click Tabs</title>
+
+<link rel="stylesheet" href="assets/css/templates/ClickNLearn/click_and_show_YesNo.css"/>
+<link rel="stylesheet" href="" changetheme='true'>
+
+<script src="js/controller/Templates/common/Clickable_Image.js"></script>
+<script src="js/controller/Templates/ClickNLearn/click_and_show_YesNo_controller.js"></script>
+ <script>
+	//var cnlData = {};
+	$(function(){
+		//console.log("templateXMLData:: "+DataManager.templateXMLData);
+		ClickNShow.init(DataManager.templateXMLData);
+	});	
+	
+</script>
+
+</head>
+<body>
+
+<div class="wrapper">	
+	<section class="mainContent">
+		<div id="clickContainer" class="clickIntHolder">
+			<ul id="clickHolder" class="itemList">
+			
+			<li class="clickItem tempClick disabled">
+				<div class="inneritem">
+				<!--	<span id="heading" class="heading"><p>Cost of dismantlement removal, and restoration</p></span> -->
+					<div id="imgHolder" class="image"><img src="../../assets/images/dummyImage.jpg"/>
+					<span id="stateMc" class="imageZoom">+</span>
+					</div>
+				</div>
+			</li>
+				<li id="instructionTxt" class="itemFirst instructionBox">
+				<div class="instruction_details">
+					<p>Click here if you would like to learn the accounting for stripping costs in the production phase of a surface mine.</p>
+				</div
+				</li>
+				
+			</ul>
+		<div class="clear"></div>
+		<div class="instructionMain">
+				<div id="YNResponse" class="i_response response">
+					<div id="question">Do you think upgrading the computer hardware in the plant needs to be capitalized?
+						Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type s
+						Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type s
+						
+						Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type s</div>
+					<div>
+						<div id="optYes" class="yes_click clk_option"></div>
+						<div id="optNo" class="no_click clk_option"></div>
+						<div class="clearboth"></div>
+					</div>					
+				</div>
+		
+		<div id="feedback">
+			<div id="fb_header"><B>Feedback</B><div id="fb_close"></div></div>
+			<div id="fb_content">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type s
+				
+				Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type s</div>
+				<div class="clearboth"></div>
+		</div>
+		</div>
+	</div>
+	</section>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html" charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+<title>MCMS</title>
+
+<link rel="stylesheet" href="assets/css/templates/knowledgeCheck.css">
+<link rel="stylesheet" href="" changetheme='true'>
+
+<script src="js/controller/Templates/common/SubmitButton.js"></script>
+<script src="js/controller/Templates/common/FeedbackNotDraggable.js"></script>
+<script src="js/controller/Templates/common/Option.js"></script>
+<script src="js/controller/Templates/common/Fof.js"></script>
+<script src="js/controller/Templates/common/Detail.js"></script>
+<script src="js/controller/Templates/MCMS/MCMSController_page6.js"></script>
+<script>
+	var mcmsData = {};
+	$(function(){	  
+	   mcmsData = Parser.loadMCSSDataFn(DataManager.templateXMLData);
+       MCMS.initMCMS(mcmsData);	   
+	});	
+</script>
+</head>
+<body>
+
+<div class="wrapper">	
+	<section id="mcmsContainer" class="mainContent">
+		<div id="mcmsHolder" class="mcssWrap">
+			<div class="mcssQuestion">
+					<div class="imgSec">
+					</div>
+					<div class="questSec">
+						<div id="mcmsQuestionTxt" class="question">What is the difference between IFRS and U.S. GAAP with regard to revaluations?</div>
+					</div>
+			</div>
+			<div class="mcmsOption_with_image">
+			<div class="mcmsContainer">
+			
+				<div id="mcmsInstructionTxt" class="mcssInstruction">
+					Select the correct option, and then click <strong>Submit</strong>.
+				</div> 
+					
+				<div id="mcmsOptionContainer" class="optionContainer">
+					<div class="row cloneOption">
+						<div class="optionIcons">
+							<div id="tickCross" class="tickIco correct"></div>
+							<div id="optionBox" class="checkBox"></div>
+						</div>
+						<div class="optionText">
+							<div id="optionTxt" class="txt"><span>option text</span></div>
+						</div>
+					</div>
+				</div>
+                
+                				       
+				
+				<div id='mcmsFeedbackBox' style="position:absolute;width: 100%;height: 100%;background: cyan;">
+					<div id='header'>
+						<span id='headerContent'>Feedback - Correct Answer(s)</span>
+						<span id='feedbackClose'>X</span>						
+					</div>
+					<div id="correctAnswerContent"></div>
+					<div id='feedbackContent'>				
+					</div>
+				</div>
+				
+				 
+			</div>
+			<div id="imageHolder" class="imageHolder"></div>
+			
+			<div id="mcmsNextBtn" class="nextBtn floatRht">
+					<input type="button" value="Next" class="btn_next">
+				</div>
+				<div id="mcmsSubmitBtn" class="submitBtn floatRht">
+					<div type="button"class="btn_submit">Submit</div>
+				</div>
+			
+			</div>
+            
+            <div id="buttons_holder">                    	                        
+                    <div id="fof_button_holder"><a href="#" id="fof_button"></a></div>                    
+     				<div id="fof_note" class="fof_note"><p>Select the From our Files icon to read a real-life KPMG ethics case.</p></div>
+     				
+     				<div id="details_button_area"><a href="#" id="details_button"></a></div>                        
+           </div>
+           
+		</div>
+		
+		 
+	</section>
+</div>
+
+</body>
+</html>

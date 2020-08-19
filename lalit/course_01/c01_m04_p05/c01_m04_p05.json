@@ -1,0 +1,111 @@
+{
+    "data": {
+        "basePath": "./course_01/c01_m04_p05/",
+        "downloadAndroidImages": "",
+        "downloadIpadImages": "",
+        "downloadImages": "c01_m04_p05.jpg",
+        "image": {
+            "use_image_tag": "true",
+            "desktop": "",
+            "ipad": {
+                "landscape": "",
+                "portrait": ""
+            }
+        },
+        "audio": {
+            "path": "course_01/c01_m04_p05/c01_m04_p05",
+            "isAbsolute": true
+        },
+        "instructionText": "Match the enabler to its description.",
+        "questionText": "",
+        "textTitle": "Title",
+        "dragTitle": "drag Title",
+        "dropTitle": "drop Title",
+        "dropOnlyOnCorrectTraget": false,
+        "maxAttempts": 1,
+        "DND": {
+            "responseType": "specific",
+            "draggableItems": {
+                "label": "Draggable item Label 01",
+                "items": [
+                    {
+                        "target": "6",
+                        "content": "Stakes",
+                        "text": "Leveraging others as thinking partners, experts, or additional voices to speak up and act."
+                    },
+                    {
+                        "target": "5",
+                        "content": "Example",
+                        "text": "Seeking more data, knowledge, evidence, or options to address the issue at hand."
+                    },
+                    {
+                        "target": "3",
+                        "content": "Questions",
+                        "text": "Seeking answers and clarity using inquiry (vs. making arguments / drawing conclusions)."
+                    },
+                    {
+                        "target": "2",
+                        "content": "Information",
+                        "text": "Reflecting on the issue from a new perspective (e.g., highlighting risks, debating assumptions, finding win-wins)."
+                    },
+                    {
+                        "target": "4",
+                        "content": "Framing",
+                        "text": "Recognizing that your actions may set the standard for others and acting based on that assumption."
+                    },
+                    {
+                        "target": "1",
+                        "content": "Allies",
+                        "text": "Understanding the needs, fears, and motivators of the person (or people) you want to persuade."
+                    }
+                ]
+            },
+            "droppables": {
+                "label": "Droppable item Label 01",
+                "items": [
+                    {
+                        "id": "6",
+                        "maxDrop": "1"
+                    },
+                    {
+                        "id": "4",
+                        "maxDrop": "1"
+                    },
+                    {
+                        "id": "3",
+                        "maxDrop": "1"
+                    },
+                    {
+                        "id": "5",
+                        "maxDrop": "1"
+                    },
+                    {
+                        "id": "2",
+                        "maxDrop": "1"
+                    },
+                    {
+                        "id": "1",
+                        "maxDrop": "1"
+                    }
+                ]
+            },
+            "feedback": {
+                "feedbacTitle": "Feedback",
+                "genericResponse": {
+                    "incorrect": {
+                        "audio": "../audio/t01_p01_incorrect",
+                        "content": "<b>That’s incorrect.</b></br>When it comes to addressing an ethical issue, there is no perfect or ‘correct’ enabler to use. The enablers on this screen are all useful and appropriate – the key is determining which ones feel most comfortable to you and will allow you to speak up in the situations that arise.</br></br><p class='insta_txt'>Close this box to view the correct answers.</p>"
+                    },
+                    "solution": {
+                        "audio": "../audio/t01_p01_solution",
+                        "content": "<b>That’s incorrect.</b></br>When it comes to addressing an ethical issue, there is no perfect or ‘correct’ enabler to use. The enablers on this screen are all useful and appropriate – the key is determining which ones feel most comfortable to you and will allow you to speak up in the situations that arise.</br></br><p class='insta_txt'>Close this box to view the correct answers.</p>"
+                    },
+                    "correct": {
+                        "audio": "../audio/t01_p01_correct",
+                        "content": "<b>That’s correct.</b></br>When it comes to addressing an ethical issue, there is no perfect or ‘correct’ enabler to use. The enablers on this screen are all useful and appropriate – the key is determining which ones feel most comfortable to you and will allow you to speak up in the situations that arise."
+                    }
+                }
+            }
+        }
+    }
+}

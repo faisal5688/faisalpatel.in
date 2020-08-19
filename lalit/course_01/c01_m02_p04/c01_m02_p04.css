@@ -1,0 +1,31 @@
+@charset "utf-8";
+
+/* CSS Document */
+
+.page_title {
+    padding: 16px 16px 16px 0
+}
+
+.colorText {
+    font-weight: bold;
+    color: #4d2278;
+}
+
+.TextRightContainer .textCont {
+    position: relative;
+}
+
+.mainContent .section {
+    display: none;
+}
+
+.mainsection {
+    overflow: hidden;
+    max-height: 468px;
+}
+
+
+.ImageTextContainer .textCont p {
+    margin-bottom: 4px;
+    line-height: 22px;
+}

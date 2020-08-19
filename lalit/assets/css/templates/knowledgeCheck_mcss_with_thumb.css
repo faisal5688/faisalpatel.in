@@ -1,0 +1,728 @@
+/* MCSS / mcss */
+
+.clearfix:before,
+.clearfix:after {
+    content: "";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    zoom: 1;
+    /* For IE 6/7 (trigger hasLayout) */
+}
+
+
+/** {
+    box-sizing: border-box;
+}*/
+
+.page_title {
+    padding-left: 0 !important;
+    padding-bottom: 10px;
+}
+
+.cloneOption,
+.hiddenOption {
+    display: none;
+}
+
+#mcssContainer {
+    margin: 0 auto 0 76px;
+    width: 930px;
+    background: #fff;
+    /* padding: 30px; */
+    box-sizing: border-box;
+}
+
+.list_alpha {
+    float: left;
+    height: auto !important;
+    margin-right: 5px;
+}
+
+.feedbackContainment {
+    width: 99%;
+    width: 99.4%\9;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.mcssWrap {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    font-size: 13px;
+    position: relative;
+}
+
+.mcssWrap .scenarioTxt {
+    /*margin-top: 26px;*/
+    color: #E88729;
+    font-size: 22px;
+    text-align: center;
+}
+
+.mcssQuestion {
+    width: 100%;
+    height: 100%;
+    color: #333;
+    position: relative;
+    overflow: auto;
+    display: flex;
+}
+
+
+/*-----------IE11 hack---------------*/
+
+@media all and (-ms-high-contrast: none),
+(-ms-high-contrast: active) {
+    .mcssQuestion .imgSec span {
+        line-height: 102px;
+    }
+}
+
+
+/*-----------IE11 hack---------------*/
+
+.btn {
+    margin-top: -34px;
+    position: absolute;
+    right: 3px;
+    z-index: 1
+}
+
+.mcssQuestion .questStatus {
+    font: 12px/normal Arial;
+}
+
+.mcssQuestion .questSec {
+    min-height: 50px;
+    padding: 0px 20px 0px 0px;
+    float: right;
+    width: 95%;
+    box-sizing: border-box;
+}
+
+.mcssQuestion .questSec .question {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    font: 16px/18px Arial;
+    color: #00338d;
+    padding: 0 0 0 10px;
+    vertical-align: middle;
+    /*border-left: 1px solid #dcdcdc;*/
+}
+
+#mcssInstructionTxt p {
+    color: #f88e3a;
+    font-size: 16px;
+    font-style: italic;
+}
+
+.optionContainer {
+    /* width: 100%; */
+    display: flex;
+}
+
+.optionContainer .row {
+    position: relative;
+}
+
+.optionIcons {
+    float: left;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    height: 310px;
+    cursor: pointer;
+}
+
+.tickIco {
+    display: block;
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    top: 12px;
+    right: 31px;
+    cursor: default;
+    background-size: contain;
+    background: url(../../images/kc_assets1.png) no-repeat -80px -11px;
+}
+
+.tickIco.mcssTick {
+    /*   background: url(../../images/correct_kc.png) no-repeat center center;
+    background-size: contain; */
+    background-position: -80px -11px;
+}
+
+.tickIco.mcssCross {
+    /* background: url(../../images/correct_kc01.png) no-repeat center center;
+    background-size: contain; */
+    background-position: -108px -11px;
+}
+
+.optionIcons .checkBox,
+.optionIcons .radio {
+    height: 100%;
+}
+
+.optionIcons .checkBox.mcssbulletPointsSelected {
+    background: rgba(0, 0, 0, 0) url("../../images/kc_assets1.png") no-repeat scroll -47px -11px;
+}
+
+.optionIcons .checkBox.mcssBulletPointsDisabled {
+    cursor: default;
+}
+
+.optionIcons .radio {
+    background-position: -201px -5px;
+}
+
+.optionIcons .radio.MCSSbulletPointsSelected {
+    background-position: -237px -5px;
+    cursor: default;
+}
+
+.optionIcons .radio.MCSSbulletPointsDisable {
+    cursor: default;
+}
+
+.optionText {
+    min-height: 20px;
+    height: auto !important;
+    margin: 0;
+    padding: 0;
+    font: 16px/18px Arial;
+    line-height: 18px;
+}
+
+.optionText .txt {
+    display: table;
+    padding: 10px;
+}
+
+.optionText .txt span {
+    display: table-cell;
+    height: auto;
+    vertical-align: middle;
+}
+
+.glossaryLink {
+    float: right;
+    padding-left: 5px;
+}
+
+.mcssInstruction {
+    font: 14px/18px Arial;
+    padding-left: 0;
+    padding-top: 0;
+    padding-bottom: 15px;
+}
+
+.floatlft {
+    float: left;
+}
+
+.floatRht {
+    float: right;
+}
+
+#mcssContainer .submitBtn {
+    bottom: -57px;
+    color: #ffffff;
+    cursor: pointer;
+    float: left;
+    position: absolute;
+    left: 0px;
+}
+
+#mcssContainer .disabled .btn_submit {
+    background-color: #838383 !important;
+    color: #d3d3d3;
+    margin: 0;
+    font-size: bold;
+}
+
+#mcssContainer .submitBtn .btn_submit {
+    background-color: #470a68;
+    padding: 10px 12px 8px 12px;
+    font-size: 16px;
+    text-align: center;
+    float: left;
+    border-radius: 0!important;
+    -webkit-border-radius: 0 !important;
+}
+
+#mcmsContainer .submitBtn .btn_submit:hover {
+    background: #00a3a1;
+}
+
+#mcssContainer .disabled {
+    color: #CCC;
+    cursor: default;
+}
+
+#mcssContainer .disabled:hover {
+    color: #CCC;
+    cursor: default;
+}
+
+#mcssHolder .imgSection {
+    background: url(../../../course_01/images/kcImage.jpg) no-repeat 0 0;
+    background-size: 100% 100%;
+    border: 2px solid #b5bedd;
+    width: 378px;
+    height: 321px;
+    float: left;
+}
+
+.mcssContainer {
+    float: left;
+    width: 100%;
+}
+
+.mcssOption_with_image {
+    /* border-bottom: 2px solid #00a3a1; */
+    float: left;
+    padding-bottom: 40px;
+    position: relative;
+    width: 100%;
+    padding: 0;
+}
+
+.imageHolder {
+    float: right;
+    width: 35%;
+}
+
+.imageHolder img {
+    max-width: 100%;
+    height: auto;
+}
+
+.msgquestion_long p {
+    padding-bottom: 5px;
+}
+
+#mcssFeedbackBox {
+    background-color: #f6f6f6 !important;
+    box-sizing: border-box;
+    font-size: 16px;
+    padding: 0px;
+    z-index: 1;
+    border: 1px solid #00338d;
+    width: 500px;
+    top: 219px;
+    left: 0px;
+}
+
+#feedbackHeader {
+    cursor: move;
+}
+
+#mcssFeedbackBox #correctAnswerContent ul li {
+    background: rgba(0, 0, 0, 0) url("../../images/correct_answer.png") no-repeat scroll left 2px;
+    padding-bottom: 15px;
+    padding-left: 25px;
+}
+
+#mcssFeedbackBox #headerContent {
+    display: block;
+    position: relative;
+    font-size: 18px;
+}
+
+.header {
+    padding: 10px;
+    background-color: #00338d;
+    color: #fff;
+}
+
+#feedbackClose {
+    color: #00338e;
+    cursor: pointer;
+    font-size: 18px;
+    position: absolute;
+    right: 6px;
+    top: 6px;
+}
+
+#feedbackClose:hover {
+    color: #00a3a0;
+    cursor: pointer;
+}
+
+#feedbackContent {
+    /* 	border-top: 2px solid #00338d; */
+    padding: 10px;
+    height: 185px;
+    overflow: auto;
+}
+
+#feedbackContent p {
+    padding-bottom: 7px;
+}
+
+#feedbackContent span {
+    color: #f68d2e;
+}
+
+#buttons_holder {
+    float: left;
+    padding-top: 10px;
+    width: 100%;
+}
+
+#details_button {
+    background: rgba(0, 0, 0, 0) url("../../images/details_button.jpg") no-repeat scroll 0 0 / 55px 55px;
+    display: block;
+    float: right;
+    height: 55px;
+    width: 55px;
+}
+
+#fof_button {
+    background: rgba(0, 0, 0, 0) url("../../images/fof_button.jpg") no-repeat scroll 0 0 / 58px 58px;
+    display: block;
+    float: right;
+    height: 58px;
+    width: 58px;
+}
+
+.fof_note {
+    color: #00a3a1;
+    float: right;
+    font-size: 14px;
+    line-height: 16px;
+    padding-right: 20px;
+    padding-top: 15px;
+    width: 225px;
+}
+
+#fof_button_holder {
+    float: right;
+}
+
+
+/* FOF Button Popup Style Code */
+
+#fof_popup {
+    background-color: #fff;
+    box-sizing: border-box;
+    left: 0;
+    padding: 20px;
+    position: absolute;
+    top: 0;
+    border: 1px solid;
+    font-family: monospace;
+    font-size: 13px;
+    color: #333333;
+    height: 100%;
+    width: 100%;
+}
+
+#fof_popup .closeBtnpop {
+    background: url("../../images/fof_close.jpg") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    background-size: 63px 14px;
+    height: 14px;
+    width: 63px;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+#fof_popup #fof_popupContent p {
+    padding-bottom: 5px;
+}
+
+#fof_popup #fof_popupHeader {
+    color: #000101;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+    #mcssHolder .imgSection {
+        background: url("../../../course_01/images/kcImage.jpg") no-repeat scroll 0 0 / 100% 100% rgba(0, 0, 0, 0);
+        border: 2px solid #b5bedd;
+        float: left;
+        height: 290px;
+        width: 285px;
+        display: none;
+    }
+}
+
+
+/* for Note 8 landscape*/
+
+@media only screen and (min-device-width: 800px) and (max-device-width: 1280px) and (device-aspect-ratio: 8/5) and (-webkit-min-device-pixel-ratio: 1.33) and (orientation: landscape) {
+    .mcssWrap .scenarioTxt {
+        margin: 1px 0px 0px 0px;
+    }
+    /*.feedBackContent {right: -282px;top: -263px;}*/
+}
+
+
+/* for Note 8 Portrait*/
+
+@media only screen and (min-device-width: 800px) and(max-device-width: 1280px) and (device-aspect-ratio: 5/8) and (-webkit-min-device-pixel-ratio: 1.33) and (orientation: portrait) {
+    .mcssWrap .scenarioTxt {
+        margin-top: 26px;
+    }
+    #div_11 {
+        top: 0px !important;
+    }
+    #div_12 {
+        top: 7px !important;
+    }
+    #pageFeedback ul {
+        margin: 2px 0 0 12px;
+    }
+    #pageFeedback ul li {
+        background: url(../../images/feed_bullets.png) no-repeat 5px 7px;
+        padding-left: 16px;
+    }
+}
+
+.imgSec {
+    position: relative;
+    float: left;
+    width: 43px;
+    display: table;
+    height: 50px;
+}
+
+.imgSec .sub_txt {
+    color: #00338d;
+    height: 50px;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    position: relative;
+    font-size: 40px;
+}
+
+.mcssOption {
+    width: 200px;
+    background: #fff;
+    padding: 0px;
+    box-shadow: 1px 2px 10px #bbb9b9;
+    margin: 0 33px 0 0;
+    height: 320px;
+    position: relative;
+}
+
+.mcssOption.MCSSbulletPointsSelected {
+    background-color: #00afa8;
+    cursor: default;
+}
+
+.mcssOption.MCSSbulletPointsSelected {
+    background-color: #00afa8;
+}
+
+.mcssOption.MCSSbulletPointsSelected .optionText .txt {
+    color: #fff;
+}
+
+.mcssOption .sqNum {
+    width: 16px;
+    height: 16px;
+    background: #9a9a9a;
+    color: #fff;
+    position: absolute;
+    top: 13px;
+    right: 13px;
+    text-align: center;
+    line-height: 52px;
+    font-size: 10px;
+    text-indent: -9999px;
+    border: 2px solid #eb8f3b;
+    box-sizing: border-box;
+}
+
+.containment {
+    height: calc(100% - 62px - 90px);
+}
+
+
+/*-------------------*/
+
+#mcssContainer .mcssOption .sqNum {
+    width: 16px;
+    height: 16px;
+    background: #9a9a9a;
+    color: #fff;
+    position: absolute;
+    top: 13px;
+    right: 13px;
+    text-align: center;
+    line-height: 52px;
+    font-size: 10px;
+    text-indent: -9999px;
+    border: 2px solid #eb8f3b;
+    box-sizing: border-box;
+}
+
+#mcssContainer .mcssQuestion .questSec .question {
+    min-height: 40px;
+}
+
+#mcssContainer .mcssOption {
+    width: 205px;
+    background: #fff;
+    padding: 5px;
+    box-shadow: 1px 1px 6px #bbb9b9;
+    margin: 0px 27px 0 0;
+    height: 360px;
+    position: relative;
+}
+
+#mcssContainer .optionText .txt {
+    padding: 6px;
+}
+
+#mcssContainer .submitBtn {
+    bottom: -46px;
+    color: #ffffff;
+    cursor: pointer;
+    float: left;
+    position: absolute;
+    left: calc(100% - 102px);
+}
+
+#PageContent {
+    height: calc(100% - 62px - 58px);
+}
+
+#mcssContainer .mcssOption {
+    padding: 0px;
+    overflow: hidden;
+    background-color: #f1f1f1;
+}
+
+#mcssContainer .mcssOption .option_img {
+    border: 10px solid #007dba;
+}
+
+.mcssOption.MCSSbulletPointsSelected .optionText .txt {
+    color: #333
+}
+
+#mcssContainer .mcssOption.MCSSbulletPointsSelected .option_img {
+    border: 10px solid #009d85;
+}
+
+#mcssContainer .mcssOption.MCSSbulletPointsSelected .sqNum {
+    background: #009d85;
+}
+
+
+/*for indivisual page fixes*/
+
+.mainContent.c01_m03_p10_03 .mcssOption .option_img {
+    display: none;
+}
+
+.mainContent.c01_m03_p10_03 .mcssWrap {
+    background: url(../../../course_01/images/c01_m03_p10_03_bgimg.jpg) no-repeat;
+    background-size: cover;
+    width: calc(100% - 32px);
+    float: left;
+    height: 492px;
+    padding: 1px 25px 10px 25px;
+    box-sizing: border-box;
+}
+
+.mainContent.c01_m03_p10_03 .mcssWrap #mcOption_4 {
+    display: none;
+}
+
+.mainContent.c01_m03_p10_03 .mcssWrap .mcssQuestion {
+    height: auto;
+    height: 40px;
+}
+
+.mainContent.c01_m03_p10_03 .mcssWrap .imgSec .sub_txt,
+.mainContent.c01_m03_p10_03 .mcssWrap .mcssQuestion .questSec .question {
+    color: #fff;
+}
+
+.mainContent.c01_m03_p10_03 .mcssWrap .imgSec .sub_txt {
+    font-size: 24px;
+    height: 28px;
+}
+
+.mainContent.c01_m03_p10_03 .mcssWrap .imgSec {
+    width: 28px;
+    height: 39px;
+}
+
+.mainContent.c01_m03_p10_03 .mcssQuestion .questSec .question {
+    min-height: 32px;
+    height: 40px;
+}
+
+.mainContent.c01_m03_p10_03 .mcssQuestion .questSec {
+    min-height: 32px!important;
+}
+
+.mainContent.c01_m03_p10_03 #mcssInstructionTxt p {
+    color: #f88e3a;
+}
+
+.mainContent.c01_m03_p10_03 .mcssOption {
+    height: 340px!important;
+    width: 340px!important;
+    padding: 15px 10px 10px 10px!important;
+}
+
+.mainContent.c01_m03_p10_03 .mcssOption#mcOption_3 {
+    margin-right: 0px;
+}
+
+.mainContent.c01_m03_p10_03 .mcssInstruction {
+    padding-bottom: 10px
+}
+
+.mainContent.c01_m03_p10_03 .mcssOption .sqNum {
+    top: -15px!important;
+    right: -10px!important;
+}
+
+.mainContent.c01_m03_p10_03 .tickIco {
+    top: -16px;
+    right: 12px;
+}
+
+#mcssContainer.mainContent.c01_m03_p10_03 .mcssOption.MCSSbulletPointsSelected {
+    background-color: #009d85;
+}
+
+#mcssContainer.mainContent.c01_m03_p10_03 .mcssOption.MCSSbulletPointsSelected .optionText .txt {
+    color: #fff;
+}
+
+#mcssContainer.mainContent.c01_m03_p10_03 .mcssOption.MCSSbulletPointsSelected .sqNum {
+    border: 2px solid #f68d2e;
+    background: #006298;
+}
+
+#mcssContainer.mainContent.c01_m03_p10_03 .submitBtn .btn_submit {
+    float: right;
+}
+
+#mcssContainer.mainContent.c01_m03_p10_03 .submitBtn {
+    right: 0px;
+    bottom: -49px;
+}

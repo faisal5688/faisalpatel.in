@@ -1,0 +1,67 @@
+<data>
+	<meta>
+		<author><![CDATA[]]></author>
+		<version><![CDATA[]]></version>
+		<keywords><![CDATA[]]></keywords>
+	</meta>
+
+	<body offest='10'>
+		<bodyText xPos='455' yPos='240' width='564'>
+		<text><![CDATA[In a moment you will be taking the final scored assessment covering the material from all the lessons of this course. This is the time to go back and review the course content before you begin the assessment.]]></text>
+		<text><![CDATA[In a moment you will be taking the final scored assessment covering the material from all the lessons of this course. This is the time to go back and review the course content before you begin the assessment.]]></text>
+		<text><![CDATA[You have already completed this assessment with a score of ]]></text>
+		<text><![CDATA[ %.]]></text>
+		<text><![CDATA[Remaining attempts: ]]></text>
+		<text><![CDATA[Course Level 22 In a moment you will be taking the final scored assessment covering the material from all the lessons of this course. This is the time to go back and review the course content before you begin the assessment.]]></text>
+		<text><![CDATA[In order to receive CPE credit, you must score a ]]></text>
+		<text><![CDATA[% or higher on the final assessment.]]></text>
+		</bodyText>
+		<instructionText xPos='455' yPos='380' width='621'><![CDATA[Click Start to take the final assessment and see how much you have learned.]]></instructionText>
+		<additionalText xPos='455' yPos='425' width='512'><![CDATA[Good Luck!!]]></additionalText>
+		<item type="text" style="" xPos="0" yPos="0" height="0" width="0"><![CDATA[<B>On Screen Text 1</B>]]></item>
+		<item type="text" style="" xPos="0" yPos="0" height="0" width="0"><![CDATA[<B>On Screen Text 2</B>]]></item>
+		<item type="text" style="" xPos="0" yPos="0" height="0" width="0"><![CDATA[<B>On Screen Text 3</B>]]></item>
+		<item type="text" style="" xPos="0" yPos="0" height="0" width="0"><![CDATA[<B>On Screen Text 4</B>]]></item>
+		<item type="text" style="" xPos="0" yPos="0" height="0" width="0"><![CDATA[<B>On Screen Text 5</B>]]></item>
+
+		<item type="images" xPos="0" yPos="0" height="0" width="0"><![CDATA[path]]></item>
+		<item type="audio" xPos="0" yPos="0" height="0" width="0"><![CDATA[path]]></item>
+		<item type="video" xPos="0" yPos="0" height="0" width="0"><![CDATA[path]]></item>
+
+	</body>
+
+	<links>
+		<item type="internal"><![CDATA[../resources/reference.doc]]></item>
+		<item type="external"><![CDATA[http://www.google.com]]></item>
+	</links>
+<AssessmentResult>
+	<Assessment>
+		<pageTitle><![CDATA[<b>Assessment Result</b>]]></pageTitle>
+		<ResultText><![CDATA[<b>Result</b>]]></ResultText>
+		<ScoreText><![CDATA[<b>Score</b>]]></ScoreText>
+		<PercentText><![CDATA[<b>%</b>]]></PercentText>
+		<QuestionText><![CDATA[<b>Questions</b>]]></QuestionText>
+		<CorrectText><![CDATA[<b>Correct</b>]]></CorrectText>
+		<InCorrectText><![CDATA[<b>Incorrect</b>]]></InCorrectText>
+		<PassText>
+			<CongtateText><![CDATA[Congratulations! You have successfully completed this assessment and will receive CPE credit.<BR>Your assessment results are shown below.]]></CongtateText>
+			<InstructionText><![CDATA[Click on the <b>EXIT</b> button to exit this course and return to the main menu.]]></InstructionText>
+		</PassText>
+		<FailText>
+			<FailSubTitle><![CDATA[Your score is not sufficient to earn you CPE credit points. <BR>Your assessment results are shown below.]]></FailSubTitle>
+			<Retake>
+				<RetakeInstructionText><![CDATA[Click <b>Retake Assessment</b> to reattempt the assessment, or click <b>Exit</b> to exit this course and return to the main menu.]]></RetakeInstructionText>
+				<RetakeButtonLabel><![CDATA[Retake Assessment]]></RetakeButtonLabel>
+			</Retake>
+		</FailText>
+	</Assessment>
+</AssessmentResult>
+	
+
+	<transcripts>
+		<transcript id="0">
+			<![CDATA[This concludes the KPMG Learning course, “Hedge Accounting”. To receive CPE credit, please proceed to the final exam.<br>]]>
+		</transcript>		
+	</transcripts>
+
+</data>

@@ -1,0 +1,349 @@
+@charset "utf-8";
+
+section.mainContent,
+#contentHolder,
+#pageContainer,
+.wrapper,
+.content {
+    width: 100%;
+    height: 100%;
+}
+
+#transcriptView {
+    float: left;
+    width: 100%;
+}
+
+#contentHolder {
+    position: relative;
+    padding-left: 76px;
+    width: 900px;
+}
+
+.content {
+    position: relative;
+    height: calc(100% - 75px);
+}
+
+.textContainer {
+    border-top: 1px solid #d43647;
+    border-bottom: 1px solid #d43647;
+    background: none;
+    float: left;
+    height: auto;
+    position: relative;
+    width: auto;
+}
+
+.Instxt {
+    color: #f68e39;
+    font: italic 14px/32px Arial;
+}
+
+.row1_section {
+    position: absolute;
+}
+
+.ins_text {
+    margin: 0 auto;
+    text-align: left;
+}
+
+.ins_text p.InstrutationText {
+    display: inline-block;
+    font-style: italic;
+    color: #f18a2e;
+    background-color: #fff;
+}
+
+.overlay {
+    background: rgba(255, 255, 255, 0.8);
+    position: absolute;
+    left: 0;
+    top: 45px;
+    right: 0;
+    bottom: 0;
+    z-index: 9;
+    display: block;
+    width: 100%;
+    height: 92%;
+}
+
+.popup_inst {
+    padding-top: 10px;
+    font-style: italic;
+    /* color:#f68d2e; */
+    color: #ee8b2e;
+}
+
+.blue_txt {
+    color: #005EB8;
+    font-weight: bold;
+}
+
+.tab.enabled {
+    cursor: pointer;
+}
+
+.tab.visited .textBlock:after {
+    content: "";
+    width: 16px;
+    height: 16px;
+    background: url(../images/Tick-icon.png) no-repeat center center;
+    position: absolute;
+    right: 10px;
+    top: 10px
+}
+
+.parentBlock {
+    width: 100%;
+}
+
+
+/*---------------- Popup------------------- */
+
+.popupContainer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    box-sizing: border-box;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.popupContentWraper {
+    background: #fff;
+    font: 16px arial;
+    padding: 0;
+    line-height: 22px;
+    width: 580px;
+    height: 255px;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.popupContentParent {
+    height: 100%;
+}
+
+.popup_title {
+    background: #007dba;
+    font-family: 'KPMG_App';
+    font-size: 28px;
+    color: #fff;
+    line-height: 35px;
+    padding: 0 10px;
+    height: 39px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.popup_content {
+    padding: 10px 16px;
+    height: calc(100% - 60px);
+   /*  overflow: auto; */
+}
+
+.popup_content p {
+    margin-bottom: 10px;
+}
+
+.closeBtn {
+    right: 9px;
+    top: 10px;
+    background: url(../images/comaaonClose.png) no-repeat 0 0;
+    position: absolute;
+    float: right;
+    font-size: 0px;
+    height: 24px;
+    width: 23px;
+    transition: all 0.7s ease 0s;
+    cursor: pointer;
+}
+
+.closeBtn:hover {
+    color: #000;
+}
+
+.popupContentWraper ul {
+    margin-left: 30px;
+    margin-top: 5px;
+}
+
+.popupContentWraper li {
+    padding-bottom: 10px;
+}
+
+.popupContentWraper ul {
+    list-style: disc;
+}
+
+.popupContentParent {
+    border: 2px solid #007dba;
+}
+
+.popup_1 .popup_title {
+    background: ##007dba;
+}
+
+/*-----------IE11 hack---------------*/
+
+@media all and (-ms-high-contrast: none),
+(-ms-high-contrast: active) {
+    .popup_title {
+        line-height: 43px;
+    }
+
+}
+
+
+/*-----------IE11 hack---------------*/
+
+
+/*alpha 2 update*/
+
+.topTextCont {
+    max-width: 900px;
+    margin-top: 15px;
+}
+
+.topTextCont p {
+    margin-bottom: 10px;
+}
+
+.topTextCont p:last-child {
+    margin-bottom: 0px;
+}
+
+.parentBlock {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    height: 287px;
+    position: relative;
+    left: 0px;
+    top: 0px;
+    max-width: 905px;
+    top: 0;
+    transform: none;
+    left: 0;
+}
+
+
+/* Pillar css */
+
+.piller_wraper {
+    width: 729px;
+    height: 454px;
+    position: absolute;
+    left: 85px;
+    top: 3px;
+}
+
+.pillerbg {
+    background: url(7piller_bg.png) no-repeat;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.piller_container {
+    position: absolute;
+    width: 670px;
+    height: 272px;
+    left: 25px;
+    top: 138px;
+}
+
+.piller {
+    position: relative;
+    height: 272px;
+    width: 62px;
+    padding-left: 30px;
+    background: url(7pillers.png) no-repeat;
+    background-position-x: 0px;
+    background-position-y: 0px;
+    float: left;
+}
+
+.piller span {
+    display: block;
+    color: #fff;
+    font-size: 20px;
+    transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg);
+    width: 242px;
+    position: absolute;
+    left: -60px;
+    top: 136px;
+    text-align: center;
+    padding: 0 20px;
+    box-sizing: border-box;
+    font-weight: normal;
+}
+
+.piller.piller_7 span {
+    top: 126px;
+}
+
+.piller_1 {
+    background-position-x: 31px;
+}
+
+.piller_2 {
+    background-position-x: -62px;
+}
+
+.piller_3 {
+    background-position-x: -154px;
+
+}
+
+.piller_4 {
+    background-position-x: -246px;
+}
+
+.piller_5 {
+    background-position-x: -338px;
+}
+
+.piller_6 {
+    background-position-x: -430px;
+}
+
+.piller_7 {
+    background-position-x: -522px;
+}
+
+.piller.inactive {
+    opacity: 0.1;
+}
+.tab.selected{
+	position:relative;
+}
+.tab.visited:after{
+	content:'';
+	background:url(correct.png)no-repeat;
+	width:20px;
+	height:15px;
+	position:absolute;
+	right:0px;
+	top:0px;
+}
+.footnote{
+	position: absolute;
+    bottom: 2px;
+    left: 150px;
+    font-size: 11px;
+    font-style: italic;
+    color: #333;
+}

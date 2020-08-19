@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html" charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+<title>Link Click</title>
+
+<link rel="stylesheet" href="assets/css/templates/linkClick.css">
+<link rel="stylesheet" href="" changetheme='true'>
+
+<script src="js/controller/Templates/common/Popup_01.js"></script>
+<script src="js/controller/Templates/ClickNLearn/Click_Link_Controller.js"></script>
+<script>
+	var activityData = {};
+	$(function(){
+		activityData = Parser.loadActivityDataFn(DataManager.templateXMLData);				
+        LinkActivityObj.initActivity(activityData);
+	});
+</script>
+</head>
+<body>
+
+<div class="wrapper">	
+	<div id="linkOverlay"></div>
+	<section id="activityContainer" class="mainContent">
+		<div class="linkWrap">
+			<div id="linkActivityHolderId" class="linkContent">
+				<div class="infoSec">Click link to see related information.</div>
+				<div class="contentSec">
+					<div id="contentWrap" class="contentWrap">
+						<p>Selected tab will be<span id="hyperlink_1">Highlighted</span>, Learner clicks on a tab when some other tab is already open. Learner clicks on a tab when no other tab is already open. The tab already in open state goes to visited state. The clicked tab gets selected and corresponding description text is displayed. Particular tab gets selected and corresponding description text is displayed</p>
+
+						<p>Learner clicks on a tab when <span id="hyperlink_2">Hyperlink</span> other tab is already open. <span id="hyperlink_3"> Learner clicks</span> on a tab when no other tab is already open. The tab already in open state goes to visited state. The clicked tab gets selected and corresponding description text is displayed. Particular tab gets selected and corresponding description text is displayed</p>
+
+						<p>Learner clicks on a tab when some other tab is already open. Learner clicks on a tab when no other tab is already open. The tab already in  <span id="hyperlink_4">Open</span> state goes to visited state. The clicked tab gets selected and corresponding description text is displayed. 	Particular tab gets selected and corresponding description text is displayed</p>
+					</div>	
+					
+				</div>
+			</div>			
+			<!--<div id="popupContainer" class="clickIntOverlay">
+				<div class="clickIntPopup">
+					<div class="clickIntHeader">
+						<span id="popupHeader" class="clickIntHeadTxt">Cost of dismantlement removal, and restoration</span>
+						<span id="popupClose" class="clickIntClose"></span>
+					</div>
+					<div id="popupContent" class="clickIntpopupTxt">
+						<p>popup Content will appear here</p>
+					</div>
+				</div>
+			</div> -->
+		</div>
+		
+	</section>
+</div>
+
+</body>
+</html>

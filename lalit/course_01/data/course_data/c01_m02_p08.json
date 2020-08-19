@@ -1,0 +1,59 @@
+﻿{
+    "data": {
+        "audio": "",
+        "scenarioText": "",
+        "question": "<p>Which of the GVV pillars focuses on questions such as “Are ethics or values conflicts just a regular part of everyday living?”</p>",
+        "instructionText": "<p>Select the best response and click <b>Submit</b>.</p>",
+        "downloadAndroidImages": "",
+        "downloadImages": "../../assets/images/kc_rightimg.png,../images/kc_assets1.png",
+        "MCQ": {
+            "responseType": "specific",
+            "maxAttempts": "1",
+            "correctAnswer": "2",
+            "options": {
+                "option": [
+                    "<span class='optno'>A.</span> Choice",
+                    "<span class='optno'>B.</span> Normalization",
+                    "<span class='optno'>C.</span> Purpose",
+                    "<span class='optno'>D.</span> Reasons and Rationalizations"
+                ]
+            },
+            "feedback": {
+                "genericResponse": {
+                    "incorrect": {
+                        "audio": "",
+                        "content": ""
+                    },
+                    "solution": {
+                        "audio": "",
+                        "content": ""
+                    },
+                    "correct": {
+                        "audio": "",
+                        "content": "That is correct."
+                    }
+                },
+                "specificResponse": {
+                    "response": [{
+                            "audio": "blank",
+                            "content": "<p><b>That is incorrect. </b> The Choice pillar is at the heart of GVV and asks “Do we believe we have an option to speak up?” </p><p>The correct answer is Normalization.</p>"
+                        },
+                        {
+                            "audio": "blank",
+                            "content": "<p><b>That is correct.</b> The Normalization pillar seeks to answer the question “Are ethics or values conflicts just a regular part of everyday living?”</p>",
+							"showAnswer":"<p><b>The correct answer is B.</b> The Normalization pillar seeks to answer the question “Are ethics or values conflicts just a regular part of everyday living?”</p>"
+                        },
+                        {
+                            "audio": "blank",
+                            "content": "<p><b>That is incorrect.</b> The Purpose pillar is focused on “Why and how is my work meaningful and how does that affect my ability to  act on my values?” </p><p>The correct answer is Normalization.</p>"
+                        },
+                        {
+                            "audio": "blank",
+                            "content": "<p><b>That is incorrect.</b> The Reasons and Rationalizations pillar seeks to identify the typical kinds of objections or pushback you might encounter when you try to voice and act on your values.</p><p> The correct answer is Normalization.</p>"
+                        }
+                    ]
+                }
+            }
+        }
+    }
+}

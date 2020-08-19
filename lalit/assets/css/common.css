@@ -1,0 +1,350 @@
+a:visited {
+    color: blue;
+}
+
+a:active {
+    color: blue;
+}
+
+.container {
+    /* defaults for resposive height container */
+    position: relative;
+    width: 900px;
+    height: 300px;
+    margin: 0 auto;
+    overflow: visible;
+}
+
+.iosSlider {
+    width: 100% !important;
+    height: 100% !important;
+}
+
+.iosSlider .slider {
+    width: 100% !important;
+    height: 100% !important;
+    cursor: default !important;
+}
+
+.iosSlider .slider .item {
+    float: left;
+    width: 100% !important;
+    height: 100% !important;
+    top: 0 !important;
+}
+
+.container .prev {
+    position: absolute;
+    top: 65px;
+    left: -60px;
+    width: 40px;
+    height: 40px;
+    background: #000;
+    z-index: 10;
+}
+
+.container .next {
+    position: absolute;
+    top: 65px;
+    right: -60px;
+    width: 40px;
+    height: 40px;
+    background: #000;
+    z-index: 10;
+}
+
+.container .unselectable {
+    opacity: 0.2;
+}
+
+.clickIntOverlay {
+    display: block;
+    width: 100%;
+    height: 100%;
+    /* background:rgba(0, 0, 0, 0.3); */
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 59px 0 0;
+    z-index: 1;
+    /*background:url("../../assets/images/cnl_overlay.png") repeat;*/
+}
+
+
+/*submit / Next button*/
+
+.showAnswerBtn input[type="button"],
+.submitBtn input[type="button"],
+.nextBtn input[type="button"],
+.resetBtn input[type="button"],
+.resetBtn button,
+.submitBtn button,
+.showAnswerBtn button,
+.nextBtn button {
+    min-width: 82px;
+    height: 28px;
+    border: none;
+    color: #FFF;
+    margin: 0 0 0 2px;
+    padding: 0 0 4px;
+    font: 15px/24px arial;
+    cursor: pointer;
+    background: #470a68;
+    z-index: 9;
+    font-weight: bold;
+}
+
+.showAnswerBtn input[type="button"]:hover,
+.submitBtn input[type="button"]:hover,
+.showAnswerBtn input[type="button"]:hover,
+.nextBtn input[type="button"]:hover,
+.resetBtn input[type="button"]:hover,
+.resetBtn button:hover,
+.submitBtn button:hover,
+.showAnswerBtn button:hover,
+.showAnswerBtn button:hover,
+.nextBtn button:hover {
+    background: #00338c;
+}
+
+.showAnswerBtn input.disabled[type="button"],
+.submitBtn input.disabled[type="button"],
+.submitBtn input.disabled:hover,
+.nextBtn input.disabled[type="button"],
+.nextBtn input.disabled:hover .resetBtn input.disabled:hover,
+.resetBtn button.disabled,
+.resetBtn button.disabled:hover,
+.submitBtn button.disabled,
+.submitBtn button.disabled:hover,
+.showAnswerBtn button.disabled:hover,
+.nextBtn button.disabled,
+.nextBtn button.disabled:hover {
+    background: #838383;
+    color: #d3d3d3;
+    cursor: default;
+}
+
+
+/*Feedback box*/
+
+.feedBackPopup {
+    clear: both;
+    display: none;
+    z-index: 555;
+}
+
+.feedBackContent {
+    width: 325px;
+    min-height: 150px;
+    margin: 0 auto;
+    /* position: relative; */
+    z-index: 101;
+    border: 2px solid #004e96;
+    background: #FFF;
+}
+
+.feedBackContent .titleTxt {
+    color: #FFF;
+    /* position: relative; */
+    cursor: move;
+    background: #004e96;
+}
+
+.feedBackContent .titleTxt span {
+    display: block;
+    height: 36px;
+    line-height: 36px;
+    padding: 0 12px 1px;
+}
+
+.popupClose {
+    color: #FFF;
+    width: 35px;
+    height: 36px;
+    position: absolute;
+    right: 4px;
+    top: 3px;
+    cursor: pointer;
+    background: url(../images/popup_buttons.png) no-repeat 10px 10px;
+}
+
+.feebackText {
+    height: 115px;
+    margin: 10px 0 0 0;
+    overflow-x: hidden;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    font-size: 14px;
+}
+
+
+/* Fill Blanks - with image */
+
+.fillBlanksWrap.withImage {
+    max-width: 85%;
+}
+
+.fillBlanksWrap.withImage .contentSec {
+    max-width: 70.5%;
+    float: left;
+    padding: 0;
+}
+
+.fillBlanksWrap.withImage .contentSec .contentWrap {
+    height: 284px;
+    margin: 28px 18px;
+    padding: 0 18px 0 0;
+    overflow: auto;
+}
+
+.fillBlanksWrap.withImage .contentSec .contentWrap ul li {
+    padding: 0 0 10px 20px;
+    /*color:#000;*/
+    background: url(../images/bulletIco.jpg) no-repeat 0 8px;
+}
+
+.fillBlanksWrap.withImage .imgSection {
+    float: left;
+    width: 28.7%;
+    max-width: 315px;
+    text-align: right;
+}
+
+.fillBlanksWrap.withImage .imgSection img {
+    height: auto;
+    width: 100%;
+}
+
+
+/* Fill Blanks */
+
+.fillBlanksWrap {
+    /*max-width:766px;*/
+    max-width: 85%;
+    margin: 0 auto;
+    /*padding: 82px 45px 0;*/
+}
+
+.infoSec,
+.instructionTxt p {
+    float: left;
+    margin: 0 0 1px;
+    padding: 0 13px;
+    font: normal 15px/50px Arial;
+    color: #004e96;
+    border-left: solid 5px #e4801b;
+    background: #dad9d9;
+}
+
+.instructionTxt p {
+    float: none;
+    padding: 0;
+    margin: 0;
+    border: none;
+    background: none;
+}
+
+.fillBlanksContent {
+    padding: 0 0 30px;
+    overflow: hidden;
+}
+
+.fillBlanksContent .contentSec {
+    margin: 0 0 1px;
+    padding: 28px 18px;
+    font: normal 14px/20px Arial;
+    color: #FFF;
+    clear: both;
+    position: relative;
+    background: #00a1b9;
+}
+
+.fillBlanksContent .contentWrap input,
+.fillBlanksContent .contentWrap select {
+    color: #FFF;
+    border: solid 1px #003037;
+    background: #00616f;
+}
+
+.fillBlanksContent .contentWrap input {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.fillBlanksContent .contentWrap p {
+    margin: 0 0 18px;
+}
+
+.fillBlanksContent .contentWrap p a {
+    text-decoration: underline;
+}
+
+.fillBlanksContent .contentWrap p a:hover {
+    text-decoration: none;
+}
+
+.fillBlanksContent .submitBtn {
+    position: absolute;
+    right: 0;
+    bottom: -31px;
+}
+
+.fillBlanksContent .showAnswerBtn {
+    position: absolute;
+    right: -100px;
+    bottom: -31px;
+}
+
+
+/*Note8 Potrait Orientation Start*/
+
+@media only screen and (min-device-width: 800px) and (max-device-width: 1280px) and (device-aspect-ratio: 5/8) and (-webkit-min-device-pixel-ratio: 1.33) and (orientation: portrait) {
+    .fillBlanksWrap.withImage .imgSection {
+        background: #00A1B9;
+        width: 100% !important;
+        text-align: center;
+        max-width: inherit;
+    }
+    .fillBlanksWrap.withImage .imgSection img {
+        width: 50%;
+        margin: 2px auto -1px;
+    }
+    .fillBlanksWrap.withImage .contentSec {
+        max-width: 100% !important;
+    }
+}
+
+
+/*Note8 Landscape Orientation Start*/
+
+@media only screen and (min-device-width: 800px) and (max-device-width: 1280px) and (device-aspect-ratio: 8/5) and (-webkit-min-device-pixel-ratio: 1.33) and (orientation: landscape) {
+    .fillBlanksWrap.withImage .contentSec {
+        max-width: 65.5%;
+        height: 292px;
+    }
+    .fillBlanksWrap.withImage .imgSection {
+        width: 33.7%;
+        max-width: inherit;
+    }
+}
+
+.detail_popup_link {
+    cursor: pointer;
+    color: #f68d2e;
+    font-weight: bold;
+}
+
+.tlLine {
+    display: none;
+}
+
+.showAnswerBtn input[type="button"],
+.submitBtn input[type="button"],
+.nextBtn input[type="button"],
+.resetBtn input[type="button"],
+.resetBtn button,
+.submitBtn button,
+.showAnswerBtn button,
+.nextBtn button {
+    padding: 4px 10px;
+}

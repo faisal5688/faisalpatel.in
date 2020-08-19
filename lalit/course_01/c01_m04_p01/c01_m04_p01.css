@@ -1,0 +1,372 @@
+@charset "utf-8";
+
+/* CSS Document */
+
+.page_title {
+    padding: 16px 16px 16px 0
+}
+
+.colorText {
+    font-weight: bold;
+    color: #4d2278;
+}
+
+.TextRightContainer .textCont {
+    position: relative;
+}
+
+.mainContent .section {
+    display: none;
+}
+
+.mainsection {
+    overflow: hidden;
+    max-height: 468px;
+}
+
+.TextRightContainer .textCont {
+    order: 2;
+    width: 100%;
+}
+
+.ImageTextContainer .imageCont {
+    align-self: flex-start;
+    width: 56%;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.section_01 p {
+    margin-bottom: 8px;
+}
+
+.section_02 {
+    width: 100%;
+    height: 463px;
+    float: left;
+    overflow: hidden;
+    box-sizing: border-box;
+    background-color: #ededed;
+    border: 2px solid #00338d;
+}
+
+.section_02 .sub_sec {
+    padding: 15px;
+    overflow-y: scroll;
+    height: 385px;
+}
+
+.section_02 .header_sec {
+    padding: 5px 10px;
+    background-color: #00338d;
+    color: #fff;
+    font-size: 28px;
+    font-family: "KPMG_App";
+}
+
+.section_02 p {
+    margin-bottom: 10px !important;
+}
+
+.section_02,
+.section_02 .sectionpopupHolder {
+    display: none;
+}
+
+.section_02 ol {
+    list-style-type: decimal;
+    margin-left: 20px;
+}
+
+.section_02 ol li {
+    padding-bottom: 8px;
+}
+
+.section_02 .queText {
+    position: relative;
+    margin: 10px 0px;
+}
+
+/* .section_02 .txt{
+	padding-left: 35px;
+} */
+.section_02 .queText .txt:before {
+    content: '';
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 20px;
+    height: 20px;
+
+}
+
+.section_02 p.noteTxt {
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+.instxt {
+    color: #f68d2e;
+    font-style: italic;
+    display: none;
+}
+
+.firstbutton {
+    width: 150px;
+    color: #fff;
+    background: #00a3a1;
+    text-align: center;
+    padding: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    margin: 0 auto;
+    display: none;
+}
+
+@media screen and (min-width:0\0) {}
+
+
+/****Checkbox added css****/
+
+.optionContainer {
+    width: 100%;
+    margin-left: 0;
+    position: relative;
+}
+
+.optionContainer .row {
+    position: relative;
+}
+
+.row {
+    box-sizing: border-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: flex;
+    -webkit-flex: 0 1 auto;
+    -ms-flex: 0 1 auto;
+    -webkit-box-flex: 0;
+    flex: 0 1 auto;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    flex-direction: row;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.optionIcons {
+    float: left;
+    /* min-height: 40px; */
+}
+
+.tickIco {
+    display: block;
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    top: 4px;
+    left: 14px;
+    background: url(kc_assets1.png) no-repeat -80px -11px;
+}
+
+.optionIcons .checkBox {
+    background: rgba(0, 0, 0, 0) url(kc_assets1.png) no-repeat scroll -11px -11px;
+    cursor: pointer;
+    height: 20px;
+    margin: 0;
+    position: absolute;
+    width: 20px;
+}
+
+.optionIcons .checkBox.mcssbulletPointsSelected {
+    background: rgba(0, 0, 0, 0) url("kc_assets1.png") no-repeat scroll -47px -11px;
+}
+
+.optionIcons .checkBox.mcssBulletPointsDisabled {
+    cursor: default;
+}
+
+.optionText {
+    min-height: 20px;
+    height: auto !important;
+    margin: 0;
+    padding: 0 0px 10px 30px;
+    font: 16px/18px Arial;
+    line-height: 21px;
+}
+
+.mcssContainer .mcssOption .optionText .txt {
+    position: relative;
+    padding-left: 25px;
+    cursor: pointer;
+}
+
+.optionText .txt {
+    display: table;
+}
+
+
+/**Submit button**/
+
+.submitBtn.disabled {
+    color: #CCC;
+    cursor: default;
+}
+
+.submitBtn {
+    color: #ffffff;
+    cursor: pointer;
+    float: left;
+    margin-top: 10px;
+}
+
+.submitBtn .btn_submit {
+    background-color: #00338d;
+    padding: 8px;
+    width: auto;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+    float: left;
+    margin: 0 0 8px 0;
+    border-radius: 0 !important;
+    -webkit-border-radius: 0 !important;
+}
+
+.disabled .btn_submit {
+    background-color: #838383 !important;
+    color: #d3d3d3;
+    margin: 0 0 8px 0;
+    font-weight: bold;
+}
+
+
+/****section 03***/
+
+.sectionpopupHolder {
+    height: 100%;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.6);
+    z-index: 999;
+    /* opacity: 0.8; */
+}
+
+.sectionPopUp03 {
+    background: none repeat scroll 0 0 #fff;
+    border-bottom: 2px solid #00338d;
+    border-left: 2px solid #00338d;
+    border-right: 2px solid #00338d;
+    bottom: 0;
+    height: 282px;
+    left: 0;
+    margin: auto;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 620px;
+}
+
+.sectionexitInstPopUp {
+    background: #00338d none repeat scroll 0 0;
+    color: #fff;
+    float: left;
+    padding: 5px 10px;
+    text-align: right;
+    width: 602px;
+    height: 22px;
+}
+
+.sectionexitInstPopUp p {
+    text-align: left;
+}
+
+.section_03 {
+    display: none;
+    z-index: -1;
+}
+
+.section_03 table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    border: 2px solid #fff;
+}
+
+.section_03 table tbody tr th {
+    font-family: 'KPMG_App';
+    color: #fff;
+    font-size: 25px;
+    background: #3c388d;
+    font-weight: normal;
+}
+
+.section_03 table tbody tr th:nth-child(1) {
+    width: 82%;
+}
+
+.section_03 table tbody tr th:nth-child(2) {
+    width: 18%;
+}
+
+.section_03 table tr td p {
+    margin-bottom: 10px !important;
+}
+
+.section_03 td,
+th {
+    border: 2px solid #fff;
+    text-align: left;
+    padding: 8px;
+}
+
+.section_03 tr:nth-child(even) {
+    background-color: #d4ccd7;
+}
+
+.section_03 tr:nth-child(odd) {
+    background-color: #eeeeee;
+}
+
+.myInputOption {
+    width: 100%;
+}
+
+.myInputOption textarea {
+    resize: none;
+    width: 100%;
+}
+
+.c01_m04_p01 .section_01 {
+    background: url(c01_m04_p01.jpg)no-repeat;
+    width: 896px;
+    height: 465px;
+    background-position: center;
+}
+
+.sec_txt {
+    background-color: #470a68;
+    color: #fff;
+    padding: 15px;
+    width: 320px;
+    box-sizing: border-box;
+    height: 435px;
+    position: absolute;
+    top: 15px;
+    left: 15px;
+}
+
+.section_01 .instxt {
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+.optionContainer:after {
+    content: none;
+    display: none;
+}

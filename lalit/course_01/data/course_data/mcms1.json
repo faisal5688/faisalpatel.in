@@ -1,0 +1,71 @@
+{
+    "data": {
+        "downloadAndroidImages": "",
+        "downloadIpadImages": "",
+        "downloadImages": "c01_m04_p04_01.jpg, c01_m04_p04_02.jpg, ../../images/comaaonClose.png, ../../images/kc_assets1.png",
+        "image": {
+            "use_image_tag": "true",
+            "desktop": "",
+            "ipad": {
+                "landscape": "",
+                "portrait": ""
+            }
+        },
+        "content": "Review your Ethics and Integrity knowledge: Round 1",
+		"audio": "../audio/en/t01_p01",
+	  "scenarioText": "scenario text for question",
+	  "question": "What is the essential last step in the firm’s Ethical Decision-Making (EDM) Tool?",
+	  "instructionText": "Select the purple box to test your knowledge.",
+	  "downloadAndroidImages":"assets/images/ladyImage.jpg",
+	  "downloadImages":"",
+	  "MCQ": {
+		"responseType": "specific",
+		"maxAttempts": "1",
+		"correctAnswer": "2",
+		"options": {
+		  "option": [
+			  "<span><span class='optno'>A.</span> <ol class='one'><li>Recognize</li><ol></span>",
+			  "<span><span class='optno'>B.</span> <ol class='one' start='2'><li>Act</li><ol></span>",			  
+			  "<span><span class='optno'>C.</span> <ol class='one' start='2'><li>Decide</li><ol></span>",
+			  "<span><span class='optno'>D.</span> <ol class='one' start='3'><li>Evaluate</li></ol></span>"
+		  ]
+		},
+		"feedback": {
+		  "genericResponse": {
+			"incorrect": {
+			  "audio": "../audio/t01_p01_incorrect",
+			  "content": ""
+			},
+			"solution": {
+			  "audio": "../audio/t01_p01_solution",
+			 "content": ""
+			},
+			"correct": {
+			  "audio": "../audio/t01_p01_correct",
+			  "content": ""
+			}
+		  },
+		  "specificResponse": {
+			"response": [
+			  {
+				"audio": "../audio/t01_p01_feeback01",
+				"content": "<p><b>Answer A is incorrect.</b> Recognizing ethical issues is the first step in the EDM Tool, not the last step. The last step is to ‘act’ to resolve the issue.</p> <p><b>Answer B is correct.</b> Deciding the right course of action is not the same as acting to resolve the issue, which is why the EDM Tool includes ‘act’ as the final step needed to resolve ethical dilemmas.</p>"
+			  },
+			  {
+				"audio": "../audio/t01_p01_feeback02",
+				"content": "<p><b>Answer B is correct.</b> Deciding the right course of action is not the same as acting to resolve the issue, which is why the EDM Tool includes ‘act’ as the final step needed to resolve ethical dilemmas.</p>"
+			  },
+			  {
+				"audio": "../audio/t01_p01_feeback03",
+				"content": "<p><b>Answer C is incorrect.</b> Deciding on the right course of action is not the last step in the EDM Tool. The last step is to ‘act’ to resolve the issue.</p><p><b>Answer B is correct.</b> Deciding the right course of action is not the same as acting to resolve the issue, which is why the EDM Tool includes ‘act’ as the final step needed to resolve ethical dilemmas.</p>"
+			  },
+			  {
+				"audio": "../audio/t01_p01_feeback03",
+				"content": "<p><b>Answer D is incorrect.</b> Evaluating the issue to determine the alternatives and the right course of action is not the last step in the EDM Tool. The last step is to ‘act’ to resolve the issue.</p><p><b>Answer B is correct.</b> Deciding the right course of action is not the same as acting to resolve the issue, which is why the EDM Tool includes ‘act’ as the final step needed to resolve ethical dilemmas.</p>"
+			  }
+			]
+		  }
+		}
+	  }
+    }
+}

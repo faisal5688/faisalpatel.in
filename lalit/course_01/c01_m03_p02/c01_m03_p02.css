@@ -1,0 +1,65 @@
+@charset "utf-8";
+
+/* CSS Document */
+
+.page_title {
+    padding: 16px 16px 16px 0
+}
+
+.colorText {
+    font-weight: bold;
+    color: #4d2278;
+}
+
+.TextRightContainer .textCont {
+    position: relative;
+}
+
+.mainContent .section {
+    display: none;
+}
+
+.mainsection {
+    overflow: hidden;
+    max-height: 452px;
+}
+
+.ImageTextContainer .imageCont {
+    align-self: flex-start;
+    width: 84%;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.TextRightContainer .textCont {
+    order: 2;
+    width: 47%;
+}
+.section1{
+	background:url(c01_m03_p02_01.jpg)no-repeat;
+	width:869px;
+	height:465px;
+}
+.section2{
+	background:url(c01_m03_p02_02.jpg)no-repeat;
+	width:869px;
+	height:465px;
+}
+.section3{
+	background:url(c01_m03_p02_03.jpg)no-repeat;
+	width:869px;
+	height:465px;
+}
+.section4{
+	background:url(c01_m03_p02_04.jpg)no-repeat;
+	width:869px;
+	height:465px;
+}
+
+p.footNote {
+    width: 100%;
+    text-align: center;
+    font-size: 11px;
+    margin-top: 6px;
+    color: #000;
+}

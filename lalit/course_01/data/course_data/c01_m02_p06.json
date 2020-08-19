@@ -1,0 +1,60 @@
+﻿{
+    "data": {
+        "audio": "",
+        "scenarioText": "",
+
+        "question": "<p>There are four common reasons people choose not to speak up when faced with an ethical dilemma. Which of the reasons best aligns with this statement: “I don’t know if I have the competence and confidence to speak up about ethical issues when they arise.”</p>",
+        "instructionText": "<p>Select the best response and click <b>Submit</b>.</p>",
+        "downloadAndroidImages": "",
+        "downloadImages": "../../assets/images/kc_rightimg.png,../images/kc_assets1.png",
+        "MCQ": {
+            "responseType": "specific",
+            "maxAttempts": "1",
+            "correctAnswer": "4",
+            "options": {
+                "option": [
+                    "<span class='optno'>A.</span> Fear",
+                    "<span class='optno'>B.</span> Rationalization",
+                    "<span class='optno'>C.</span> Response",
+                    "<span class='optno'>D.</span> Skill"
+                ]
+            },
+            "feedback": {
+                "genericResponse": {
+                    "incorrect": {
+                        "audio": "",
+                        "content": ""
+                    },
+                    "solution": {
+                        "audio": "",
+                        "content": ""
+                    },
+                    "correct": {
+                        "audio": "",
+                        "content": "That is correct."
+                    }
+                },
+                "specificResponse": {
+                    "response": [{
+                            "audio": "blank",
+                            "content": "<p><b>That is incorrect.</b>  Fear is better described by the statement “I am afraid of what will happen if I speak up and raise a concern.”</p>"
+                        },
+                        {
+                            "audio": "blank",
+                            "content": "<p><b>That is incorrect.</b> Rationalization is better described by the statement, “I have reasons and rationalizations to explain why I’m not speaking up or acting on my values.” </p>"
+                        },
+                        {
+                            "audio": "blank",
+                            "content": "<p><b>That is incorrect.</b> Response is the perspective that “I’m only going to speak up if I think I will be successful in resolving my concern.”</p>"
+                        },
+                        {
+                            "audio": "blank",
+                            "content": "<p><b>That is correct.</b>  Skill is about questioning whether you have the competence and confidence to speak up about ethical issues when they arise.</p>",
+							"showAnswer":"<p><b>The correct answer is D.</b> Skill is about questioning whether you have the competence and confidence to speak up about ethical issues when they arise.</p>"
+                        }
+                    ]
+                }
+            }
+        }
+    }
+}

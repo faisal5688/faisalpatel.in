@@ -1,0 +1,58 @@
+﻿{
+    "data": {
+        "audio": "",
+        "scenarioText": "",
+        "question": "<p>In the experiment described in the previous film clip, participants completed a difficult multiple choice test. Some were shown the answers and they did very well on the test. When those same participants then took a similar test with no answers provided, and they were asked to estimate how many answers they got right, what happened?</p>",
+        "instructionText": "<p>Select the best response and click <b>Submit</b>.</p>",
+        "downloadAndroidImages": "",
+        "downloadImages": "../../assets/images/kc_rightimg.png,../images/kc_assets1.png",
+        "MCQ": {
+            "responseType": "specific",
+            "maxAttempts": "1",
+            "correctAnswer": "2",
+            "options": {
+                "option": [
+                    "<span class='optno'>A.</span> Participants estimated that they would not do well on the new test because it was hard.",
+                    "<span class='optno'>B.</span> Participants did not self-correct at all for having access to the answers on the first test, and they assumed that they would get many more right than they actually did.",
+                    "<span class='optno'>C.</span> Participants understood that the answers provided for the first test had helped them tremendously and corrected for that in their estimates, stating that they would not get many answers correct on the second test.",
+                    "<span class='optno'>D.</span> Participants assumed that they became much better test takers as a result of the first test and estimated that they would get a perfect score on the second test."
+                ]
+            },
+            "feedback": {
+                "genericResponse": {
+                    "incorrect": {
+                        "audio": "",
+                        "content": ""
+                    },
+                    "solution": {
+                        "audio": "",
+                        "content": ""
+                    },
+                    "correct": {
+                        "audio": "",
+                        "content": "That is correct."
+                    }
+                },
+                "specificResponse": {
+                    "response": [{
+                            "audio": "blank",
+                            "content": "<p><b>A is incorrect.</b> Participants deceived themselves into thinking that they are great test takers, and went into the new test with unrealistic confidence.</p>"
+                        },
+                        {
+                            "audio": "blank",
+                            "content": "<p><b>B is correct.</b> Participants did not self-correct at all. Based on the results of their first test, they deceived themselves into thinking that they are amazing test takers.</p>"
+                        },
+                        {
+                            "audio": "blank",
+                            "content": "<p><b>C is incorrect.</b> Going into the second test, participants did not take into consideration that being provided the answers for the first test had helped them tremendously. Instead, they deceive themselves into thinking that they are strong test takers and they will do as well on the second test.</p>"
+                        },
+                        {
+                            "audio": "blank",
+                            "content": "<p><b>D is incorrect.</b> Participants deceived themselves into believing that they did not use the answers on the first test, and that they are now great test takers. However, they estimated that they would perform as well on the second test, not that they would get a perfect score.</p>"
+                        }
+                    ]
+                }
+            }
+        }
+    }
+}

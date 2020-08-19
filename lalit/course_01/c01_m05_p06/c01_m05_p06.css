@@ -1,0 +1,490 @@
+/* Drag - Drop */
+
+.clear {
+    clear: both;
+}
+
+.pageContentwraper {
+    width: 85%;
+    max-width: 860px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.questionText {
+    padding-left: 0;
+    margin-bottom: 16px;
+    position: relative;
+    color: #470a68;
+}
+
+/* .questionText::before {
+    content: "Q.";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 34px;
+    height: 34px;
+    text-align: center;
+    line-height: 30px;
+    font-size: 40px;
+    color: inherit;
+} */
+
+.questionText p.queText {
+    color: inherit;
+}
+
+.questionText p:not(:last-child) {
+    margin-bottom: 15px;
+}
+
+.questionText p.instText {
+    color: #e4801b;
+}
+
+.tempFeedback {
+    display: none;
+}
+
+.dragDropWrap {
+    max-width: 100%;
+    margin: 0 auto;
+    position: relative;
+    padding-left: 0;
+}
+.dragDropWrap .innerContent {
+    min-height: 320px;
+    position: relative;
+}
+
+.lftColumn {
+    float: right;
+    width: 380px;
+    min-height: 320px;
+}
+
+.lftColumn .title {
+    background: #6c2078;
+    color: #fff;
+    font-weight: bold;
+    width: 100%;
+    min-height: 18px;
+    /* line-height: 47px; */
+    padding: 8px 10px;
+    box-sizing: border-box;
+    text-align: center;
+    text-align: left;
+    padding-left: 15px;
+}
+
+
+/* .lftColumn .info, */
+
+.dragItem {
+    /* float: left; */
+    width: 100%;
+    margin: 6px 0px 4px;
+    position: relative;
+    border: solid 1px #646363;
+    background: #fff;
+    box-sizing: border-box;
+}
+
+.opacity {
+    opacity: 0.4;
+    filter: alpha(opacity=40) !important;
+    /*  -ms-filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=30) !important; */
+}
+
+.dragItem.active {
+    cursor: move;
+}
+
+.dragItem.disabled {
+    cursor: default;
+}
+
+.dragItem img {
+    width: auto;
+}
+
+.dragItem .textStripe {
+    display: table;
+    width: 100%;
+    height: auto;
+    left: 0;
+    position: relative;
+    height: auto;
+    padding: 6px 10px 6px 6px;
+    width: auto;
+}
+
+.dragItem .textStripe span {
+    display: table-cell;
+    width: 100%;
+    height: auto;
+    font: 15px/16px Arial;
+    color: #000;
+    vertical-align: middle;
+    padding: 0 4px;
+    background: #fff;
+    box-sizing: border-box;
+}
+
+.rhtColumn {
+    float: left;
+    min-height: 284px;
+    max-width: 498px;
+    /* padding: 0 8px; */
+    /* background: #D9D9D9; */
+}
+
+.rhtColumn .title {
+    float: left;
+    width: 50%;
+    max-width: 246px;
+    min-height: 48px;
+    line-height: 48px;
+    background: #007dba;
+    color: #fff;
+    font-weight: bold;
+    box-sizing: border-box;
+    /*    text-align: center; */
+    text-align: left;
+    padding-left: 15px;
+}
+
+.rhtColumn .title.title2 {
+    background: #006298;
+    margin-left: 3px;
+}
+
+.rhtColumn .dropWrap {
+    float: left;
+    width: 415px;
+    min-height: 284px;
+    /* margin: 8px; */
+    margin-bottom: 2px;
+    border: solid 1px #007dba;
+    background: #FFF;
+    box-sizing: border-box;
+    position: relative;
+}
+.rhtColumn .dropWrap#dropHolder2 {
+    margin-left: 3px;
+    border: solid 1px #006298;
+}
+
+.rhtColumn .dropWrap .dragItem {
+    border: solid 1px #006298;
+}
+
+.dropWrap .title {
+    font: bold 14px/24px Arial;
+    color: #FFF;
+    text-align: center;
+    background: #333;
+}
+
+.dropWrap .dragItem {
+    float: none;
+    margin: 3px;
+    border: solid 1px #007dba;
+    height: auto;
+    width: auto;
+}
+
+.dragDropWrap .showAnswerBtn,
+.dragDropWrap .submitBtn {
+    position: relative;
+    display: inline-block;
+    top: -36px;
+}
+
+.dragDropWrap .submitBtn input[type="button"],
+.dragDropWrap .showAnswerBtn input[type="button"] {
+    /* background-color: #470a68; */
+    height: auto;
+    padding: 4px;
+    margin: 0;
+}
+
+.feedbackWrap {
+    display: none;
+    width: 500px;
+    height: 100px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: rgba(255, 255, 255, 0.2);
+    z-index: 3;
+    color: #333;
+}
+
+.feedbackWrap .contentSec {
+    color: #333;
+    background: #fff;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.feedbackWrap .row {
+    overflow: hidden;
+    color: #FFF;
+    border-bottom: solid 1px #d17c1f;
+}
+
+.feedbackWrap .row:last-child {
+    margin: 0;
+    border: none;
+    width: 100%;
+    height: 100%;
+}
+
+.feedbackWrap .row .imgBlock {
+    float: left;
+}
+
+.feedbackWrap .row .imgBlock img {
+    width: 63px;
+    height: 63px;
+    margin: 3px 8px 0;
+    border: solid 1px #767676;
+}
+
+.feedbackWrap .row .txtBlock {
+    /* padding: 0 8px 0 81px; */
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.feedbackWrap .row .txtBlock .ttl {
+    font: bold 16px/16px Arial;
+    color: #fff;
+    padding: 8px 10px 8px;
+    background: #470a68;
+    box-sizing: border-box;
+    min-height: 32px;
+}
+
+.feedbackWrap .row .txtBlock .feedbackTxt {
+    font: 16px/16px Arial;
+    padding: 15px 10px;
+    color: #333;
+    height: calc(100% - 32px);
+    box-sizing: border-box;
+    border: 2px solid #470a68;
+}
+
+.feedbackTxt p {
+    margin-bottom: 6px;
+    line-height: 18px;
+}
+
+.submitBtn input[type='button'],
+.submitBtn button{
+    min-width: 415px;
+    font: 16px/24px arial;
+    font-weight: normal;
+}
+
+/* iPads (portrait) */
+
+
+/*Note8 Potrait Orientation Start*/
+
+@media screen and (max-device-width:800px) and (max-device-height:1280px) and (device-aspect-ratio: 5/8) {
+    .item {
+        top: 0 !important;
+    }
+
+    .dragDropWrap .innerContent {
+        margin: 0;
+    }
+
+    .dragDropWrap {
+        min-height: 700px;
+        max-width: inherit;
+        padding: 0;
+        margin-top: 10px;
+        margin-left: 62px;
+        margin-right: 47px;
+    }
+
+    .lftColumn {
+        min-height: 292px;
+        padding: 11px 8px;
+        width: 435px;
+    }
+
+    .dragItem {
+        margin: 0 4px 5px;
+    }
+
+    .rhtColumn {
+        float: left;
+        min-height: 340px;
+        margin-top: 1px;
+        padding: 0 8px;
+        width: 435px;
+    }
+
+    .rhtColumn .dropWrap {
+        margin: 4px 0 0;
+        min-height: 158px;
+        width: 100%;
+    }
+
+    .dragDropWrap .showAnswerBtn,
+    .dragDropWrap .submitBtn {
+        bottom: 6px;
+        position: absolute;
+        left: 0px;
+    }
+
+    .dragDropWrap .showAnswerBtn {
+        left: 100px;
+    }
+
+    .dropWrap .dragItem {
+        float: left;
+        margin: 1px;
+    }
+
+    .feedbackWrap {
+        width: 438px;
+        height: 300px;
+        margin-left: 8px;
+        z-index: 10001;
+    }
+}
+
+
+/*Note8 Lansacpe Orientation Start*/
+
+@media screen and (max-device-width:1280px) and (max-device-height:800px) and (device-aspect-ratio: 8/5) {
+    .dragDropWrap .innerContent {
+        margin: 0;
+        min-height: 200px;
+    }
+
+    .dragDropWrap {
+        height: 396px;
+        max-width: inherit;
+        padding: 0;
+        margin-top: 5px;
+        margin-left: 17px;
+        margin-right: 47px;
+    }
+
+    .lftColumn {
+        float: right;
+        width: 375px;
+        min-height: 320px;
+    }
+
+    .dragItem {
+        margin: 0 4px 5px;
+    }
+
+    .rhtColumn {
+        float: right;
+        min-height: 348px;
+        margin-left: 1px;
+        padding: 0 8px;
+        width: 429px;
+    }
+
+    .rhtColumn .dropWrap {
+        margin: 4px 0 0;
+        min-height: 158px;
+        width: 100%;
+    }
+
+    .dragDropWrap .showAnswerBtn,
+    .dragDropWrap .submitBtn {
+        bottom: 17px;
+        position: absolute;
+        right: 363px;
+    }
+
+    .dragDropWrap .showAnswerBtn {
+        right: 263px;
+    }
+
+    .dropWrap .dragItem {
+        float: left;
+        margin: 1px;
+    }
+
+    .feedbackWrap {
+        width: 438px;
+        height: 332px;
+        padding-bottom: 10px;
+        top: 5px;
+        margin-left: 8px;
+        z-index: 10001;
+    }
+}
+
+.dropWrap .dragItem.correct {
+    border-color: #8dc63f;
+}
+
+.dropWrap .dragItem.correct .textStripe::after {
+    content: "";
+    width: 20px;
+    height: 20px;
+    background: url(../../assets/images/correct.png) no-repeat;
+    background-position: center center;
+    position: absolute;
+    right: 5px;
+    z-index: 1;
+    /* border: 1px solid red; */
+    top: 0;
+    right: 0;
+    background-size: 80%;
+}
+
+.dropWrap .dragItem.incorrect {
+    border-color: #b5101c;
+}
+
+.dropWrap .dragItem.incorrect .textStripe::after {
+    content: "";
+    width: 20px;
+    height: 20px;
+    background: url(../../assets/images/incorrect.png) no-repeat;
+    background-position: center center;
+    position: absolute;
+    right: 5px;
+    z-index: 1;
+    /* border: 1px solid red; */
+    top: 0;
+    right: 0;
+    background-size: 80%;
+}
+
+.closeIcon {
+    right: 4px;
+    top: 4px;
+}
+
+#dndFeedbackContent #label {
+    cursor: move;
+}
+
+.imgWrapper {
+    position: absolute;
+    background: url(c01_m05_p06.jpg) no-repeat;
+    background-position: 0 0;
+    width: 100%;
+    height: 405px;
+    display: block;
+    left: 0;
+    top: 70px;
+    z-index: 1;
+}

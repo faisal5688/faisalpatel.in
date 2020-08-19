@@ -1,0 +1,14 @@
+[{
+    "setting": {
+        "baseURL": "",
+        "dataURL": "/data/",
+        "videoURL": "/media/video/",
+        "swfURL": "/media/swf/",
+        "imageURL": "/images/",
+        "audioURL": "/media/audio/",
+        "assessmentURL": "/data/assessment/",
+        "courseDataType": "json",
+        "retinaImageUrl": "/images/",
+        "courseAudio": "blank,blank,blank,c01_m00_p06,blank,c01_m01_p02,c01_m01_p03,c01_m01_p04,c01_m02_p01,blank,blank,c01_m02_p05,blank,c01_m03_p01_1,c01_m03_p02,blank,c01_m03_p04,blank,c01_m03_p05,c01_m03_p06,c01_m03_p07,c01_m04_p01,c01_m04_p02,c01_m04_p03,blank,c01_m04_p02_1,c01_m04_p04,c01_m04_p05,c01_m04_p08,c01_m05_p01_1,c01_m05_p03,blank,blank,blank,blank,c01_m05_p07,blank"
+    }
+}]

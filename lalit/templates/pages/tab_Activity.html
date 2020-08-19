@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html" charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+<title>Tab with Activity</title>
+<link rel="stylesheet" href="assets/css/templates/tabActivity2.css">
+<link rel="stylesheet" href="" changetheme='true'>
+
+<script src="js/controller/Templates/common/Feedback_Overlay.js"></script>
+<script src="js/controller/Templates/common/SubmitButton.js"></script>
+<script src="js/controller/Templates/ClickNLearn/TabActivityController.js"></script>
+<script>
+	var tabData = {};
+	$(function(){	  
+	   tabData = JSONParser.parseTabData(DataManager.templateXMLData);              	   
+       TabObj.initTabs(tabData);
+	});	
+</script>
+</head>
+<body>
+
+<div class="wrapper">	
+	<section class="mainContent">
+		<div id="tabContainer" class="tabsWrap">
+			<div class="infoSec">Click each tab to learn more.</div>
+			<div id="tabHolder" class="tabsHolder">
+				<ul class="tabsNav"></ul>
+				<div id="blockPanel" class="tabsPanel"></div>
+			</div>
+			
+			<li class="tempTab"><a href="#tab_1">Tab - 1</a><div id="tab_act_tick1"></div></li>
+			<div id="tab_1" class="tempTabPanel tabsPanel"></div>
+			<div id="feedbackOverlay" class="feedbackOverlay"/>
+			<div id="tabFeedbackBox" class="feedBackPopup">
+				<div class="feedBackContent">
+					<div id="feedbackHeader" class="titleTxt">
+						<span>Feedback</span>
+						<div id="feedbackClose" class="popupClose"></div>
+					</div>
+					<div id="feedbackContent" class="feebackText">Feedback text will appear here</div>
+				</div>
+			</div>
+			<div class="clear"></div>
+		</div>
+		<div class="clear"></div>
+	</section>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<title>Click Hotspot</title>
+<link rel="stylesheet" href="assets/css/templates/cnl_v3.css">
+<link rel="stylesheet" href="" changetheme='true'>
+
+<script src="js/controller/Templates/ios-orientationchange-fix.min.js"></script>
+<script src="js/controller/Templates/ClickNLearn/Click_Hotspot_02.js"></script>
+<script src="libs/core/jquery.rwdImageMaps.min.js"></script>
+<script>
+
+	$(function(){
+		Click_Hotspot_02.init(DataManager.templateXMLData);
+	});
+	</script>
+</head>
+
+<body>
+	<div class="wrapper">
+	
+	
+	<section class="mainContent">
+	<div>
+
+		<img src="assets/images/slide_17.jpg" width="855" height="515" border="0" usemap="#Map" />
+		<map name="Map" id="Map">
+
+			<area alt="1st" href="#" coords="125,195,506,289" shape="rect" id="1">
+			<area shape="poly" coords="542,135,575,163,542,169,567,184,544,200,585,197,578,216,602,212,603,239,620,201,647,228,650,204,684,222,673,193,705,196,681,180,705,168,683,146,647,146,653,121,622,145,603,134,597,149" href="#"  alt="2nd" id="2"/>
+
+		</map>
+
+	</div>
+
+	
+	</section>	
+	<div id="popupContainer" class="clickIntOverlay">
+		<div class="clickIntPopup">
+			<div class="clickIntHeader">
+				<span id="areaPopupHeader" class="clickIntHeadTxt">Heading</span>
+				<span id="areaPopupClose" class="clickIntClose"><img src="../../assets/images/clickIntClose.png" /></span>
+			</div>
+			<div id="areaPopupContent" class="clickIntpopupTxt">
+				<p>popup Content will appear here</p>
+			</div>
+		</div>
+	</div>	
+
+
+</body>
+</html>

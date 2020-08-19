@@ -1,0 +1,191 @@
+sup {font-size:xx-small; vertical-align:super;}
+
+/* MCSS / MCMS */
+.cloneOption, .hiddenOption{
+	display: none;
+}
+.list_alpha{
+	float:left;
+	height:auto !important;
+	margin-right:5px;
+}
+.que_listing li{
+	margin-bottom:9px;
+}
+.mcssWrap{
+ max-width: 85%; 
+/*     max-width: 928px; */
+	margin: 0 auto;
+	padding: 0;
+	font-size: 13px;
+	position: relative;
+}
+.questSec p{
+	margin-bottom:10px;
+}
+.mcssWrap .scenarioTxt{
+    /*margin-top: 26px;*/
+	color: #E88729;
+    font-size: 22px;
+    text-align: center;
+}
+.mcmsContainer{
+    margin: 55px 0 0;
+	position:relative;
+}
+#mcmsHolder .mcmsContainer{
+	margin:0;
+}
+.mcssQuestion{
+    width: 100%;
+    min-height: 88px;
+    color: #FFF;
+    position: relative;
+    background: #262628;
+}
+.mcssQuestion .imgSec{
+    width: 72px;
+    height: 88px;
+    float: left;
+    color: #FFF;
+    text-align: center;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.mcssQuestion .questStatus{
+	font:12px/normal Arial;
+}
+.mcssQuestion .questSec{
+	min-height: 68px;
+	padding: 10px 0;
+	border-left: 72px solid #3C3C3E;
+}
+.mcssQuestion .questSec .question{	
+    height: 68px;
+    display: table-cell;
+    font: 16px/18px Arial;
+    color: #FFF;
+    padding: 0 8px 0 20px;
+    vertical-align: middle;	
+	font-weight:bold;	
+}
+.optionContainer{
+    width: 100%;
+}
+.optionContainer .row{
+	position: relative;
+}
+.optionIcons{
+	float: left;
+    width: 72px;
+    height: 48px;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+.tickIco {
+    display: block;
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    top: 15px;
+    left: 9px;
+    background: url(../../images/kc_assets.png) no-repeat -106px -26px;
+}
+.tickIco.mcssTick {
+	background-position: -106px -26px;
+}
+.tickIco.mcssCross {
+    background-position: -153px -26px;
+}
+.optionIcons .checkBox, .optionIcons .radio {
+    width: 18px;
+    height: 18px;
+    margin: 16px 0 0 38px;
+    position: absolute;
+    cursor: pointer;
+    background: url(../../images/kc_assets.png) no-repeat -22px -51px;
+}
+.optionIcons .checkBox.MCMSbulletPointsSelected{
+	background-position: -57px -51px;
+}
+
+.optionIcons .checkBox.MCMSBulletPointsDisabled{
+	cursor:default;
+}
+.optionIcons .radio{
+	background-position: -22px -24px;	
+}
+.optionIcons .radio.MCSSbulletPointsSelected{
+	background-position: -57px -24px;	
+	cursor:default;
+}
+.optionIcons .radio.MCSSbulletPointsDisable{
+	cursor:default;
+}
+
+.optionText{
+    min-height: 34px;
+    margin: 1px 0;
+    padding: 7px 20px;
+	font: 15px/18px Arial;
+	border-left: solid 72px #5C5E4E;
+	background: #B9BD9C;
+}
+.optionText .txt{
+	display:table;
+}
+.optionText .txt span{
+	display:table-cell;
+
+	height:auto;
+	vertical-align:middle;
+}
+.mcssInstruction {
+    height: 35px;
+    font:15px/32px Arial;
+    color: #E4811B;
+    padding: 0 0 0 20px;
+	margin: 0 0 1px;
+    position: relative;
+    background-color: #262628;
+}
+.floatlft{
+    float: left;	
+}
+.floatRht{
+    float: right;
+}
+
+/* for Note 8 landscape*/
+@media only screen and (min-device-width : 800px) and (max-device-width : 1280px) and (device-aspect-ratio : 8/5) and (-webkit-min-device-pixel-ratio : 1.33) and (orientation : landscape){
+.mcssWrap{width:90%;
+	margin-top:3px;}
+.mcssQuestion .questSec .question{
+	font:16px/20px Arial;
+}
+#mcmsHolder .mcmsContainer{ margin:20px 0 0;}
+.mcmsContainer{ margin: 10px 0 0;}
+.mcssWrap .scenarioTxt{margin: 1px 0px 0px 0px;}
+/*.feedBackContent {right: -282px;top: -263px;}*/
+}
+
+/* for Note 8 Portrait*/
+@media only screen and (min-device-width : 800px) and (max-device-width : 1280px) and (device-aspect-ratio : 5/8) and (-webkit-min-device-pixel-ratio : 1.33) and (orientation : portrait){
+.mcssWrap{max-width:88%;
+	margin-top:20%;}
+
+.mcssInstruction{
+	height:auto;
+	font:15px/18px Arial;
+	padding:5px 20px;
+}
+.mcmsContainer{ margin: 15px 0 0;}
+.mcssWrap .scenarioTxt{ margin-top: 26px;}
+#div_11{top: 0px !important;}
+#div_12{top: 7px !important;}
+/* .feedBackContent { right: -7px; top: 1px;} */
+
+}
+

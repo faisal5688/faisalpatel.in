@@ -1,0 +1,41 @@
+{
+    "data": {
+        "basePath": "./course_01/c01_m05_p01_1/",
+        "audios": [{
+                "path": "c01_m05_p01_1"
+            },
+            {
+                "path": "c01_m05_p01_1_01",
+                "isPopup": true
+            },
+            {
+                "path": "c01_m05_p01_1_02",
+                "isPopup": true
+            },
+            {
+                "path": "c01_m05_p01_1_03",
+                "isPopup": true
+            }
+        ],
+        "downloadAndroidImages": "",
+        "downloadIpadImages": "",
+        "downloadImages": "c01_m05_p01_1_img1.jpg,c01_m05_p01_1_img2.jpg,c01_m05_p01_1_img3.jpg,c01_m05_p01_1_img1_popup_img_1.jpg,c01_m05_p01_1_img1_popup_img_2.jpg,c01_m05_p01_1_img1_popup_img_3.jpg,comaaonClose.png",
+        "content": {
+            "backgroundAudio": "blank.mp3",
+            "ins_text": "<p class='InstrutationText'>Click on each of the last three pillars to review these elements of the GVV methodology.</p>",
+            "click_1": "<span class='ptext'>SELF KNOWLEDGE</span>",
+            "click_2": "<span class='ptext'>VOICE</span>",
+            "click_3": "<span class='ptext'>REASONS AND RATIONALIZATION</span>",
+            "click_1_text": "<div class='popupContentParent popup_1'> <div class='closeBtn'></div><div class='popup_title'>Self knowledge</div><div class='popup_content'><p>The Self-Knowledge pillar offers the chance to explore your own strengths, styles, enablers, and disablers so that you can leverage them more intentionally when facing values conflicts.</p><p class='popup_inst'>Click <b>X</b> to close the popup.</p></div></div>",
+
+            "click_2_text": "<div class='popupContentParent popup_2'> <div class='closeBtn'></div><div class='popup_title'>Voice</div><div class='popup_content'><p>The Voice pillar will provide you with the opportunity to create scripts for common pressures and conflicts so you can practice addressing them before they arise. It will also give you the chance to offer and receive peer coaching to strengthen and refine your skills. We know that those who effectively speak up to address ethical issues in the moment have often had the chance to practice what they’d do in advance.</p><p class='popup_inst'>Click <b>X</b> to close the popup.</p></div></div>",
+
+            "click_3_text": "<div class='popupContentParent popup_3'> <div class='closeBtn'></div><div class='popup_title'>Reasons and Rationalization</div><div class='popup_content'><p>In learning about the Reasons and Rationalizations pillar, you will be asked to brainstorm the most common counter arguments that people will give to your script so you can plan ahead on how you will address those arguments when you speak up. You’ll find there are common reasons and rationalizations, and anticipating how you’ll address them will strengthen your ability to speak up when others ask you to act in a way that does not reflect your values.</p><p class='popup_inst'>Click <b>X</b> to close the popup.</p></div></div>",
+
+            "transcript_1": "<p>The Self-Knowledge pillar offers the chance to explore your own strengths, styles, enablers, and disablers so that you can leverage them more intentionally when facing values conflicts.</p>",
+            "transcript_2": "<p>The Voice pillar will provide you with the opportunity to create scripts for common pressures and conflicts so you can practice addressing them before they arise. It will also give you the chance to offer and receive peer coaching to strengthen and refine your skills. We know that those who effectively speak up to address ethical issues in the moment have often had the chance to practice what they’d do in advance.</p>",
+            "transcript_3": "<p>In learning about the Reasons and Rationalizations pillar, you will be asked to brainstorm the most common counter arguments that people will give to your script so you can plan ahead on how you will address those arguments when you speak up. You’ll find there are common reasons and rationalizations, and anticipating how you’ll address them will strengthen your ability to speak up when others ask you to act in a way that does not reflect your values.</p>"
+
+        }
+    }
+}

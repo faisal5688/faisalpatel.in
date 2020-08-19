@@ -1,0 +1,184 @@
+/* Tabs */
+.headTxt{
+	font:bold 16px/normal Arial;
+	margin:0 0 12px;
+}
+.infoSec, .instructionTxt p{
+	float:none;
+	font: 15px/normal Arial;
+	color:#e4801b;
+	margin: 0 0 2px;
+	padding:7px 10px;
+	background:#020202;
+}
+.txtSection{
+	margin:0;
+	position:absolute;
+	top:16px;
+	left:16px;
+}
+.contHolder{
+	margin:0;
+	overflow:hidden;
+}
+.contHolder .imgSection{
+	float:left;
+	width:50%;
+	margin:36px 0 0;
+}
+.contHolder .imgSection img{
+	max-width:100%;
+	height:auto;
+}
+.contHolder .dataSection, .contHolder .dataSection p, .txtSection{	
+	font:normal 15px/18px Arial;
+}
+.contHolder .dataSection{
+	float:right;	
+	width:50%;
+	margin:85px 0 0;
+}
+.contHolder .dataSection p{
+	margin:0;
+	padding:3px 11px 4px;	
+}
+.dataTtl{
+	font-weight:bold;
+	color:#FFF;
+	padding:4px 11px;
+	background:#004e96;
+}
+.innerCont{
+	overflow:hidden;
+	border:solid 1px #004e96;
+	border-top:none;
+	border-bottom-width:3px;
+}
+.row{
+	overflow:hidden;
+	border-top:solid 1px #004e96;
+	background:#e0e0e2;
+}
+.lftCol{
+	float:left;
+	width:75%;
+}
+.rhtCol{
+	float:right;
+	width:25%;
+	text-align:center;
+}
+.rhtCol p{
+	border-left:solid 1px #004e96;
+}
+.rhtCol p em{
+    position: relative;
+    left: -10px;
+}
+.seperator{
+	height:15px;
+	position:relative;
+	bottom:-1px;
+	background:#fff;
+}
+.tabsPanel{
+    clear: both;
+    max-width: 100%;
+    min-height: 354px;
+    padding:16px;
+	position:relative;
+	border:solid 1px #e3801b;
+	background: url(../../images/tabs_panel_bg.png) repeat-x 0 bottom #f2f2f3;
+}
+
+
+.tempTab, .tempTabPanel{
+	display:none;
+}
+
+.tabsWrap{
+	max-width:85%;
+	margin:0 auto;
+	padding:0;
+}
+.tabsHolder{
+	clear:both;
+}
+ul.tabsNav{
+	overflow:hidden;
+}
+ul.tabsNav li{
+    float: left;
+    list-style-type: none;
+    position: relative;
+}
+ul.tabsNav li a{
+    height: 25px;
+    padding: 0 0 4px;
+	margin: 0 2px 0 0;
+    text-align: center;
+    font: bold 16px/24px Arial;
+    color: #FFF;
+    display: block;
+	border-top: 5px solid transparent;
+    background: #01a1b9;	
+}
+ul.tabsNav li:last-child, ul.tabsNav li:last-child a{
+	margin:0;
+}
+ul.tabsNav li.ui-tabs-active {
+    border:none;
+}
+ul.tabsNav li.ui-tabs-active a{
+    color: #FFF;
+	cursor:default;
+    background: #e2801c;
+}
+ul.tabsNav li a.tab-visited{
+	border-top-color: green;
+}
+ul.tabsNav li.ui-state-disabled a{
+	background:#aaa9ae;
+	color:#dddddf;
+	cursor:default !important;
+}
+
+.cnl_v2_tickShow{
+	float:right;
+    height: 20px;
+    position: absolute;
+    right: 3px;
+    top: 2px;
+    width: 20px;
+	background: url(../../images/kc_assets.png) no-repeat -106px -26px;
+}
+
+/* for Note 8 landscape*/
+@media only screen and (min-device-width : 800px) and (max-device-width : 1280px) and (device-aspect-ratio : 8/5) and (-webkit-min-device-pixel-ratio : 1.33) and (orientation : landscape){
+.tabsPanel{ min-width:150px; padding:5px 10px 5px;} 
+.fillBlanksContent{ padding:0 0 5px;}
+.tabsWrap{
+	margin:10px auto 0;
+}
+.cnl_v2_Wrap{max-width:85%}
+ul.cnl_v2_Nav li{ margin: 0 1px 0 0;}
+.infoSec, .instructionTxt p {    font: 15px/33px Arial;}
+
+}
+
+/* for Note 8 Portrait*/
+@media only screen and (min-device-width : 800px) and (max-device-width : 1280px) and (device-aspect-ratio : 5/8) and (-webkit-min-device-pixel-ratio : 1.33) and (orientation : portrait){
+ul.tabsNav li a{
+	min-width:0;
+}
+.tabsWrap{
+	margin:14% auto 0;
+}
+.cnl_v2_Wrap { 
+max-width: 85%;
+}
+.cnl_v2_tickShow{
+	top:0;
+	right:3px;
+}
+}

@@ -1,0 +1,21 @@
+{
+    "data": {
+        "basePath": "./course_01/c01_m00_p03/",
+        "audio": {
+            "path": "course_01/c01_m00_p03/c01_m00_p03",
+            "isAbsolute": true
+        },
+        "downloadAndroidImages": "",
+        "downloadIpadImages": "",
+        "downloadImages": "",
+        "image": {
+            "use_image_tag": "false",
+            "desktop": "",
+            "ipad": {
+                "landscape": "",
+                "portrait": ""
+            }
+        },
+        "content": " <div class='mainCont'> <div class='text-screen-wrapper'> <div class='Hbox_wraper Hbox1 timeLine timeLine_1'> <div class='icon_box icon1'> Course objectives </div><div class='text_box'> <p>At the conclusion of this course, you should be better able to:</p> <ul> <li>Describe what a Speak Up culture is and recognize factors that can get in the way</li>  <li>Recognize that we often know the right course of action to take but can still struggle to resolve ethical dilemmas in a way that reflects our values</li> <li>Recognize that values conflicts are a normal part of our personal and professional lives, and</li> <li>Determine conditions that empower us to effectively speak up and act on our values and those that tend to inhibit that action.</li> </ul> </div> </div> <div class='Hbox_wraper Hbox2 timeLine timeLine_2'> <div class='icon_box icon2'> Course agenda </div> <div class='text_box'> <p class='moduletext'>Module 1 – What is a Speak Up culture? </p><p class='moduletext'>Module 2 – Why is it hard to speak up?</p> <p class='moduletext'>Module 3 – How do I speak up and act on my values?</p> <p class='moduletext'>Module 4 – When have I spoken up and when haven’t I spoken up? </p> <p class='moduletext'>Module 5 – What Speak Up skills will I learn next? </p></div> </div> </div> <div class='clear'> </div> </div>"
+    }
+}

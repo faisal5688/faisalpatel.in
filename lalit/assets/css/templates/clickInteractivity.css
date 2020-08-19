@@ -1,0 +1,430 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* Click Interactivity */
+.clickIntHolder {
+	max-width:85%;
+	padding:0;
+	margin:0 auto
+}
+ul.itemList {
+	list-style:none;
+}
+.itemFirst {
+    width:25.4% !important;
+	max-width:25.4% !important;
+    color: #004E96;
+	cursor:default!important;
+    font: 14px/19px Arial;
+    vertical-align: middle;
+    border-left: 5px solid #E4801B;
+	background:#dad9d9 !important;
+	box-shadow:none !important;
+	box-shadow: none;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	-o-box-shadow: none;
+	-ms-box-shadow: none;
+	
+}
+.itemFirst p {
+    margin: 31% 5%;
+}
+.clickItem {
+	width:26%;
+	max-width:26%;
+	max-height:264px;
+	/* float:left; */
+	margin:2% 3.25%;
+	display:inline-block;
+	vertical-align:top;
+	background:#8da552;
+	
+	box-shadow: 1px 3px 2px 0px rgba(0, 0, 0, 0.3);	
+	-webkit-box-shadow: 1px 3px 2px 0px rgba(0, 0, 0, 0.3);
+	-moz-box-shadow: 1px 3px 2px 0px rgba(0, 0, 0, 0.3);
+	-o-box-shadow: 1px 3px 2px 0px rgba(0, 0, 0, 0.3);
+	-ms-box-shadow: 1px 3px 2px 0px rgba(0, 0, 0, 0.3);
+}
+.clickItem.hover{
+	background:#68bace;
+	cursor:pointer;
+}
+.clickItem.current{
+	background:#68bace;
+}
+
+/* .image:hover {
+	border-left:1px solid #3b6a75;
+	border-top:1px solid #3b6a75;
+	border-right:1px solid #b7ebf7;
+	border-bottom:1px solid #b7ebf7;
+} */
+.inneritem{
+ 	width:99%;
+	margin:1px;
+	border-left:1px solid #d5e7a7;
+	border-top:1px solid #d5e7a7;
+	border-right:1px solid #465229;
+	border-bottom:1px solid #465229;
+	display:table;
+}
+/* .inneritem:hover{
+	border-left:1px solid #b7ebf7;
+	border-top:1px solid #b7ebf7;
+} */
+.heading {
+    width: 100%;
+    height: 60px;
+    display: table;
+    font: 14px/18px Arial;
+    text-align: center;
+}
+.heading p {
+    padding: 0 20px;
+    display: table-cell;
+    vertical-align: middle;
+}
+.image {
+    margin:4px;
+	display:block;
+	border-top:1px solid #252c15;
+	border-left:1px solid #252c15;
+	border-bottom:1px solid #d5e7a7;
+	border-right:1px solid #d5e7a7;
+	position:relative;
+}
+.image > img{
+	width:100%;
+	display: block;
+}
+.imageZoom {
+	background:rgba(0, 0, 0, 0.8);
+    bottom: 0;
+    color: #E4801B;
+    font: bold 25px/13px arial;
+    height: 13px;
+    padding: 12px;
+    position: absolute;
+    right: 0;
+    width: 13px;
+}
+.imageZoom.visited{
+	color:#8DA552;
+}
+/* .imageZoom:hover {
+	background:rgba(0, 0, 0, 1);
+	color: #fff;
+	cursor:pointer;	
+} */
+/*.clickIntOverlay {
+	display:block;
+ 	width:100%;
+	height:100%;
+	position:absolute;
+	top:0;
+	left:0;
+	margin: 59px 0 0;
+	z-index:1;
+	background:url("../../../assets/images/cnl_overlay.png") repeat;
+}*/
+.clickIntPopup {
+    margin: -220px auto 0;
+    max-width: 40%;
+    position: relative;
+    top: 50%;
+    background:url("../../../assets/images/popupBg.png") repeat;
+}
+.clickIntHeader {
+	border-bottom: 1px solid #E4801B;
+    margin: 0 25px;
+	padding:20px 0;
+}
+.clickIntHeadTxt {
+    width: 85%;
+    height: 100%;
+    font-size: 16px;
+    color: #E4801B;
+    display: table;
+}
+.clickIntHeadTxt > p {
+    display: table-cell;
+    vertical-align: middle;
+}
+.clickIntClose {
+    cursor: pointer;
+    display: block;
+    height: 35px;
+    position: absolute;
+    right: 25px;
+    top: 13px;
+    width: 36px;
+	background:url("../../../assets/images/popup_buttons.png") no-repeat scroll -16px -76px;
+}
+.clickIntClose:hover, .clickIntClose.selected{
+	background:url("../../../assets/images/popup_buttons.png") no-repeat scroll -16px -112px;
+}
+.clickIntClose.disabled{
+	background:url("../../../assets/images/popup_buttons.png") no-repeat scroll -16px -148px;
+}
+.clickIntpopupTxt {
+    color: #FFF;
+    font-size: 14px;
+    margin: 25px 25px 0;
+    padding: 0 0 25px;
+}
+.clickIntpopupTxt .innerTxt{
+    height: 210px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    padding: 0 20px 0 0;
+}
+.innerTxt > li {
+    list-style-position: inside;
+}
+
+
+/* iPads (Landscape) */
+@media screen and (max-width: 1024px)
+{
+	.clickIntHolder {
+		max-width:712px;
+		padding:0;
+		margin:0 auto;
+	}
+	ul.itemList {
+		list-style:none;
+	}
+	.itemFirst {
+		background:#dad9d9;
+		border-left: 5px solid #E4801B;
+		color: #004E96;
+		float: left;
+		font: 14px/18px Arial;
+		height: 145px !important;
+		margin: 10px;
+		padding: 20px 20px 0 10px;
+		vertical-align: middle;
+		width: 181px !important;
+		max-width: inherit !important;
+	}
+	.itemFirst p {
+		margin: 0;
+	}
+	.clickItem {
+		width:216px;
+		height:165px;
+		max-width: inherit;
+		max-height:inherit;		
+		float:left;
+		margin:10px;
+		background:#8da552;
+		box-shadow: 1px 3px 2px 0px rgba(0, 0, 0, 0.3);	
+		-webkit-box-shadow: 1px 3px 2px 0px rgba(0, 0, 0, 0.3);
+		-moz-box-shadow: 1px 3px 2px 0px rgba(0, 0, 0, 0.3);
+		-o-box-shadow: 1px 3px 2px 0px rgba(0, 0, 0, 0.3);
+		-ms-box-shadow: 1px 3px 2px 0px rgba(0, 0, 0, 0.3);
+	}
+	.clickItem.hover{
+		background:#68bace;
+		cursor:pointer;
+	}
+	/* .image:hover {
+		border-left:1px solid #3b6a75;
+		border-top:1px solid #3b6a75;
+		border-right:1px solid #b7ebf7;
+		border-bottom:1px solid #b7ebf7;
+	} */
+	.inneritem{
+		width:212px;
+		margin:1px;
+		border-left:1px solid #d5e7a7;
+		border-top:1px solid #d5e7a7;
+		border-right:1px solid #465229;
+		border-bottom:1px solid #465229;
+		display:table;
+	}
+	/* .inneritem:hover{
+		border-left:1px solid #b7ebf7;
+		border-top:1px solid #b7ebf7;
+	} */
+	.heading {
+		display: table;
+		font: 14px/18px Arial;
+		height: 37px;
+		text-align: center;
+		width: 100%;
+	}
+	.heading p {
+		display:table-cell;
+		vertical-align:middle;
+	}
+	.image {
+		height: 115px;
+		margin:4px;
+		display:block;
+		border-top:1px solid #252c15;
+		border-left:1px solid #252c15;
+		border-bottom:1px solid #d5e7a7;
+		border-right:1px solid #d5e7a7;
+		position:relative;
+	}
+	.imageZoom {
+		background:rgba(0, 0, 0, 0.8);
+		bottom: 0;
+		color: #E4801B;
+		font: bold 25px/13px arial;
+		height: 13px;
+		padding: 12px;
+		position: absolute;
+		right: 0;
+		width: 13px;
+	}
+	.imageZoom.visited{
+		color:#8DA552;
+	}
+/* 	.imageZoom:hover {
+		background:rgba(0, 0, 0, 1);
+		color: #fff;
+		cursor:pointer;	
+	} 
+	.clickIntOverlay {
+		display:block;
+		width:100%;
+		height:100%;
+		background:rgba(0, 0, 0, 0.3);
+		position:absolute;
+		top:0;
+		left:0;
+		z-index:1;
+	}*/
+	.clickIntPopup {
+		max-width: 300px;
+	}
+	/*.clickIntPopup {
+		max-width: 400px;
+		margin:0 auto;
+		position: relative;
+		top: 50%;
+		background: rgba(0, 0, 0, 0.85);
+	}
+	.clickIntHeader {
+		width:100%;
+		min-height:40px;
+		border-bottom:1px solid #e4801b;
+		display:table;
+	}
+	.clickIntHeadTxt {
+		color: #E4801B;
+		display: table-cell;
+		font-size: 16px;
+		height: 30px;
+		text-align: center;
+		vertical-align: middle;
+		width:85%;
+	}
+	.clickIntClose {
+		display: table-cell;
+		height: 40px;
+		margin-right: 7px;
+		width:43px;
+		cursor:pointer;
+		float:right;
+	}
+	.clickIntpopupTxt {
+		padding:36px 27px;
+		color:#fff;
+		font-size: 14px;	
+	}*/
+
+	.clear{
+		clear:both;
+	}
+
+}
+/* iPads (Landsacpe) */
+@media screen and (max-width:1024px) and (orientation:landscape){
+	/*.inneritem{
+		width:100%;
+	}*/
+	.itemFirst{
+		height: 149px !important;
+	}
+	.clickItem{
+		height: 169px;
+	}
+	.image{
+		height:118px;
+	}
+}
+
+/* iPads (Portrait) */
+@media screen and (max-width: 768px)
+{	
+	.clickIntHolder {
+		max-width:472px !important;
+	}
+	/*.inneritem{
+		width:100%;
+	}*/
+	.itemFirst{
+		height: 149px !important;
+	}
+	.clickItem{
+		height: 169px;
+	}
+	.image{
+		height:118px;
+	}
+	/* .clickIntHolder {
+		padding:70px 0 0;
+	} */
+}
+
+
+/*Note8 Potrait Orientation Start*/
+@media only screen and (min-device-width : 800px) and (max-device-width : 1280px) and (device-aspect-ratio : 5/8) and (-webkit-min-device-pixel-ratio : 1.33) and (orientation : portrait){
+.clickIntHolder {
+	max-width:472px !important;
+	/* padding:30px 0 0; */
+	margin-top:13%;
+}
+.inneritem{
+ 	width:100%;
+}
+.itemFirst{
+	height: 148px !important;
+	max-width: inherit !important;
+}
+.clickItem{
+	height: 168px;
+	max-width: inherit;
+	margin:2%;
+}
+.image{
+	height:118px;
+}
+}
+
+/*Note8 Lansacpe Orientation Start*/
+@media only screen and (min-device-width : 800px) and (max-device-width : 1280px) and (device-aspect-ratio : 8/5) and (-webkit-min-device-pixel-ratio : 1.33) and (orientation : landscape){
+.clickIntHolder {
+	padding:0;
+	max-width:732px !important;
+}
+.inneritem{
+ 	width:100%;
+}
+.itemFirst{
+	height: 148px !important;
+	max-width: inherit !important;
+}
+.clickItem{
+	height: 168px;
+	max-width: inherit;
+	margin:2%;
+}
+.image{
+	height:118px;
+}
+}

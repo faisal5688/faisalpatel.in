@@ -1,0 +1,41 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html" charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+<title>Text Image template</title>
+<link rel="stylesheet" href="assets/css/templates/textImageTwoColumn.css">
+<link rel="stylesheet" href="" changetheme='true'>
+
+<script src="js/controller/Templates/TextImageTwoColumnController.js"></script>
+<script>	
+	var textImageData = {};	
+	$(function(){
+		textImageData = Parser.loadTextImageTwoColumnDataFn(DataManager.templateXMLData);	
+		TextImageObj.initTextSection(textImageData);		
+	});	
+</script>
+<style>
+.tempColumn{
+	display:none;
+}
+</style>
+</head>
+
+<body>
+	<div class="wrapper">	
+		<section class="mainContent">
+			<div id="textImageTwoColContainer" class="txtimgContainer">
+				<!-- <div id="imgHolder" class="imageHolder"></div> -->
+				<div id="columnContainer" class="columnContainer">
+					<div class="dataContainer tempColumn">
+						<div id="HeadingContainer" class="txtHeader"></div>
+						<div id="TextHolder" class="txtHolder"></div>
+					</div>				
+				</div>
+				<div class="clear"></div>
+			</div>
+		</section>	
+	</div>
+</body>
+</html>

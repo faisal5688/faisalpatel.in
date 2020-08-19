@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html" charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+<title>Drag N Drop - one to one</title>
+
+<link rel="stylesheet" href="assets/css/templates/dnd_one_to_one.css"/>
+<link rel="stylesheet" href="" changetheme='true'>
+
+<script type="text/javascript" src="js/controller/Templates/common/Feedback.js"></script>
+<script src="js/controller/Templates/DragNDrop/dnd_one_to_one.js"></script>
+<script>
+	var dndData = {};
+	$(function(){
+		DND_OneToOne.initialize(DataManager.templateXMLData);    
+	});
+</script>
+</head>
+<body>
+
+<div class="wrapper">
+	<section class="mainContent">
+		<div id="dnd_2Container" class="dragDropWrap">
+			<div id="dndFeedbackBox" class="feedBackPopup">
+					<div class="feedBackContent">
+						<div id="feedbackHeader" class="titleTxt">
+							<span>Feedback</span>
+							<div id="close_dnd_v2feedback" class="popupClose"></div>
+						</div>
+						<div id="feedbackContent" class="feebackText"> </div>
+					</div>
+				</div>
+			<div class="dnd_v2_dragContent">
+				<div id="instructionTxt" class="info">
+					<span>Drag the images into the correct category.</span>
+				</div>
+				<div id="drag_Col" class="drag_wraper">
+					
+				</div>
+		
+			</div>	
+			<div class="dnd_v2_dropContent">
+				<div class="title">
+					<span>Title</span>
+				</div>
+				<div id="drop_Col" class="drag_wraper">
+					
+				</div>
+			
+			</div>
+			<div class="dnd_v2Holder">
+				<div class="submitBtn">
+					<button id="submitBtn" class="">Submit</button>
+				</div>
+				<div class="resetBtn">
+					<button id="resetBtn" class="">Reset</button>
+				</div>
+			</div>
+				
+				
+				<div class="clear"></div>		
+		</div>
+	</section>
+</div>
+
+</body>
+</html>

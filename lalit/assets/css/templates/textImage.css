@@ -1,0 +1,180 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* Static Text/Image/Video */
+.txtimgWrap {
+	max-width:90%;
+	margin:0 auto;
+	padding:0;
+}
+.txtimgContainer {
+	background-color:#b0d9e6;
+}
+.txtimgHeader {
+	width:100%;
+	height:41px;
+	background:#00a1b9;
+	display:table;
+	border-bottom:solid 1px #fff;
+}
+.txtimgHeader p {
+	display:table-cell;
+	height:40px;
+	vertical-align:middle;
+	padding-left:4%;
+	font:bold 20px arial;
+}
+.middleContainer {
+	padding:10px 0 0;
+}
+.dataContainer  {
+    width: 100%;
+    float: left;
+    /*margin: 0.5% 0;*/
+}
+.txtHolder {
+    float: left;
+    width: 51%;
+  /*   margin: 1% 0 0 4%; */
+	margin:10px 0 0 24px;
+    font-size: 15px;
+    text-align: left;
+}
+.txtHolder ul li {
+	display:list-item;
+	list-style:none;
+	margin:2% 0;
+    padding-left: 20px;	
+	background:url(../../images/bulletIco.jpg) no-repeat left 5px;
+}
+.imageHolder {
+    /* float: left; */
+    float: right;
+    margin: -10px 0 -1px;
+    width: 45%;
+	/*height:450px;*/
+	text-align:right;
+}
+.imageHolder > img {
+   
+    float: right;
+    height: auto;
+ /*   max-width: 100%;*/
+	display: block;
+}
+#txtimgContainer {
+	/*background:#e0e0e2;*/
+	
+	}
+.txtimgContainer.bgImage {
+	/*background:url("../../images/ladyImageBig.png") no-repeat scroll right bottom #B0D9E6;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader( src='arrow-big-right.png', sizingMethod='scale');
+    -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader( src='arrow-big-right.png', sizingMethod='scale')";
+	background-size:auto 93%;*/
+}
+.videoHolder{
+	margin:0 0 1% 4%;
+}
+/*.middleContainer{
+	min-height:290px;
+}*/
+.txtHolder {
+	height:220px;
+	overflow-x:hidden;
+	overflow-y:auto;
+}
+/* iPads (Landsacpe) */
+@media screen and (min-width : 768px) and (max-width : 1024px) and (orientation : landscape){
+.txtimgWrap{
+	margin-right:68px;
+}
+}
+
+/* iPads (Portrait) */
+@media screen and (min-width : 768px) and (max-width : 1024px) and (orientation : portrait){ 
+.txtimgWrap{
+	margin-right:54px;
+}
+.contentOuter{
+	padding-right:15px;
+}
+#textImageContainer{	
+	height:710px;
+}
+.txtimgWrap {
+	margin-top:27%;
+	margin-right:60px;
+	max-width:85%;
+}
+
+.txtHolder{
+	height:315px;
+	width:95%;
+}
+.imageHolder{
+	text-align:center;
+	margin-left:20px;
+	height:250px;
+	width:94%;
+}
+}
+
+/*Note8 Potrait Orientation Start
+@media only screen and (min-device-width : 800px) and (max-device-width : 1280px) and (device-aspect-ratio : 5/8) and (-webkit-min-device-pixel-ratio : 1.33) and (orientation : portrait){
+#div_2{
+	top:20px;
+	}
+.contentOuter{
+	padding-right:15px !important;
+	}
+#textImageContainer{	
+	height:670px!important;
+}
+.txtimgWrap {
+	margin-top:27%;
+	margin-right:60px;
+	max-width:85%;
+}
+
+.txtHolder{
+	height:315px;
+	width:95% !important;
+}
+.imageHolder{
+	text-align:center !important;
+	margin-left:20px;
+	height:250px;
+	width:94%;
+}
+}*/
+
+/*Note8 Lansacpe Orientation Start
+@media only screen and (min-device-width : 800px) and (max-device-width : 1280px) and (device-aspect-ratio : 8/5) and (-webkit-min-device-pixel-ratio : 1.33) and (orientation : landscape){
+#div_2{
+	top:10px;
+}
+.txtimgWrap {
+	margin:10px auto;
+}
+.txtHolder{
+	
+	margin-bottom:0;
+}
+.txtimgContainer{
+	margin-top:43px;
+}
+.txtHolder {
+	width:59%;
+	height:335px;
+	overflow:auto;
+	}
+.imageHolder{
+	width:37%;
+	height:345px;
+	}
+
+#textImageContainer {
+	height:359px;
+}
+
+}*/

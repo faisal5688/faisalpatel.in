@@ -1,0 +1,99 @@
+@charset "utf-8";
+
+/* CSS Document */
+
+.txtimgWrap {
+    margin: 0 auto;
+}
+
+.dataContainer {
+    width: 100%;
+    float: left;
+}
+
+.txtHolder {
+    font-size: 16px;
+    padding: 0;
+    text-align: left;
+}
+
+.mainCont {
+    /*  background: #f0f0f0 url(c01_m00_p03.png) no-repeat right top; */
+    box-sizing: border-box;
+    height: 530px;
+    padding: 0;
+}
+
+.txtHolder p {
+    margin: 0;
+    padding: 0 0 5px;
+}
+
+.txtHolder ul {
+    margin: 0 0 0 0px;
+    padding: 0 0 0 15px;
+}
+
+.txtHolder ul li a {
+    text-decoration: underline;
+}
+
+.txtHolder ul li {
+    /* background: url(../images/green_bullets.jpg) no-repeat left center; */
+    display: list-item;
+    list-style: outside disc;
+    padding: 0 0 5px 0;
+    margin-bottom: 0px;
+    border-radius: 5px;
+}
+
+.text_box {
+    width: calc(100% - 225px)
+}
+
+.Hbox_wraper {
+    background: #6d2077;
+    display: flex;
+    flex-direction: row;
+    color: #fff;
+}
+
+.Hbox_wraper .text_box {
+    background: #006298;
+    padding: 38px 35px;
+    border-left: 2px solid #fff;
+    line-height: 18px;
+}
+
+.Hbox_wraper.Hbox1 .text_box {
+    padding: 46px 35px;
+}
+
+.Hbox_wraper.Hbox1 {
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+.icon_box {
+    width: 225px;
+    height: 188px;
+    position: relative;
+    text-indent: -9999px;
+    overflow: hidden;
+}
+
+.icon_box.icon1 {
+    background: url("c01_m00_p03_icon1.png") no-repeat center center;
+    height: 220px;
+}
+
+.icon_box.icon2 {
+    background: url("c01_m00_p03_icon2.png") no-repeat center center;
+}
+
+.txtHolder ul li:last-child {
+    padding: 0;
+}
+.txtHolder p:last-child {
+    padding: 0;
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html" charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+<title>Text Image template</title>
+<link rel="stylesheet" href="assets/css/templates/textImageTwoColumn.css">
+<link rel="stylesheet" href="" changetheme='true'>
+
+<script src="js/controller/Templates/AnyImageAnyColumnController.js"></script>
+<script>	
+	var textImageData = {};	
+	$(function(){
+		textImageData = Parser.loadAnyImageAnyColumnFn(DataManager.templateXMLData);	
+		ImgColObject.initTextSection(textImageData);		
+	});	
+</script>
+
+<style>
+.tempColumn{
+	display:none;
+}
+.tempImage{
+	display:none;
+}
+</style>
+</head>
+
+<body>
+	<div class="wrapper">	
+		<section class="mainContent">
+			<div id="textImageTwoColContainer" class="txtimgContainer">
+				<ul id="imgHolder" class="imageHolder">
+					<li class="colImg tempImage"><img src=""/></li>
+				</ul>
+				<ul id="columnContainer" class="columnContainer">
+					<li class="dataContainer tempColumn">
+						<div id="HeadingContainer" class="txtHeader"></div>
+						<div id="TextHolder" class="txtHolder"></div>
+					</li>				
+				</ul>
+				<div class="clear"></div>
+			</div>
+		</section>	
+	</div>
+</body>
+</html>

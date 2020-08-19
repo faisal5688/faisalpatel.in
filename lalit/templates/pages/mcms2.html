@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html" charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>MCMS</title>
+
+    <link rel="stylesheet" href="assets/css/templates/knowledgeCheck.css">
+    <link rel="stylesheet" href="course_01/css/mcms2.css" type="text/css" />
+    <link rel="stylesheet" href="" changetheme='true'>
+
+    <script src="js/controller/Templates/common/SubmitButton.js"></script>
+    <script src="js/controller/Templates/common/FeedbackNotDraggable.js"></script>
+    <script src="js/controller/Templates/common/Option_custompage.js"></script>
+    <script src="js/controller/Templates/common/Fof.js"></script>
+    <script src="js/controller/Templates/common/Detail.js"></script>
+    <script src="js/controller/Templates/MCMS/MCMSController_custompage.js"></script>
+    <script>
+        var mcmsData = {};
+        $(function() {
+            mcmsData = Parser.loadMCSSDataFn(DataManager.templateXMLData);
+            MCMS.initMCMS(mcmsData);
+        });
+    </script>
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <section id="mcmsContainer" class="mainContent">
+            <div class="page_title">Review your Ethics and Integrity knowledge: Round 2</div>
+            <div id="mcmsInstructionTxt" class="mcssInstruction">Select the purple box to test your knowledge.</div>
+            <div class="ImageTextContainer TextRightContainer section section_01">
+                <div class="block block_01 disabled">
+                    <p class="block_heading">Know the Code – Live the Values</p>
+                    <p class="block_info">Do I know the steps to follow to evaluate an ethical dilemma?</p>
+                </div>
+                <div class="block block_02 disabled">
+                    <p class="block_heading">Ethical Decision-Making and the Science of (Dis)Honesty</p>
+                    <p class="block_info">Do I know my personal values and how they align with the firm’s Values?</p>
+                </div>
+                <div class="block block_03">
+                    <p class="block_heading closeBtn">Ethics and Integrity – Values in Action</p>
+                    <p class="block_info closeBtn">Do I know my personal values and how they align with the firm’s Values?</p>
+                </div>
+                <div class="block block_04 disabled">
+                    <p class="block_heading">Giving Voice to Value</p>
+                    <p class="block_info">Am I ready to take action and speak up when faced with an ethical dilemma?</p>
+                </div>
+            </div>            
+            <div id="mcmsHolder" class="mcmsWrap section section_02">
+                <div class="mcmsQuestion">
+                    <div class="mcmsContainer">
+                        <div class="qusWrapper">
+                            <div id="mcmsQuestionTxt" class="question"></div>
+                            <div id="mcmsOptionContainer" class="optionContainer">
+                                <div class="row cloneOption">
+                                    <div class="optionIcons">
+                                        <div id="tickCross" class="tickIco correct"></div>
+                                        <div id="optionBox" class="checkBox"></div>
+                                    </div>
+                                    <div class="optionText">
+                                        <div id="optionTxt" class="txt"><span>option text</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="mcmsNextBtn" class="nextBtn floatRht">
+                                <input type="button" value="Next" class="btn_next">
+                            </div>
+                            <div id="mcmsSubmitBtn" class="submitBtn floatRht">
+                                <div type="button" class="btn_submit">Submit</div>
+                            </div>
+                        </div>
+                        <div id='mcmsFeedbackBox' style="position:absolute;width: 100%;height: 100%;background: cyan;">
+                            <div id='header'>
+                                <span id='headerContent'>Feedback</span>
+                                <span id='feedbackClose' class="closeIcon"></span>
+                            </div>
+                            <div id="correctAnswerContent"></div>
+                            <div id='feedbackContent'>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </div>
+
+</body>
+
+</html>

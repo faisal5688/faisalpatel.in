@@ -1,0 +1,40 @@
+@charset "utf-8";
+
+/* CSS Document */
+
+.txtimgWrap {
+    width: 922px;
+    margin: 0 auto;
+    background: #fff;
+    /*  padding: 15px; */
+    box-sizing: border-box;
+}
+
+section.mainContent {
+    height: 100%;
+}
+
+.jp-video-300p {
+    width: 600px;
+    border: 10px solid #f2f2f3;
+    -webkit-box-shadow: 8px 8px 4px -4px #ccc;
+    box-shadow: 8px 8px 4px -4px #ccc;
+    margin: 0 auto!important;
+    background-color: white;
+    position: relative;
+    top: 58px;
+}
+
+#PageContent {
+    clear: both;
+    max-height: 100%;
+    height: calc(100% - 62px - 74px);
+    overflow: hidden;
+    padding: 0;
+    position: relative;
+    z-index: 1;
+}
+
+.jp-video .jp-toggles {
+    display: none !important;
+}

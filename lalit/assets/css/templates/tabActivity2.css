@@ -1,0 +1,137 @@
+/* Tabs */
+.tempTab, .tempTabPanel{
+	display:none;
+}
+
+.tabsWrap{
+	max-width:85%;
+	margin:0 auto;
+	padding:0;
+}
+.tabsHolder{
+	clear:both;
+}
+ul.tabsNav{
+	overflow:hidden;
+}
+ul.tabsNav li{
+    float: left;
+    /*margin: 0 2px 0 0;*/
+    list-style-type: none;
+    position: relative;
+	/*width:24%;*/
+}
+ul.tabsNav li a{
+/* 	display:block;
+	min-width:216px;
+	height:28px;
+	padding:8px 0 0;
+	font:bold 16px/normal Arial;
+	color:#FFF;
+	text-align:center;
+	border:solid 2px #6e8d24;
+	border-bottom:none;
+	background:#6e8d24; */
+    height: 30px;
+    padding: 12px 0 6px;
+	margin: 0 2px 0 0;
+    text-align: center;
+    font: bold 16px/30px Arial;
+    color: #FFFFFF;
+    display: block;
+    background: none repeat scroll 0 0 #6E8D24;	
+}
+ul.tabsNav li:last-child, ul.tabsNav li:last-child a{
+	margin:0;
+}
+ul.tabsNav li.ui-tabs-active {
+    border:none;
+}
+ul.tabsNav li.ui-tabs-active a{
+    background: none repeat scroll 0 0 #DFEECB;
+    color: #6E8D24;
+    height: 28px;
+	cursor:default;
+	border:solid 2px #6E8D24;
+	border-bottom:none;
+}
+.tabsPanel{
+    clear: both;
+    max-width: 100%;
+    min-height: 250px;
+    padding:20px;
+    background:#DFEECB;
+}
+.cnl_v2_tickShow{
+	float:right;
+    height: 20px;
+    position: absolute;
+    right: 3px;
+    top: 2px;
+    width: 20px;
+	background: url(../../images/kc_assets.png) no-repeat -106px -26px;
+}
+.inputBox{
+	display:inline-block;
+	position:relative;
+}
+.tickIco {
+    display: block;
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    top: -6px;
+    left: -9px;
+    background: url(../../images/kc_assets.png) no-repeat -106px -26px;
+}
+.tickIco.inputTick {
+	background-position: -106px -26px;
+}
+.tickIco.inputCross {
+    background-position: -153px -26px;
+}
+
+.feedbackOverlay {
+    background: none repeat scroll 0 0 #000000;
+    opacity: 0;
+    display: block;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+/* for Note 8 landscape*/
+@media only screen and (min-device-width : 800px) and (max-device-width : 1280px) and (device-aspect-ratio : 8/5) and (-webkit-min-device-pixel-ratio : 1.33) and (orientation : landscape){
+.contentWrap{
+	height:155px;
+	overflow:auto;
+}
+.tabsPanel{ min-width:150px; padding:5px 10px 7px;} 
+.fillBlanksContent{ padding:0 0 30px;}
+.tabsWrap{
+	margin:10px auto 0;
+}
+.cnl_v2_Wrap{max-width:85%}
+ul.cnl_v2_Nav li{ margin: 0 1px 0 0;}
+.infoSec, .instructionTxt p {    font: 15px/33px Arial;}
+
+}
+
+/* for Note 8 Portrait*/
+@media only screen and (min-device-width : 800px) and (max-device-width : 1280px) and (device-aspect-ratio : 5/8) and (-webkit-min-device-pixel-ratio : 1.33) and (orientation : portrait){
+ul.tabsNav li a{
+	min-width:0;
+}
+.tabsWrap{
+	margin:8% auto 0;
+}
+.cnl_v2_Wrap { 
+max-width: 85%;
+}
+.cnl_v2_tickShow{
+	top:0;
+	right:3px;
+}
+}

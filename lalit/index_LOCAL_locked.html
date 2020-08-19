@@ -1,0 +1,42 @@
+<!DOCTYPE HTML>
+
+<html lang="en">
+
+<head>
+
+    <meta http-equiv="content-type" content="charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta http-equiv="Content-Type" content="text/html" charset="utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+
+    <title>Ethical Decision-Making and the Science of (Dis)Honesty</title>
+    <link rel="stylesheet" href="assets/css/preloadPage.css" type="text/css" />
+    <script type="text/javascript" src="libs/core/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript">
+        var scoCompliance = "local";
+        //options= scorm1_2/scorm2004/local
+        var navigationMode = "locked";
+        //options = locked/unlocked
+    </script>
+</head>
+
+<body onunload="finish()" oncontextmenu="return false">
+    <div id="bodyOverlay" class="bodyOverlay">
+        <div class="loader"></div>
+    </div>
+    <div id="courseContainer"></div>
+    <script type="text/javascript">
+        window.onload = function() {
+            $('#courseContainer').hide();
+            $("#courseContainer").load("main.html", hidePreloader);
+        };
+
+        function hidePreloader() {
+            $('#bodyOverlay').hide();
+            $('#courseContainer').show();
+        }
+    </script>
+</body>
+
+</html>

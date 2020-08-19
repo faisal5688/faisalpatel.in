@@ -1,0 +1,56 @@
+@charset "utf-8";
+
+/* CSS Document */
+
+.page_title {
+    padding: 16px 16px 16px 0
+}
+
+.colorText {
+    font-weight: bold;
+    color: #4d2278;
+}
+
+.TextRightContainer .textCont {
+       position: absolute;
+    background: #6d2077;
+    color: #fff;
+    min-height: 232px;
+    max-width: 350px;
+    height: auto;
+    transform: translateY(-50%);
+    top: 50%;
+    left: 18px;
+}
+
+.mainContent .section {
+    display: none;
+}
+
+.mainContent .section .ImageTextContainer {
+    position: relative;
+}
+
+.mainsection {
+    overflow: hidden;
+    max-height: 468px;
+}
+
+.footNote {
+    background: #007dba;
+    padding: 20px;
+    box-sizing: border-box;
+    color: #fff;
+    margin-top: 25px;
+    position: absolute;
+    bottom: 26px;
+    left: 0;
+}
+
+.ImageTextContainer .imageCont {
+    width: 100%;
+}
+
+.ImageTextContainer .TextRightContainer .textCont {
+    position: absolute;
+}

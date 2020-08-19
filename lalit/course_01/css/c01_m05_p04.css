@@ -1,0 +1,160 @@
+@charset "utf-8";
+
+/* CSS Document */
+
+.page_title {
+    padding: 16px 16px 16px 0
+}
+
+#sectionHolder {
+    height: 474px;
+}
+
+.instText {
+    color: #f88e3a;
+    font-size: 16px;
+    font-style: italic;
+    margin: 0;
+    padding: 0 16px 16px 0;
+}
+
+.mainsection {
+    float: left;
+    position: relative;
+    width: 100%;
+}
+
+.secleftside {
+    width: 548;
+    height: 375px;
+    float: left;
+    padding: 0;
+    box-sizing: border-box;
+    border-right: 3px solid #fff;
+}
+
+.secleftside.pinkbgcolor {
+    background-color: #470a69;
+}
+
+.secleftside.bluebgcolor {
+    background-color: #005eb8;
+}
+
+.secleftside.greenbgcolor {
+    background-color: #00a3a2;
+}
+
+.secrightside {
+    width: calc(100% - 566px);
+    height: 375px;
+    background: #f5f5f5;
+    padding: 10px;
+    box-sizing: border-box;
+    float: left;
+    display: flex;
+    align-items: center;
+    padding-bottom: 40px;
+}
+
+.fixheight {
+    width: auto;
+    /* height: 330px; */
+    padding: 0 10px;
+    overflow: auto;
+    max-height: 100%;
+}
+
+.fixheight p {
+    line-height: 22px;
+    margin: 0;
+    padding: 0
+}
+
+.txttitle01 {
+    color: #470a69;
+}
+
+
+/* pink*/
+
+.txttitle02 {
+    color: #005eb8;
+}
+
+
+/* blue*/
+
+.txttitle03 {
+    color: #00a3a2;
+}
+
+
+/* purple */
+.txttitle04 {
+    color: #470a69;
+}
+
+.txttitle01,
+.txttitle02,
+.txttitle03,
+.txttitle04 {
+    font-style: italic;
+    font-weight: bold;
+}
+
+.txtRed {
+    color: red;
+    font-weight: normal;
+}
+
+
+/* green*/
+
+.nxtbck_button {
+    position: absolute;
+    right: 0px;
+    bottom: 10px;
+    width: 66px;
+    height: 24px;
+    /* padding: 0; */
+    box-sizing: border-box;
+}
+
+.backbtn,
+.nextbtn,
+.backbtndisable,
+.nextbtndisable {
+    width: 24px;
+    height: 24px;
+    float: left;
+}
+
+.backbtn {
+    background: url(../images/nxtbckbtn.png) no-repeat 0 0;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.nextbtn {
+    background: url(../images/nxtbckbtn.png) no-repeat -42px 0;
+    cursor: pointer;
+}
+
+.backbtndisable {
+    background: url(../images/nxtbckbtn.png) no-repeat 0 -25px;
+    margin-right: 10px;
+}
+
+.nextbtndisable {
+    background: url(../images/nxtbckbtn.png) no-repeat -42px -25px;
+}
+
+.backbtn.disable,
+.nextbtn.disable {
+    cursor: default;
+}
+
+.fixheight p {
+    margin-bottom: 10px;
+}

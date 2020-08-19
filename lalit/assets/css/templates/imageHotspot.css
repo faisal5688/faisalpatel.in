@@ -1,0 +1,133 @@
+.hotspotWrap{
+    margin: 0 auto;
+   /*max-width: 914px;*/
+	max-width: 95%;	
+    padding: 82px 45px 0;
+}
+.linkContent {
+    padding: 0 0 30px;
+}
+.hotspotimgCnt{
+	width:550px;
+	min-height:390px;
+	margin:0 auto;
+}
+.hotspotimg{	
+	width:100%;
+	border:solid 1px #9e9d9d;
+}
+.contentTxt{
+	
+}
+.linkContent .contentSec {
+    background:#b0d9e6;
+    clear: both;
+    color: #FFFFFF;
+    font: 14px/20px Arial;
+    margin: 0 0 1px;
+    padding: 28px 18px;
+    position: relative;
+}
+.infoSec, .instructionTxt p {
+    background: none repeat scroll 0 0 #DAD9D9;
+    border-left: 5px solid #E4801B;
+    color: #004E96;
+    float: left;
+    font: 15px/50px Arial;
+    margin: 0 0 1px;
+    padding: 0 13px;
+}
+
+.linkContent .contentWrap p {
+    margin: 0 0 18px;
+}
+
+
+
+.linkContent .contentWrap p a {
+    text-decoration: underline;
+}
+.feedBackPopup {
+    clear: both;
+    display: none;
+}
+
+.feedBackContent {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 3px solid #6593BE;
+    margin: 0 auto;
+    min-height: 150px;
+    position: relative;
+    top: -30px;
+    width: 325px;
+    z-index: 101;
+}
+.feedBackContent .titleTxt {
+    background: none repeat scroll 0 0 #192A3A;
+    color: #FFFFFF;
+    cursor: move;
+    position: relative;
+}
+.feedBackContent .titleTxt span {
+    display: block;
+    height: 36px;
+    line-height: 36px;
+    padding: 0 12px 1px;
+}
+.popupClose {
+    background: url("../images/popup_buttons.png") no-repeat scroll -16px -75px transparent;
+    color: #FFFFFF;
+    cursor: pointer;
+    height: 36px;
+    position: absolute;
+    right: 1px;
+    top: 0;
+    width: 35px;
+}
+.feebackText {
+    height: 105px;
+    margin: 12px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.tick{
+	/* visibility:hidden; */
+}
+#linkOverlay{
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0.3);
+    display: none;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+.visited{
+	color:red;
+}
+
+
+/* for Note 8 landscape*/
+@media only screen and (min-device-width : 800px) and (max-device-width : 1280px) and (device-aspect-ratio : 8/5) and (-webkit-min-device-pixel-ratio : 1.33) and (orientation : landscape){
+/*body{background:green;}*/
+.hotspotWrap{
+    margin: 0 auto;
+   	max-width: 740px;	
+    padding: 15px 0px 0;
+}
+
+}
+
+/* for Note 8 Portrait*/
+@media only screen and (min-device-width : 800px) and (max-device-width : 1280px) and (device-aspect-ratio : 5/8) and (-webkit-min-device-pixel-ratio : 1.33) and (orientation : portrait){
+
+/*body{background:blue;}*/
+.hotspotWrap{
+    margin: 0 auto;
+   	max-width: 420px;	
+    padding: 75px 0px 0;
+}
+.hotspotimgCnt {width:100%;}
+}

@@ -1,0 +1,44 @@
+{
+    "data": {
+        "basePath": "./course_01/c01_m01_p03/",
+        "audios": [{
+                "path": "c01_m01_p03"
+            },
+            {
+                "path": "blank",
+                "isPopup": true
+            },
+            {
+                "path": "blank",
+                "isPopup": true
+            },
+            {
+                "path": "blank",
+                "isPopup": true
+            }
+        ],
+        "downloadAndroidImages": "",
+        "downloadIpadImages": "",
+        "downloadImages": "c01_m01_p03_icons.png",
+        "content": {
+            "intro_text": "",
+            "ins_text": "<p><i>Select each photo to read the reason each individual gave for making this poor decision.</i></p>",
+            "click_1": "<p>partner</p>",
+            "click_2": "<p>Manager</p>",
+            "click_3": "<p>Associate</p>",
+
+            "click_1_text": "<p>Meeting my client’s deadline is more important than this internal training requirement, and sharing the answers saves me and my team time.</p>",
+
+            "click_2_text": "<p>Everyone on the team is using the answers, so why wouldn’t I? And even if I don’t use them when I take the exam, it’s not like I’m going to report the people on my team – they would never want to work with me again.</p>",
+
+            "click_3_text": "<p>My manager told me to use the answers to pass the course so I can get back to my client work. Who knows what she’ll do if I say no or question what she told me to do.</p>",
+
+            "reveal_text1": "",
+            "transcript_1": "<p>Integrity sits at the heart of Ethical Decision-Making, and it means</p><ul><li>having a moral compass that does not waver in any situation, big or small,</li> <li>doing what we say and taking accountability when we don't,</li> <li>being honest and forthright, even when it's difficult,</li> <li>not being a bystander, but taking action in the moment to do what is right and speak up, and </li> <li>upholding both the letter and spirit of our ethical and professional standards, even when we are under pressure.</li></ul>",
+            "transcript_2": "<p>Our Value of Excellence touches on humility and learning from both success and failure, and inviting honest feedback and constructive challenge to build trust.</p>",
+            "transcript_3": "<p>It takes our Value of Courage to openly question our own and others’ actions that are inconsistent with our KPMG Values, even when it’s not popular.</p>",
+            "bottom_text": ""
+
+        }
+    }
+}

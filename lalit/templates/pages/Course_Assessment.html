@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<!-- Template Controllers Section -->
+<link rel="stylesheet" href="assets/css/courseAssesment.css" />
+<link rel="stylesheet" href="" changetheme='true'>
+
+<script type="text/javascript" src="js/controller/AssessmentEngine.js"></script>
+<title>Course Assesment</title>
+<script>
+	
+	$(document).ready(function(){
+		//load Assessment Data
+		trace('assessment path '+DataManager.settingDataObj.appAssessmentURL + 'assessment.xml')
+		
+		
+		$.ajax(
+            {
+            	url:DataManager.settingDataObj.appAssessmentURL + 'assessment.xml',
+                async:false,
+                dataType:"xml",
+                success:function(data){
+                	
+                	if(DataManager.settingDataObj.courseDataType == "json"){        				
+							//DataManager.assessmentData = JSONParser.parseJSONAssessmentData(data);        				        				        				
+						}else{
+							DataManager.assessmentData = XMLParser.parseXMLAssessmentData(data);				
+						}  			
+						initAssessmentEngine();
+                	},
+                error:function(){
+                	alert("Assessment Data Loading Failed");
+                }
+            });
+		
+		
+		
+		/*
+		$.get(DataManager.settingDataObj.appAssessmentURL + 'assessment.xml',function(data, status, xhr){
+			
+			if(xhr.responseJSON){        				
+				//DataManager.assessmentData = JSONParser.parseJSONAssessmentData(data);        				        				        				
+			}else{
+				DataManager.assessmentData = XMLParser.parseXMLAssessmentData(data);				
+			}  			
+			initAssessmentEngine();
+		});
+		*/
+	});
+</script>
+</head>
+<body>
+<div id="assessmentStartPage" class="assesmentShadow">
+  <div id="assessmentStartContent" class="assesmentMain">
+    <div class="assesmentHeader">
+      <div class="assesmentstartText">ASSESSMENT</div>
+    </div>
+    <div class="StartPage">
+		<div class="start">
+		<img src="assets/images/startBg.jpg" />
+		</div>
+		<div class="startText">
+        	<p id="assessmentStartTxt"></p>
+            <p id="assessmentInfoTxt"></p>
+            <p id="assessmentInstrutionTxt" class="colorChange"></p>
+            <p id="assessmentAdditionalTxt"></p>   
+        </div>
+    </div>
+    
+    <div class="assementfooter">
+    <div id="assessmentStartBtn"  class="submitButtonDisable"  title="Start">Start</div>
+    <div class="footerText"></div>
+  </div>
+  
+
+  </div>
+  
+</div>
+<div id="assessmentContainer" class="assesmentShadow">
+
+  <div id="assessmentHolder" class="assesmentMain2">
+    <div class="assesmentHeader2">
+      <div class="iconQuestion2">&nbsp;</div>
+      <div class="querstionText2"><p id="assessmentQuestionTxt">which of the following statements is accurate regarding the timeline of events relating to the FASB/IASB Leases Project?</p></div>
+    </div>
+    <div id="assessmentOptionContainer" class="assesmentMiddle2">
+      <div id="optionHolder" class="options">
+		<div class="optionswrapper tempOption">
+			<div class="checkboxContainer"><span id="assessmentOptionBox" class="bulltePoints"></span></div> 
+			<span id="assessmentOptionTxt" class="optionText">accurate regarding the timeline of events relating to the FASB/IASB Leases Project?</span> 
+    </div>
+
+  </div>
+</div>
+
+    <div class="assementfooter2">
+	<div id="assessmentSubmitBtn" class="submitButtonDisable" title="submit">Submit</div>
+	<div id="assessmentInstructionTxt" class="footerText">Read the question and select the best answer.</div>
+    </div>	
+</div>
+</div>
+<!-- RESULT PAGE -->
+<div id="assessmentResultPage" class="assesmentShadow">
+  <div id="assessmentResultContent" class="resultMain">
+    <div class="assesmentHeader">
+		<div id="resultTitle" class="assesmentstartText"></div>
+	</div>
+	<div class="resultMiddle">
+	<div id="remedialContent" class="showRemedial"></div>	
+	<div class="resultHolder">
+		<div class="resultimage"></div>
+		<div id="resultMessage" class="resultText"></div>
+		<div class="resultgrad">
+			<div class="scoreDisplay">
+				<div id="resultLabel" class="result">Result</div>
+				<div id="assessmentUserStatus" class="box">Score</div>
+				<div id="scoreLabel" class="failpass"></div>
+				<div id="assessmentUserScore" class="box"></div>
+			</div>
+		</div>
+	</div>
+	</div>
+<div class="resultfooter">
+	<div id="showRemedialBtn" class="showRemedialShow" title="Show Remedial">Show Remedial</div>
+	<div id="hideRemedialBtn" class="showRemedialHide" title="Hide Remedial">Hide Remedial</div>
+	<div id="assessmentStartBtn" ></div>
+	<div class="footerText"></div>
+</div>	
+  </div>
+
+
+</div>
+</body>
+</html>

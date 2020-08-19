@@ -1,0 +1,65 @@
+@charset "utf-8";
+
+/* CSS Document */
+
+.page_title {
+    padding: 16px 16px 16px 0
+}
+
+.colorText {
+    font-weight: bold;
+    color: #4d2278;
+}
+
+.TextRightContainer .textCont {
+    position: relative;
+}
+
+.mainContent .section {
+    display: none;
+}
+
+.mainsection {
+    overflow: hidden;
+    max-height: 468px;
+    margin-top: 20px;
+}
+
+.box {
+    width: 49%;
+    float: left;
+    height: 195px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    padding: 20px;
+    box-sizing: border-box;
+    font-size: 14px;
+    color: rgb(255, 255, 255);
+    line-height: 18px;
+}
+
+.box p {
+    margin-bottom: 8px;
+    font-size: 16px;
+}
+
+.p_box2,
+.p_box4 {
+    margin-right: 0px;
+}
+
+.p_box1 {
+    background-color: #6d2077;
+}
+
+.p_box2 {
+    background-color: #f68d2e;
+}
+
+.p_box3 {
+    background-color: #005eb8;
+}
+
+.p_box4 {
+    background-color: #009a44;
+}

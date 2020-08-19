@@ -1,0 +1,139 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html" charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+<title>Match template</title>
+
+<link rel="stylesheet" href="" changetheme='true'>
+
+<script src="js/controller/Templates/MatchTemplateController.js"></script>
+ <script>
+	var matchData = {};
+	$(function(){
+		MatchTemplateController.initSection(DataManager.templateXMLData);   
+		//MatchTemplateController.initSection(""); 
+	});
+</script>
+
+
+<style>
+.canvasCls{
+	position: absolute;
+	z-index:-1;
+	top:15px;
+	left:21px;
+	
+}
+
+</style>
+</head>
+
+<body>
+	<div class="wrapper">	
+	<section class="mainContent">
+		<div class="matchHolder">
+			<div class="instructionTxt">
+				<p>Match elements and click <b>Submit</b> button.</p>
+			</div>
+		<div class="lftrhtContainer">
+			<div class="lftContainer">
+				<ul>
+					<li>
+						<div class="textHolder">
+							<p>Submit button only activate once Learner performs activity.</p>
+						</div>
+						<span id="dragbg_1"><span id="drag_1"class="drag defaultIco"></span></span>
+					</li>
+					<li>
+						<div class="textHolder">
+							<p>Learner can drag only one item at a time.</p>
+						</div>
+						<span id="dragbg_2"><span id="drag_2" class="drag defaultIco"></span></span>
+					</li>
+					<li>
+						<div class="textHolder">
+							<p>Feedback should be displayed with retry button beneath feedback text.</p>
+						</div>
+						<span id="dragbg_3"><span id="drag_3" class="drag defaultIco"></span></span>
+					</li>
+				<!-- 	<li>
+						<div class="textHolder">
+							<p>On retry, page should be reset.</p>
+						</div>
+						<span id="drag_4" class="defaultIco"></span>
+					</li>
+					<li>
+						<div class="textHolder">
+							<p>On completion, this activity will be disabled for learner.</p>
+						</div>
+						<span id="drag_5" class="defaultIco"></span>
+					</li>
+					<li>
+						<div class="textHolder">
+							<p>Submit button will be disabled initially.</p>
+						</div>
+						<span id="drag_6" class="defaultIco"></span>
+					</li> -->
+				</ul>
+			</div>
+			
+			<div class="rhtContainer">
+				<ul>
+					<li>
+						<div class="textHolder">
+							<p>Submit button only activate once Learner performs activity.</p>
+						</div>
+						<span><span id="drop_1" class="defaultIco drop"></span></span>
+					</li>
+					<li>
+						<div class="textHolder">
+							<p>Learner can drag only one item at a time.</p>
+						</div>
+						<span><span id="drop_2" class="defaultIco drop incorrectIco"></span></span>
+					</li>
+					<li>
+						<div class="textHolder">
+							<p>Feedback should be displayed with retry button beneath feedback text.</p>
+						</div>
+						<span><span id="drop_3" class="defaultIco drop correctIco"></span></span>
+					</li>
+					<!-- <li>
+						<div class="textHolder">
+							<p>On retry, page should be reset.</p>
+						</div>
+						<span id="drop_4" class="defaultIco drop"></span>
+					</li>
+					<li>
+						<div class="textHolder">
+							<p>On completion, this activity will be disabled for learner.</p>
+						</div>
+						<span id="drop_5" class="defaultIco incorrectIco drop"></span>
+					</li>
+					<li>
+						<div class="textHolder">
+							<p>Submit button will be disabled initially.</p>
+						</div>
+						<span id="drop_6" class="defaultIco correctIco drop"></span>
+					</li> -->
+				</ul>
+			</div>
+		</div>
+			<div class="submitBtn floatRht">
+				<input type="button" id="matchSubmitbtn" value="Submit" disabled="disabled">
+			</div>
+		</div>
+
+		<div class="feedBackPopup">
+			<div class="feedBackContent">
+				<div class="titleTxt">
+					<span>Feedback</span>
+					<div class="popupClose"></div>
+				</div>
+				<div class="feebackText">Answer A is correct. PP&E is initially measured at cost; it should be recognized as an asset when it is probable that future economic benefits associated with the item will flow to the entity and the cost of the item can be measured reliably.</div>
+			</div>
+		</div>
+	</section>
+</div>
+</body>
+</html>

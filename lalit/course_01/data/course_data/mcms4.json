@@ -1,0 +1,71 @@
+{
+    "data": {
+        "downloadAndroidImages": "",
+        "downloadIpadImages": "",
+        "downloadImages": "c01_m04_p04_01.jpg, c01_m04_p04_02.jpg, ../../images/comaaonClose.png, ../../images/kc_assets1.png",
+        "image": {
+            "use_image_tag": "true",
+            "desktop": "",
+            "ipad": {
+                "landscape": "",
+                "portrait": ""
+            }
+        },
+        "content": "Fudge factors in action: Self-deception",
+		"audio": "../audio/en/t01_p01",
+	  "scenarioText": "scenario text for question",
+	  "question": "<p>What is Speak Up culture?</p>",
+	  "instructionText": "Select the light purple box to test your knowledge.",
+	  "downloadAndroidImages":"assets/images/ladyImage.jpg",
+	  "downloadImages":"",
+	  "MCQ": {
+		"responseType": "specific",
+		"maxAttempts": "1",
+		"correctAnswer": "2",
+		"options": {
+		  "option": [
+			  "<span><span class='optno'>A.</span> <ol class='one'><li>A hotline where employees can raise their concerns anonymously</li><ol></span>",
+			  "<span><span class='optno'>B.</span> <ol class='one' start='2'><li>An environment where employees generally feel that their ideas and their concerns are welcomed and valued</li><ol></span>",			  
+			  "<span><span class='optno'>C.</span> <ol class='one' start='2'><li>A culture where people do not want to share their input in their workplace</li><ol></span>",
+			  "<span><span class='optno'>D.</span> <ol class='one' start='3'><li>A situation where people feel like their voice is not heard</li></ol></span>"
+		  ]
+		},
+		"feedback": {
+		  "genericResponse": {
+			"incorrect": {
+			  "audio": "../audio/t01_p01_incorrect",
+			  "content": ""
+			},
+			"solution": {
+			  "audio": "../audio/t01_p01_solution",
+			 "content": ""
+			},
+			"correct": {
+			  "audio": "../audio/t01_p01_correct",
+			  "content": ""
+			}
+		  },
+		  "specificResponse": {
+			"response": [
+			  {
+				"audio": "../audio/t01_p01_feeback01",
+				"content": "<p><b>Answer A is incorrect.</b> The Ethics and Compliance hotline is a resource that employees can use to raise their concerns anonymously.</p><p><b>Answer B is correct.</b> A Speak Up culture supports an environment where employees generally feel that their ideas and concerns are welcomed and valued.</p>"
+			  },
+			  {
+				"audio": "../audio/t01_p01_feeback02",
+				"content": "<p><b>Answer B is correct.</b> A Speak Up culture supports an environment where employees generally feel that their ideas and concerns are welcomed and valued.</p>"
+			  },
+			  {
+				"audio": "../audio/t01_p01_feeback03",
+				"content": "<p><b>Answer C is incorrect.</b> Speak Up culture helps overcome employee silence, which is when people withhold ideas or concerns or feel they do not want to share their input in their workplace.</p><p><b>Answer B is correct.</b> A Speak Up culture supports an environment where employees generally feel that their ideas and concerns are welcomed and valued.</p>"
+			  },
+			  {
+				"audio": "../audio/t01_p01_feeback03",
+				"content": "<p><b>Answer D is incorrect.</b> Speak Up culture is one that supports employee voice, meaning that people raise concerns, share information about problems, challenge the status quo, and offer new ideas to someone who can action them.</p><p><b>Answer B is correct.</b> A Speak Up culture supports an environment where employees generally feel that their ideas and concerns are welcomed and valued.</p>"
+			  }
+			]
+		  }
+		}
+	  }
+    }
+}

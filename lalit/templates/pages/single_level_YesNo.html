@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html" charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+<title>Click Tabs</title>
+
+<link rel="stylesheet" href="assets/css/templates/single_level_YesNo.css"/>
+<link rel="stylesheet" href="" changetheme='true'>
+
+<script src="js/controller/Templates/common/Clickable_Image.js"></script>
+<script src="js/controller/Templates/ClickNLearn/single_level_YesNo_controller.js"></script>
+ <script>
+	//var cnlData = {};
+	$(function(){
+		//trace("templateXMLData:: "+DataManager.templateXMLData);
+		SingleLevelYesNo.init(DataManager.templateXMLData);
+	});	
+	
+</script>
+
+</head>
+<body>
+
+<div class="wrapper">	
+	<section class="mainContent">
+		<div id="yesNoContainer" >
+		<div>
+			<div id="textContainer"></div>
+				<div id="imgHolder" class="image"><!-- <img src="../../assets/images/dummyImage.jpg"/> --></div>
+			</div>
+		
+		<div class="instructionMain">
+			<div id="instructionTxt" class="instruction_details">
+				<p>instruction</p>
+			</div>
+			<div id="YNResponse" class="i_response response">
+				<div id="question"></div>
+				<div class="yesno_main">
+					<div id="optYes" class="yes_click clk_option"></div>
+					<div id="optNo" class="no_click clk_option"></div>
+					<div class="clearboth"></div>
+				</div>					
+			</div>
+		
+			<div id="feedback">
+				<div id="fb_header"><B>Feedback</B></div>
+				<div id="fb_content">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type s
+					
+					Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type s</div>
+					<div class="clearboth"></div>
+			</div>
+		</div>
+		<div class="clearboth"></div>
+	</div>
+	</section>
+</div>
+
+</body>
+</html>

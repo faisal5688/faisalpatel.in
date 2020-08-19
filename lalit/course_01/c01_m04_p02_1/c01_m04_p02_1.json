@@ -1,0 +1,49 @@
+{
+    "data": {
+        "basePath": "./course_01/c01_m04_p02_1/",
+        "audios": [{
+                "path": "c01_m04_p02_1"
+            },
+            {
+                "path": "blank",
+                "isPopup": true
+            },
+            {
+                "path": "blank",
+                "isPopup": true
+            },
+            {
+                "path": "blank",
+                "isPopup": true
+            },
+            {
+                "path": "blank",
+                "isPopup": true
+            }
+        ],
+        "downloadAndroidImages": "",
+        "downloadIpadImages": "",
+        "downloadImages": "c01_m04_p02_1_img1.jpg,c01_m04_p02_1_img2.jpg,c01_m04_p02_1_img3.jpg,c01_m04_p02_1_img1_popup_img_1.jpg,c01_m04_p02_1_img1_popup_img_2.jpg,c01_m04_p02_1_img1_popup_img_3.jpg,comaaonClose.png",
+        "content": {
+            "backgroundAudio": "blank.mp3",
+            "ins_text": "<p class='InstrutationText'>Select the photos to review real life leadership tales.</p>",
+            "click_1": "<div class='imageBlock'></div>",
+            "click_2": "<div class='imageBlock'></div>",
+            "click_3": "<div class='imageBlock'></div>",
+            "click_4": "<div class='imageBlock'></div>",
+			
+            "click_1_text": "<div class='popupContentParent popup_1'> <div class='closeBtn'></div><div class='popup_leftpart'> <div class='popup_content'><div class='popup_title'><p>Placeholder</p></div><div class='page_content'><p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book</p></div> </div></div><div class='popup_rightpart rimg1'></div></div>",
+
+            "click_2_text": "<div class='popupContentParent popup_2'> <div class='closeBtn'></div><div class='popup_leftpart'> <div class='popup_content'><div class='popup_title'><p>Placeholder</p></div><div class='page_content'><p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book</p></div> </div></div><div class='popup_rightpart rimg2'></div></div>",
+
+            "click_3_text": "<div class='popupContentParent popup_3'> <div class='closeBtn'></div><div class='popup_leftpart'> <div class='popup_content'><div class='popup_title'><p>Placeholder</p></div><div class='page_content'><p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book</p></div></div></div><div class='popup_rightpart rimg3'></div></div>",
+			
+			"click_4_text": "<div class='popupContentParent popup_4'> <div class='closeBtn'></div><div class='popup_leftpart'> <div class='popup_content'><div class='popup_title'><p>Placeholder</p></div> <div class='page_content'><p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book</p></div></div></div><div class='popup_rightpart rimg4'></div></div>",
+
+            "transcript_1": "<p>Any person could include a variety of third parties and intermediaries acting on an individual or entity's behalf.</p>",
+            "transcript_2": "<p>Knowing does not require actual awareness, but rather includes deliberate ignorance or willful blindness.</p>",
+            "transcript_3": "<p>Be alert to these indicators of potential wrongdoing by third parties.</p>"
+
+        }
+    }
+}

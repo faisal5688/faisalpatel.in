@@ -1,0 +1,46 @@
+{
+    "data": {
+        "basePath": "./course_01/c01_m03_p03/",
+        "audios": [{
+                "path": "c01_m03_p03"
+            },
+            {
+                "path": "blank",
+                "isPopup": true
+            },
+            {
+                "path": "blank",
+                "isPopup": true
+            },
+            {
+                "path": "blank",
+                "isPopup": true
+            }
+        ],
+        "downloadAndroidImages": "",
+        "downloadIpadImages": "",
+        "downloadImages": "c01_m03_p03_icons.png",
+        "content": {
+            "intro_text": "",
+            "ins_text": "",           
+            "click_1": "<p>Integrity<span>We do what is <b>right</b>.</span></p>",
+            "click_2": "<p>Excellence<span>We never stop <b>learning</b> and <b>improving</b>.</span></p>",
+            "click_3": "<p>Courage<span>We <b>think</b> and act <b>boldly</b>.</span></p>",
+
+            "click_1_text": "<p>A person who exhibits Integrity…</p><ul><li>Has a moral compass that does not waver in any situation, big or small</li><li>Does what they say and takes accountability when they don’t</li><li>Is honest and forthright, even when it’s difficult</li><li>Is not a bystander; takes action in the moment to do what is right and speak up</li><li>Upholds the letter and spirit of our ethical and professional standards, even under pressure</li></ul>",
+
+            "click_2_text": "<p>A person who exhibits Excellence…</p><ul><li>Demonstrates a passion for quality</li><li>Pushes individuals and teams to reflect and evolve, learning from both success and failure</li><li>Shares knowledge patiently  and generously</li><li>Advocates for and role models life-long personal, technical and professional growth</li><li>Invites feedback and constructive challenge, and promptly acts on it</li></ul>",
+
+            "click_3_text": "<p>A person who exhibits Courage…</p><ul><li>Thinks big, pursuing innovative ideas and solutions</li><li>Openly questions actions inconsistent with our values, even when it isn’t popular</li><li>Engages in candid conversations, caring personally and challenging directly</li><li>Has a bias for action and makes tough decisions</li><li>Acknowledges mistakes and limitations; asks for help</li></ul>",
+
+            "reveal_text1": "",
+            "transcript_1": "<p>Integrity sits at the heart of Ethical Decision-Making, and it means</p><ul><li>having a moral compass that does not waver in any situation, big or small,</li> <li>doing what we say and taking accountability when we don't,</li> <li>being honest and forthright, even when it's difficult,</li> <li>not being a bystander, but taking action in the moment to do what is right and speak up, and </li> <li>upholding both the letter and spirit of our ethical and professional standards, even when we are under pressure.</li></ul>",
+            "transcript_2": "<p>Our Value of Excellence touches on humility and learning from both success and failure, and inviting honest feedback and constructive challenge to build trust.</p>",
+            "transcript_3": "<p>It takes our Value of Courage to openly question our own and others’ actions that are inconsistent with our KPMG Values, even when it’s not popular.</p>",
+            "transcript_4": "<p>Our Value of Together means we trust and invite others in our community to help us avoid rationalizations and make more honest decisions.</p>",
+            "transcript_5": "<p>And lastly, our Value For Better reminds us that small things we do every day impact whether we are trusted, whether others can depend on us and whether others want to work with us. It is the trust we build with our clients and one another that enables our success individually and as a firm.</p>",
+            "bottom_text": ""
+
+        }
+    }
+}

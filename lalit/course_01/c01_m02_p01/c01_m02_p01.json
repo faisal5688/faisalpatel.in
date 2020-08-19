@@ -1,0 +1,44 @@
+{
+    "data": {
+        "basePath": "./course_01/c01_m02_p01/",
+        "audios": [{
+                "path": "c01_m02_p01"
+            },
+            {
+                "path": "blank",
+                "isPopup": true
+            },
+            {
+                "path": "blank",
+                "isPopup": true
+            },
+            {
+                "path": "blank",
+                "isPopup": true
+            },
+            {
+                "path": "blank",
+                "isPopup": true
+            }
+        ],
+        "downloadAndroidImages": "",
+        "downloadIpadImages": "",
+        "downloadImages": "c01_m02_p01_p01.jpg,c01_m02_p01_p02.jpg,c01_m02_p01_p03.jpg,c01_m02_p01_p04.jpg",
+        "content": {
+            "backgroundAudio": "blank.mp3",
+            "ins_text": "<p class='InstrutationText'>Review the four reasons and then flip each card to revisit how these reasons may have been a factor in some of the stories you encountered in previous Ethics & Integrity courses.</p>",
+            "click_1": "<p>Fear<span>&quot;I am afraid of what will happen if I speak up and try to act on my values.&quot;</span></p>",
+            "click_2": "<p>Rationalization<span>&quot;I have reasons and rationalizations to explain why I'm not speaking up or acting on my values.&quot;</span></p>",
+            "click_3": "<p>Response<span>&quot;I'm only going to speak up if I think I will be successful in resolving my concern&quot;</span></p>",
+            "click_4": "<p>Skills<span>&quot;I don't know if I have the competence or confidence to speak up about ethical issues when they arise.&quot;</span></p>",
+            "click_1_text": "<div class='popupContentParent popup_1'> <div class='closeBtn'></div><div class='popup_leftpart'><div class='popup_content'><div class='left_img'></div><div class='right_cont'><p><b>Do you remember this story when Lisa was solicited by a government client for free travel and conference passes?</b></p><p>Thomas, a government client, asked Lisa to provide a pass to a KPMG-sponsored conference for free, in addition to covering his travel meals and entertainment for the event. He also indicated he would help Lisa with connections and potential new work within the government agency in return for this support. Fulfilling Thomas’s request could be seen as a bribe in exchange for influence and new work, but Lisa may also have been concerned about the impact of saying no to this client as she thought through her alternates to resolve this ethical dilemma.</p><p class='popup_inst'>Select the <b>X</b> to close the text box.</p></div></div></div></div>",
+            "click_2_text": "<div class='popupContentParent popup_2'> <div class='closeBtn'></div><div class='popup_leftpart'><div class='popup_content'><div class='left_img'></div><div class='right_cont'><p><b>Do you remember this story when Joe rationalized that everyone was doping so he had to dope, too?</b></p><p>After taking some time off to complete college, Joe went back to his professional cycling career. He found the races were faster and it was harder to compete. Through the advice of his teammate, he went to see a doctor who prescribed a performance-enhancing drug that would help him match the performance of the other athletes. Joe’s teammates were all complicit in this doping scheme and had a shared interest in keeping it quiet. Joe felt he couldn’t win without using the performance-enhancing drug because so many others were doing it. He never would have imagined himself doping. But when you think that everybody else is doing it, even if you don't know that to be true, your ‘fudge factor’ makes it a lot easier to believe what you've done is reasonable and acceptable.</p><p class='popup_inst'>Select the <b>X</b> to close the text box.</p></div></div></div></div>",
+            "click_3_text": "<div class='popupContentParent popup_3'> <div class='closeBtn'></div><div class='popup_leftpart'><div class='popup_content'><div class='left_img'></div><div class='right_cont'><p><b>Do you remember this story where a professional spoke up and was successful in resolving her concern?</b></p><div class='content'><p>From Our Files: A professional alleged retaliation by her PML for previously raising allegations that the PML had discriminated against her and impeded her career growth by reassigning some of her job duties. The professional said the PML improperly designating her as a low performer in retaliation.</p><p>An investigation conducted by Human Resources (HR) determined the professional’s low performer designation was based solely on the PML’s feedback. HR also noted that the PML made no mention of the professional having performance issues when interviewed by HR about her reassignment of job duties. However, less than two weeks later, the PML flagged her as a low performer during a year-end assessment meeting.</p><p>The investigation concluded that the timing of events and the PML’s conduct demonstrated that the PML had retaliated against the professional for raising the earlier allegations. Consequently, practice leadership separated the PML from the firm.</p><p class='popup_inst'>Select the <b>X</b> to close the text box.</p></div></div></div></div></div>",
+            "click_4_text": "<div class='popupContentParent popup_4'> <div class='closeBtn'></div><div class='popup_leftpart'><div class='popup_content'><div class='left_img'></div><div class='right_cont'><p><b>Do you remember this story where a team was experiencing pressure from their leader to complete a client deliverable quickly?</b></p><p>Anna, the partner on the engagement, told the team on Friday that they needed to have the final deliverable by Monday and the deadline could not be extended under any circumstance. She told them that they needed to do “whatever it takes” to get the job done.</p><p>After Anna left the room, Ajay told the rest of the team that he found some issues that would not be resolved without a lot of work. He wanted to bring this up to Anna, but didn’t have the courage to speak up about his concern in that moment.</p><p class='popup_inst'>Select the <b>X</b> to close the text box.</p></div></div></div></div>",
+            "transcript_1": "",
+            "transcript_2": "",
+            "transcript_3": "",
+            "transcript_4": ""
+        }
+    }
+}

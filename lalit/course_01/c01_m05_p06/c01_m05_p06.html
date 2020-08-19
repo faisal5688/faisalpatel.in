@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html" charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>Drag N Drop - Classification</title>
+
+    <link rel="stylesheet" href="course_01/c01_m05_p06/c01_m05_p06.css">
+
+    <script src="course_01/c01_m05_p06/SubmitButton.js"></script>
+    <script src="course_01/c01_m05_p06/DragNDrop_single.js"></script>
+    <script src="course_01/c01_m05_p06/c01_m05_p06.js"></script>
+
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <div class="page_title">Fudge factor in action: Conflicts of interest</div>
+        <section class="pageContentwraper">
+            <!-- <div class="imgWrapper"></div> -->
+            <div class="questionText">
+                <p class="queText">Conflicts of interest arise when we have competing interests that could compel us to make an unethical decision in our own self-interest. We might, for example, fail to point out an appetizer the server forgot to add to our bill because it saves us a few dollars. Conflicts of interest can also be a problem in the workplace.</p>            
+                <p class="instText">Which of these has the potential to be a conflict of interest? Drag and drop them into the box on the screen.</p>
+            </div>
+            <div id="dndContainer" class="dragDropWrap">
+                <div class="innerContent">
+                    <div class="lftColumn">
+                        <div class="title">Issues</div>
+                        <div id="dragHolder" class="dragWrap">
+                        </div>
+                    </div>
+                    <div class="rhtColumn">
+                        <!-- <div class="title title1">Positive drop zone answers: </div> -->
+                        <div id="dropHolder1" class="dropWrap"></div>
+
+                    </div>
+
+
+                    <div class="clear"></div>
+
+                </div>
+                <div id="submitBtn" class="submitBtn">
+                    <input type="button" value="Submit">
+                </div>
+                <!-- <div id="showAnswerBtn" class="showAnswerBtn">
+                    <input type="button" value="Show Answer" class="disabled">
+                </div> -->
+                <div class="clear"></div>
+                <div class="dragItem tempDragOption">
+                    <div id="dragContent" class="textStripe">
+                        <span>Lorem Ipsum</span>
+                    </div>
+                </div>
+                <div id="dndFeedbackBox" class="feedbackWrap">
+                    <div id="dndFeedbackContent" class="contentSec">
+                        <div class="row tempFeedback">
+                            <div id="contentHolder" class="txtBlock">
+                                <div id="label" class="ttl">Feedback</div>
+                                <div id="feedbackClose" class="close closeIcon"></div>
+                                <div id="content" class="feedbackTxt">All of these issues have the potential to be a conflict of interest because self-interest may compete with making an ethical choice.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="clear"></div>
+        </section>
+    </div>
+
+</body>
+
+</html>

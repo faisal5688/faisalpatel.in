@@ -1,0 +1,118 @@
+.linkWrap {
+	margin: 0 auto;
+	max-width: 85%;
+	padding:0;
+}
+.linkContent {
+	padding: 0 0 30px;
+}
+.linkContent .contentSec {
+	background: none repeat scroll 0 0 #00A1B9;
+	clear: both;
+	color: #FFFFFF;
+	font: 14px/20px Arial;
+	margin: 0 0 1px;
+	padding: 28px 18px;
+	position: relative;
+}
+.linkContent .contentWrap p {
+	margin: 0 0 18px;
+}
+.linkContent .contentWrap p a {
+	text-decoration: underline;
+	color:#0000FF;
+}
+.linkContent .contentWrap p a:hover {
+	text-decoration: none;
+}
+.tick {
+/* visibility:hidden; */
+}
+#linkOverlay {
+	background: none repeat scroll 0 0 rgba(0, 0, 0, 0.3);
+	display: none;
+	height: 100%;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	z-index: 1;
+}
+.visited {
+	color:#ffcc00 !important;
+}
+/* popup 
+.clickIntOverlay {
+	display:block;
+	width:100%;
+	height:100%;
+	position:absolute;
+	top:0;
+	left:0;
+	z-index:1000;
+	background:url("../../../assets/images/cnl_overlay.png") repeat;
+}*/
+.clickIntPopup {
+	max-width: 35%;
+	position: relative;
+	top: 50%;
+	margin:-165px auto 0;
+	background:url("../../../assets/images/popupBg.png") repeat;
+}
+.clickIntHeader {
+	width:100%;
+	min-height:40px;
+	border-bottom:1px solid #e4801b;
+	display:table;
+}
+.clickIntHeadTxt {
+    color: #E4801B;
+    display: table-cell;
+    font-size: 16px;
+    height: 30px;
+    padding: 5px 20px;
+    vertical-align: middle;
+}
+.clickIntClose {
+	cursor: pointer;
+	display: table-cell;
+	float: right;
+	height: 40px;
+	margin-right: 5px;
+	margin-top: 5px;
+	width: 34px;
+	background:url("../../../assets/images/kc_assets.png") no-repeat scroll -209px -22px;
+}
+.clickIntpopupTxt {
+	padding:36px 27px;
+	color:#fff;
+	font-size: 14px;
+	height: auto;
+	overflow-y: auto;
+}
+.clickableLnkCls {
+	cursor:pointer;
+}
+/* iPads (Landscape) */
+@media screen and (max-width: 1024px)
+{
+	.clickIntPopup{
+		max-width: 300px;
+	}
+}
+/* for Note 8 Potrait*/
+@media only screen and (min-device-width : 800px) and (max-device-width : 1280px) and (device-aspect-ratio : 5/8) and (-webkit-min-device-pixel-ratio : 1.33) and (orientation : portrait){
+.linkWrap {
+	max-width: 76%;
+	margin:14% auto 0;
+}
+.clickIntPopup{
+	max-width: 430px;
+}
+}
+/* for Note 8 landscape*/
+@media only screen and (min-device-width : 800px) and (max-device-width : 1280px) and (device-aspect-ratio : 8/5) and (-webkit-min-device-pixel-ratio : 1.33) and (orientation : landscape){
+	.linkWrap {
+		padding:25px 0 0;
+	}
+}

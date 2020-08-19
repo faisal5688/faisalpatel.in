@@ -1,0 +1,133 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* Static Text/Image/Video */
+.txtimgWrap {
+	max-width:90%;
+	margin:0 auto;
+	padding:0;
+}
+.txtimgContainer {
+	background-color:#b0d9e6;
+	margin: 0 auto;
+    max-width: 90%;
+    padding: 0;
+}
+.txtimgHeader {
+	width:100%;
+	height:41px;
+	background:#00a1b9;
+	display:table;
+	border-bottom:solid 1px #fff;
+}
+.txtimgHeader p {
+	display:table-cell;
+	height:40px;
+	vertical-align:middle;
+	padding-left:4%;
+	font:bold 20px arial;
+}
+.middleContainer {
+	padding:5px 0;
+}
+.dataContainer  {
+    width: 44%;
+    float: left;
+    margin: 0.5% 1%;
+}
+
+.columnContainer {
+    width: 100%;
+}
+.txtHolder {
+    width: 95%;
+    margin: 1% 2%;
+    font-size: 15px;
+    text-align: left;
+}
+.txtHeader{
+    margin: 1% 4%;
+    font-size: 15px;
+    text-align: left;
+}
+.txtHolder ul li {
+	display:list-item;
+	list-style:none;
+	margin:2% 0;
+    padding-left: 20px;	
+	background:url(../../images/bulletIco.jpg) no-repeat left 5px;
+}
+.imageHolder {
+    width: 100%;
+	text-align:right;
+}
+.imageHolder > img {
+    max-width: 100%;
+    height: auto;
+}
+.txtimgContainer.bgImage {
+	background:url("../../images/ladyImageBig.png") no-repeat scroll right bottom #B0D9E6;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader( src='arrow-big-right.png', sizingMethod='scale');
+    -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader( src='arrow-big-right.png', sizingMethod='scale')";
+	background-size:auto 93%;
+}
+.videoHolder{
+	margin:0 0 1% 4%;
+}
+.middleContainer{
+	min-height:290px;
+}
+.txtHolder {
+	height:220px;
+	overflow-x:hidden;
+	overflow-y:auto;
+}
+/* iPads (Landsacpe) */
+@media screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape){
+.txtimgWrap{
+	margin-right:68px;
+}
+}
+
+/* iPads (Portrait) */
+@media screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait){
+.txtimgWrap{
+	margin-right:54px;
+}
+}
+/*Note8 Potrait Orientation Start*/
+@media only screen and (min-device-width : 800px) and (max-device-width : 1280px) and (device-aspect-ratio : 5/8) and (-webkit-min-device-pixel-ratio : 1.33) and (orientation : portrait){
+.item{
+	top:0 !important;
+}
+.txtimgWrap {
+	margin-top:27%;
+	margin-right:60px;
+	max-width:85%;
+	background:green;
+}
+.txtimgContainer.bgImage{
+	background-size:url("../../images/ladyImageBig.png") no-repeat scroll right bottom #B0D9E6;
+	background-size:auto 93%;
+    /* height: 700px; */
+	z-index:1001;
+}
+.txtHolder{
+	height:315px;
+	width:50%;
+}
+}
+
+/*Note8 Lansacpe Orientation Start*/
+@media only screen and (min-device-width : 800px) and (max-device-width : 1280px) and (device-aspect-ratio : 8/5) and (-webkit-min-device-pixel-ratio : 1.33) and (orientation : landscape){
+.txtimgWrap {
+	margin:10px auto;
+}
+.txtHolder{
+	margin-bottom:0;
+}
+.txtimgContainer{
+	margin-top:23px;
+}
+
+}

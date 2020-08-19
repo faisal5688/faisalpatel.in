@@ -1,0 +1,47 @@
+﻿{
+    "data": {
+        "id": "c01_m00_p01",
+        "title": "",
+        "basePath": "./course_01/c01_m00_p01/",
+        "img": "",
+        "sections": [{
+            "id": "c01_m01_p24_01",
+            "dataSync": "0.1|",
+            "img": "c01_m00_p01.png",
+            "title": "",
+            "timeLine": [{
+                "time": 0,
+                "selector": "video",
+                "addClass": "gray",
+                "callback": "pauseAll"
+            }],
+            "leftSideVideo": {
+                "id": "leftVideo-container",
+                "poster": "c01_m00_p01_poster.png",
+                "video": "c01_m00_p01.mp4",
+                "track": "c01_m00_p01.vtt",
+                "autoPlay": true,
+                "size": "350,350",
+                "isActivityCompletion": "false"
+            }
+        }],
+        "downloadAndroidImages": "",
+        "downloadIpadImages": "",
+        "downloadImages": "../images/c01_m00_p01.jpg",
+        "image": {
+            "use_image_tag": "false",
+            "desktop": "",
+
+            "ipad": {
+                "landscape": "",
+                "portrait": ""
+            }
+        },
+        "content": "<div class='mainCont'> <div class='text-screen-wrapper'></div> <div class='btnWrapper hide'> <div id='back' class='back-btn next-back-btn disabled'>Previous</div> <div id='next' class='next-btn next-back-btn'>Continue </div> </div> </div>",
+        "textScreens": [{
+            "textBox": [{
+                "text": "<div class='parentBlock'> <div class='module01' data-inClass='fadeIn' data-sTime='0.5'> <div class='textBlock'><h3>Ethical <br/>Decision-Making <br/>and the <br/>Art of <br/>Speaking Up</h3> </div><div class='imageBlock'> </div > </div> </div > "
+            }]
+        }]
+    }
+}

@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" standalone="no" ?>
+<manifest identifier="KPMG_2020" version="1"
+          xmlns="http://www.imsglobal.org/xsd/imscp_v1p1"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xmlns:adlcp="http://www.adlnet.org/xsd/adlcp_v1p3"
+          xmlns:adlseq="http://www.adlnet.org/xsd/adlseq_v1p3"
+          xmlns:adlnav="http://www.adlnet.org/xsd/adlnav_v1p3"
+          xmlns:imsss="http://www.imsglobal.org/xsd/imsss"
+          xsi:schemaLocation="http://www.imsglobal.org/xsd/imscp_v1p1 imscp_v1p1.xsd
+                              http://www.adlnet.org/xsd/adlcp_v1p3 adlcp_v1p3.xsd
+                              http://www.adlnet.org/xsd/adlseq_v1p3 adlseq_v1p3.xsd
+                              http://www.adlnet.org/xsd/adlnav_v1p3 adlnav_v1p3.xsd
+                              http://www.imsglobal.org/xsd/imsss imsss_v1p0.xsd">
+
+	<metadata>
+		<schema>ADL SCORM</schema>
+		<schemaversion>CAM 1.3</schemaversion>
+	</metadata>
+	<organizations default="KPMG_WBT_Course1">
+		<organization identifier="KPMG_WBT_Course1">
+			<title>Ethical Decision-Making and the Science of (Dis)Honesty</title>
+			<item identifier="item_1" identifierref="resource_1" isvisible="false">
+				<title>Ethical Decision-Making and the Science of (Dis)Honesty</title>
+			</item>
+			<imsss:sequencing>
+				<imsss:controlMode choice="false" choiceExit="false" flow="true" forwardOnly = "true"/>
+			</imsss:sequencing>
+		</organization>
+	</organizations>
+	<resources>
+		<resource identifier="resource_1" type="webcontent" adlcp:scormType="sco" href="index_SCORM12_locked.html">
+			<file href="index_SCORM12_locked.html"/>
+		</resource>
+	</resources>
+</manifest>

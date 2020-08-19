@@ -1,0 +1,146 @@
+.pageContentwraper {
+    width: 100%;
+}
+
+.txtimgWrap {
+    height: 100%;
+    width: 100%;
+}
+
+#sectionHolder {
+    background: #fff !important;
+}
+
+.ImageTextContainer {
+    display: -moz-box;
+    display: -webkit-flexbox;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    -moz-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    align-items: center;
+    justify-content: left;
+}
+
+.ImageTextContainer .imageCont {
+    align-self: flex-start;
+    width: 50%;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.ImageTextContainer .textCont {
+    align-self: flex-start;
+    width: 50%;
+    height: 100%;
+    background: #eeeeee;
+    min-height: 465px;
+    display: -moz-box;
+    display: -webkit-flexbox;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.sectionBlock {
+    padding: 16px;
+}
+
+
+/* Order for elements in Text Right Container */
+
+.TextRightContainer .textCont {
+    order: 2;
+    width: 50%;
+    /* margin-left: 5px; */
+}
+
+.TextRightContainer .imageCont {
+    order: 1;
+}
+
+
+/* Order for elements in Text Left Container */
+
+.TextLeftContainer .textCont {
+    order: 1;
+}
+
+.TextLeftContainer .imageCont {
+    order: 2;
+    width: 49%;
+    margin-left: 4px;
+}
+
+.ImageTextContainer .textCont p {
+    line-height: 20px;
+    margin-bottom: 12px;
+}
+
+.ImageTextContainer .textCont p:last-child {
+    margin-bottom: 0;
+}
+
+.ImageTextContainer .textCont p.noBotMargin {
+    margin-bottom: 0px;
+}
+
+.ImageTextContainer .textCont ul {
+    padding-left: 20px;
+    margin: 4px 0;
+}
+
+.ImageTextContainer .textCont li {
+    list-style: none outside disc;
+    margin-bottom: 10px;
+    line-height: 21px;
+}
+
+.ImageTextContainer .textCont li:last-child {
+    margin-bottom: 0px;
+}
+
+.ImageTextContainer .titleBlock {
+    background: #3c388d;
+    font-size: 36px;
+    line-height: 40px;
+    font-family: 'KPMG_App';
+    width: 100%;
+    box-sizing: border-box;
+    color: #fff;
+    padding: 6px 20px;
+}
+
+.footNote {
+    background: #00338d!important;
+}
+
+@media screen and (min-width:0\0) {
+    .ImageTextContainer .titleBlock {
+        background: #3c388d;
+        font-size: 36px;
+        line-height: 60px;
+        font-family: "KPMG_App";
+        width: 100%;
+        box-sizing: border-box;
+        color: #fff;
+        padding: 0 20px;
+        height: 50px;
+    }
+
+}
+
+.ImageTextContainer .textCont p.mb4 {
+    margin-bottom: 4px;
+}

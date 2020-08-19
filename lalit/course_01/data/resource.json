@@ -1,0 +1,17 @@
+﻿{
+    "resources": {
+        "links": [{
+                "id": "res1",
+                "link_name": "Sample Link",
+                "type": "external",
+                "link": "https://www.google.com/"
+            },
+            {
+                "id": "res1",
+                "link_name": "Course Transcript",
+                "type": "internal",
+                "link": "/resources/course_transcript.pdf"
+            }
+        ]
+    }
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html" charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+<title>Click Tabs</title>
+
+<link rel="stylesheet" href="assets/css/templates/ClickInteractivity_2.css">
+<link rel="stylesheet" href="" changetheme='true'>
+
+<script src="js/controller/Templates/ClickNLearn/ClickNLearn_v2.js"></script>
+ <script>
+	var cnlData = {};
+	$(document).ready(function(){
+		clickInteractivity_2.initTabs(DataManager.templateXMLData);
+	});
+	
+</script>
+</head>
+<body>
+
+<div class="wrapper">	
+	<section class="mainContent">
+		<div class="cnl_v2_Wrap">
+			<div class="infoSec">Click each tab to learn more.</div>
+			<div id="cnl_v2_Holder">
+				<div id="click_v2_ContainerLeft">
+					<ul class="cnl_v2_Nav">
+						<li><a href="javascript:void(0);">Click - 1</a> <div id="cnl_v2_tick1" class="cnl_v2_tickShow"></div></li>
+						<li><a href="javascript:void(0);">Click - 2</a> <div id="cnl_v2_tick2" ></div></li>
+						<li><a href="javascript:void(0);">Click - 3</a> <div id="cnl_v2_tick3"></div></li>
+						<li><a href="javascript:void(0);">Click - 4</a><div id="cnl_v2_tick4"></div></li>
+					</ul>
+				</div>
+				<div id="cnl_v2_Container" class="cnl_v2Panel"> </div>
+			</div>
+		</div>
+	</section>
+</div>
+
+</body>
+</html>

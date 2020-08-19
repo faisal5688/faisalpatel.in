@@ -1,0 +1,688 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+
+.mainContainer {
+	width:100%;
+	height:80%;
+}
+
+.contentHolder{
+	height:auto;
+	background:url(../../assets/images/pupp_shadow.png) no-repeat left top;
+	border:2px solid #343434;
+	}
+	
+.headerHolder {
+    float: left;
+    height: auto;
+    width: 100%;
+/* 	background:url(../../assets/images/questionBg.jpg) repeat left top; */
+	}
+	
+.iconQuestion {
+	background:url(../../assets/images/Icon_question.jpg) no-repeat left top;
+	background-size:100% 100%;
+    float: left;
+	width:80px;
+	height:75px;
+	}
+
+.iconQuestion2 {
+	background:url(../../assets/images/q_image.png) no-repeat center center;
+    float: left;
+	width:80px;
+	height:50px;
+	display:block;
+}
+	
+.querstionText {
+	display: table;
+    color: #FFF;
+    font-size: 15px;
+    padding: 10px 0 10px 20px;
+	vertical-align: middle;
+	}
+.querstionText p{
+    height: 55px;
+	display: table-cell;
+    vertical-align: middle;
+}
+	
+.querstionText2 {
+    color: #000;
+    display: table;
+    font-size: 15px;
+    padding: 10px 0 10px 20px;
+    vertical-align: middle;
+	}
+	
+.querstionText2 p{
+    height: 30px;
+	display: table-cell;
+    vertical-align: middle;
+}
+	
+.optionContainer {
+    height: auto;
+    margin: 2% 0;
+}	
+
+.options{
+    display: inline-block;
+    height: inherit;
+    width:100%;
+}
+
+.optionswrapper {
+    display: inline-block;
+    height: inherit;
+    margin-bottom:15px;
+    position: relative;	
+    width: 100%;
+}
+.checkBox {
+	width:5%;
+	height:100%;
+	background:#CCC;
+	float:left;
+	background:url(../../assets/images/bulletPoint.png) no-repeat center center;
+	padding:2%;
+	}
+	
+.optionText{
+    display:block;
+    height: inherit;
+	padding:6px 0 0 32px;
+}
+
+/* .optionText:first-child{
+	line-height:2.5em;
+} */
+	
+
+
+.noteBar{
+	text-align:right;
+	line-height:2.2em;
+	float:left;
+	padding-right:1em;
+	}
+
+.hiddenOption, .tempOption, .tempdropdown{
+	display: none;
+}
+
+.assesmentShadow {
+    margin: 0 auto 0;
+/* 	padding: 0 60px; */
+	max-width: inherit;
+	clear: both;
+}
+
+.assesmentMain {
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+    width:100%;
+}
+
+.resultMain {
+    position: relative;
+    width:100%;
+}
+	
+.assesmentMain2 {
+    margin: 0 auto;
+    padding: 30px 62px 0;    
+	overflow: hidden;
+    position: relative;
+    max-width: inherit;
+	}
+	
+#assessmentHolder .optionswrapper{
+	margin-bottom: 28px;
+}
+
+.assesmentHeader {
+    float: left;
+    height:auto;
+    width: 100%;
+    color: #fff;
+    font-size: 20px;
+    text-align: left;	
+	background:url(../../assets/images/questionBg.jpg) repeat left top;
+	box-shadow: 0 3px 2px 0 rgba(0, 0, 0, 0.4);	
+	-webkit-box-shadow:0 3px 2px 0 rgba(0, 0, 0, 0.4);
+	-moz-box-shadow:0 3px 2px 0 rgba(0, 0, 0, 0.4);	
+	-o-box-shadow:0 3px 2px 0 rgba(0, 0, 0, 0.4);
+	border-bottom:2px solid rgba(255,255,255, 0.9);
+}
+
+.assesmentHeader2 {
+	width:100%;
+    color: #fff;
+    float: left;
+    font-size: 20px;
+	min-height:75px
+}
+
+
+.assesmentstartText {
+    padding:2.5% 2.9%;
+	text-align:center;
+}
+
+.assesmentResultText {
+	text-align:center;
+}
+
+.assesmentHeaderText {
+    color: #FFF;
+    font-size: 20px;
+    text-align: left;
+}
+
+.assesmentMiddle {
+    background:url("../../assets/images/pupp_shadow.png") no-repeat left top;
+	background-size:81px 100%;
+    float: left;
+    height: auto;
+    min-height:230px;
+    padding-bottom: 10px;
+    width: 100%;
+	overflow:auto;
+}
+
+.resultMiddle {
+   /*  float: left; */
+    height: auto;
+    overflow: auto;
+    position: relative;
+    width:100%;
+	background: #00aeef;
+	/*-webkit-overflow-scrolling: touch;*/
+}
+
+.assesmentMiddle2 {
+    float: left;
+    height: auto;
+    min-height:210px;
+    padding-bottom: 10px;
+    width: 100%;
+	overflow:auto;
+	background-size:81px 100%;
+}
+
+.StartPage {
+    float: left;
+    overflow: auto;
+    padding: 0 0 30px;	
+    width: 100%;
+}
+
+.bullteHolder{
+	background:url("../../assets/images/kcBg.jpg") repeat;
+	width:80px;
+	min-height:250px;
+	float:left;
+}
+
+.correctIncorrect {
+	background:#ccc;
+	width:25px;
+	height:25px;
+	float:left;
+}
+
+.bulltePoints {
+    background: url("../images/kcSprite.png") no-repeat 0 0;
+    height: 25px;
+    width: 25px;
+	margin:0 auto;
+	cursor:pointer;
+	display:block;
+}
+.answer {
+    background: url("../images/kcSprite.png") no-repeat 0 0;
+    height: 25px;
+    width: 25px;
+	margin:0 auto;
+	display:none;
+}
+.correct {
+    background: url("../images/kcSprite.png") no-repeat 0 -50px;
+    height: 25px;
+    width: 25px;
+	margin:0 auto;
+		display:none;
+}
+.incorrect {
+    background: url("../images/kcSprite.png") no-repeat 0 -75px;
+    height: 25px;
+    width: 25px;
+	margin:0 auto;
+	display:none;
+}
+.bulltePoints:hover, .bulltePointsSelected {
+    background-position: center -25px;
+}
+.bulltePoints.disabled{
+	cursor:default;
+	background-position: center 0;
+}
+
+.checkboxContainer {
+    height: 25px;
+    display:block;
+    float: left;	
+}
+.mcssTick, .mcssCross{
+    background: url("../../assets/images/correct_incorrect.png") no-repeat 0 0;
+    bottom: 0;
+    display: inline-block;
+    float: left;
+    height: 18px;
+    left: 8px;
+    position: absolute;
+    width: 21px;
+}
+.mcssCross{
+    background: url("../../assets/images/correct_incorrect.png") no-repeat 0 -17px;
+}
+
+.start {
+    float: left;
+    min-height: 252px;
+    width: 40%;
+}
+
+.start img {
+	max-width:100%;
+	height:auto;
+}
+
+.startText {
+	width:60%;
+	float:left;
+	height:250px;
+	height:auto;
+	overflow:auto;
+}
+.startText p {
+    margin: 4% 0;
+    padding: 0 2%;
+}
+
+.colorChange {
+	color:#990000;
+}
+
+.assementfooter {
+    float: left;
+    padding: 30px 62px 0;
+    width: 100%;
+}
+
+.resultfooter {
+    /* float: left; */
+    width: 100%;
+}
+
+.assementfooter2 {
+    float: left;
+    width: 100%;
+/* 	position:absolute;
+	bottom:0; */
+}
+
+
+.footerText {
+    color: #990000;
+    float: right;
+    height: 100%;
+    text-align: right;
+	font-style:italic;
+}
+
+.submitButton {
+	width: 140px;
+    text-align: center;
+	border: medium none;
+	font:18px 'Open Sans Condensed',sans-serif;
+	font-weight: 700;
+	color: #FFF;
+	padding:10px 0;
+	cursor: pointer;
+	background: #004e98; /* Old browsers */
+	background: -moz-linear-gradient(top, #004e98 0%, #00aeef 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#004e98), color-stop(100%,#00aeef)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #004e98 0%,#00aeef 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #004e98 0%,#00aeef 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #004e98 0%,#00aeef 100%); /* IE10+ */
+	background: linear-gradient(to bottom, #004e98 0%,#00aeef 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#004e98', endColorstr='#00aeef',GradientType=0 ); /* IE6-9 */
+}
+
+.submitButton:hover,  {
+	background: #004e98;
+}
+.optionIcons .radio {
+    background-position: 0 -1px;
+}
+.optionIcons .checkBox, .optionIcons .radio {
+    background: url("../../images/kcSprite.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    cursor: pointer;
+    height: 25px;
+    margin: 10px 0 0;
+    position: absolute;
+    width: 25px;
+}
+
+
+.submitButtonDisable {
+	width: 140px;
+	padding: 10px 0;
+	color: #cdcdcd;
+	text-align: center;
+	cursor: default;
+	border: medium none;
+	background: #ababab;
+	font:18px 'Open Sans Condensed',sans-serif;
+	font-weight: 700;
+}
+
+.showRemedialShow, .showRemedialHide  {
+	background: #007cc2; /* Old browsers */
+	background: -moz-linear-gradient(top, #007cc2 0%, #004a91 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#007cc2), color-stop(100%,#004a91)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #007cc2 0%,#004a91 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #007cc2 0%,#004a91 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #007cc2 0%,#004a91 100%); /* IE10+ */
+	background: linear-gradient(to bottom, #007cc2 0%,#004a91 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#007cc2', endColorstr='#004a91',GradientType=0 ); /* IE6-9 */
+    color: #fff;
+	float: left;
+    cursor: pointer;
+    font-weight: bold;
+    line-height: 41px;
+    margin-left: 40px;
+    width: 170px;
+}
+
+/* .showRemedialHide {
+    background:url("../../assets/images/RemedialBtn.png") no-repeat 0 -69px;
+    color: #717171;
+}
+ */
+.showRemedialShow:hover, .showRemedialHide:hover{
+    background: #007cc2;
+}
+
+.showRemedial{
+    height: 190px;
+    padding: 20px;
+    color: #000000;
+    overflow: auto;
+    background: url("../images/feedBackheaderShadow.png") no-repeat scroll left top rgba(0, 0, 0, 0);
+	-webkit-overflow-scrolling: touch;
+}
+
+.resultimage{
+    background: url("../../assets/images/resultImage.jpg") no-repeat center center;
+    display: block;
+    float: left;
+    height: 106px;
+    margin: 1% auto;
+    width: 100%;
+}
+
+.resultText {
+    float: left;
+    height: 48px;
+    line-height: 1.5em;
+    margin: 0 auto;
+    padding: 1% 2%;
+    text-align: center;
+    width: 96%;
+}
+
+.resultgrad {
+    float: left;
+    margin:0 auto;
+    width: 100%;
+}
+
+.scoreDisplay {
+	display: table;
+	margin: 15px 0 15px 60px;
+}
+.result, .failpass{
+	color: #fff;
+}
+
+.scoreDisplay li {
+    display: table-cell;
+    margin-right: 10px;
+    padding: 0 10px;
+    vertical-align: middle;
+	text-align: center;
+}
+
+.scoreDisplay div {
+	color:#fff;
+    float: left;
+    height: 30px;
+    padding: 3% 0 0 2%;
+    text-align: center;
+    width: 22%
+}
+
+.box {
+    color: #007DC3;
+    font-weight: bold;
+    text-align: center;
+    width: 120px;
+    background: #FFFFFF;
+    border: 1px solid #EBEBEB;
+    box-shadow: 1px 2px 1px rgba(0, 0, 0, 0.3) inset;
+}
+
+.feedbackPopup {
+    background:#FFFFFF;
+    border: 1px solid #000000;
+    display: block;
+    height: 177px;
+    overflow: auto;
+    position: absolute;
+    right: 25%;
+    top: 35%;
+    width: 50%;
+    z-index: 2;
+	box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.4);
+	-webkit-box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.4);	
+	-moz-box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.4);
+	-o-box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.4);
+	-ms-box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.4);
+}
+
+.feedbackHeader {
+	background:url("../../assets/images/questionBg.jpg") repeat-x 0 0;
+    height: 31px;
+    width: 100%;
+    z-index: 3;
+}
+
+.feedbackIcon {
+	width:110px;
+	height:31px;
+	float:left;
+	background:url("../../assets/images/feedBackIcon.png") no-repeat 0 0;
+	background-size:110px 100%;
+}
+
+.feedbackClose {
+    color: #07AAE0;
+    cursor: pointer;
+    float: right;
+    height: 25px;
+    margin: 7px 9px;
+    width: auto;
+}
+
+
+.feedbackPopupText {
+	margin:10px;
+}
+
+/* New CSS Start */
+.KCbanner{
+	background-image: -webkit-linear-gradient(top, #0b3088, #004e98);
+	background-image: -moz-linear-gradient(top, #0b3088, #004e98);
+	background-image: -ms-linear-gradient(top, #0b3088, #004e98);
+	background-image: -o-linear-gradient(top, #0b3088, #004e98);
+	background-image: linear-gradient(to bottom, #0b3088, #004e98);	
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0b3088', endColorstr='#004e98',GradientType=0 ); /* IE6-9 */
+	height: 240px;
+	max-width: 100%;
+	margin: 0 auto;
+}
+
+.bannerText {    
+    float: left;
+    margin-left: 62px;
+    margin-top: 19px;	
+	color: #fff;
+	width: 90%;
+}
+
+.bannerText h1{
+    font-size: 50px;
+    font-weight: normal;
+}
+.bannerText h1 span.assess{
+	font-size: 35px;
+}
+.bannerText h1 span#assessmentTitle{
+	font-size: 50px;
+}
+.bannerText .question{
+	font-size: 18px;
+    margin-top: 10px;
+}
+.bannerText .question p{
+	font-size: 18px;
+/* 	margin-top:7px; */
+}
+
+.KCinstruction{
+	color:#007dc3;
+	display: none;
+	width: 300px;
+	margin-top:38px;
+	margin-left:5px;
+	padding: 5px 10px 5px 0;
+	background: #fff;
+}
+.instIcon{
+	width:25px;
+	height: 25px;
+	float: left;
+	margin-right:3px;
+    background: url(../images/kcSprite.png) no-repeat 0 -104px;
+}
+
+.remediaHeader{
+	padding: 14px 22px;
+	color: #fff;
+	background: #004e98;
+	font: bold 22px/26px 'Open Sans Condensed',sans-serif;
+}
+.remedialContainer{
+    color: #979797;
+    height: 297px;
+    padding: 0;
+	margin: 10px 120px;
+	background: #FFFFFF;
+}
+
+/* css for jpg 29 start */
+.dropdown.options {
+    margin: 0 auto;
+    width: 454px;
+}
+.dropdownWrapper {
+	border-bottom: 2px solid #bdbdbd;
+/* 	display: table; */
+    width: 100%;
+	padding-top: 8px;
+}
+.dropdownContent {
+	display: table-cell;
+	color: #56aedf;
+	font-size: 28px;
+	line-height: 30px;
+	font-weight: 700;
+	vertical-align: bottom;
+	text-align: left;
+	width: 130px;
+}
+.dropboxContainer {
+	display: table-cell;
+	vertical-align: bottom;
+	width: 325px;
+}
+.dropboxContainer select { 
+		-moz-appearance: none;
+	-webkit-appearance: none;
+    background-image: url("../../assets/images/select_img.jpg");
+	background-repeat: no-repeat;
+	background-position: right top;
+	background-size:  contain;
+	background-color:  #FFFFFF;
+    border-left: 1px solid #DFDFDF;
+    border-top: 1px solid #DFDFDF;
+	border-right: 0;
+	border-bottom: 0;
+    font-size: 16px;
+    padding: 3px 0 1px 5px;
+    text-indent: 0.01px;
+    text-overflow: "";
+    width: 100%;
+	color: #bbb;
+	-webkit-border-radius: 0;
+	margin-bottom: 0;
+ }
+ 
+.dropboxContainer select .disabledOpt{
+	color: #bbb;	
+}
+
+.dropboxContainer select .activeOpt{
+	color: #004890;
+}
+
+ 
+/* #assessmentOptionContainer { text-align: center; }
+ 
+#assessmentHolder .assementfooter2 .submitButtonDisable {
+    margin: 0 auto;
+} */
+ /* css for jpg 29 end */
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+	.showRemedial {
+		height: 124px;
+	}
+	.remedialContainer { height: 219px; }
+	#dropdownHolder { margin-top: -10px; }
+	.dropdownWrapper { padding-top: 4px; }
+	#assessmentHolder .optionswrapper { margin-bottom: 24px; }
+}
+@media screen and (max-width: 768px){
+	.KCbanner {
+		height: 246px;
+	}
+}
+/* New CSS End */

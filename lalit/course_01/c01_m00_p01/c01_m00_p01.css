@@ -1,0 +1,118 @@
+@charset "utf-8";
+
+/* CSS Document */
+
+.txtimgWrap {
+    margin: 0 auto;
+    padding: 0px;
+}
+
+.dataContainer {
+    width: 100%;
+    float: left;
+}
+
+.txtHolder {
+    font-size: 14px;
+    padding: 0;
+    text-align: left;
+}
+
+#sectionHolder {
+    background: #FFF;
+    height: 474px;
+}
+
+.mainCont {
+    background: #FFF;
+    box-sizing: border-box;
+    height: 530px;
+    padding: 0;
+}
+
+.txtHolder p {
+    margin: 0;
+    padding: 0 0 16px;
+}
+
+/* .txtHolder ul {
+    margin: 0 0 10px;
+    padding: 0;
+} 
+
+.txtHolder ul li a {
+    text-decoration: underline;
+}
+*/
+.parentBlock li {
+    background: rgba(0, 0, 0, 0) url("../images/list_icon.png") no-repeat scroll left 5px !important;
+    list-style: outside none none;
+    padding-bottom: 16px;
+    padding-left: 16px;
+}
+
+.txtHolder ul li ul {
+    margin-top: 10px;
+}
+
+.parentBlock {
+    display: flex;
+    display: -webkit-flex;
+    width: 900px;
+    padding: 0 0px 0 0px;
+    height: 300px;
+}
+
+.module01,
+.module02 {
+    position: relative;
+}
+
+.parentBlock .textBlock {
+    max-width: 35%;
+    width: 426px;
+    text-align: center;
+    float: left;
+}
+
+.parentBlock .imageBlock {
+    position: relative;
+}
+
+.parentBlock .module01 {
+    width: 100%;
+}
+
+.parentBlock .module01 .imageBlock {
+    background:url("../c01_m00_p01/c01_m00_p01_0.jpg") no-repeat;
+    width: 562px;
+	height: 506px;
+    background-size: 100%;
+    float: right;
+}
+
+.parentBlock .module01 h3,
+.parentBlock .module02 h3 {
+      font-family: kpmg_app;
+    font-size: 60px;
+    color: #483698;
+    font-weight: normal;
+    text-align: left;
+    padding: 20% 0px;
+    display: block;
+    width: 100%;
+    line-height: 64px;
+}
+
+.parentBlock .module01 h3 span,
+.parentBlock .module02 h3 span {
+    font-size: 16px;
+    font-family: arial;
+    color: #fff;
+    margin-bottom: 0px;
+    display: block;
+}
+
+#shellCourseTitle.companyTitle {
+    display: none;
+}

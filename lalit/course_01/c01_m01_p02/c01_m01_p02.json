@@ -1,0 +1,48 @@
+﻿{
+    "data": {
+        "id": "c01_m01_p02",
+        "title": "",
+        "basePath": "./course_01/c01_m01_p02/",
+		"downloadAndroidImages": "c01_m01_p02_1.jpg,c01_m01_p02_2.jpg,c01_m01_p02_3.jpg,c01_m01_p02_4.jpg,c01_m01_p02_5.jpg,c01_m01_p02_poster.png,shadow.png,thumbnail.png",
+        "downloadIpadImages": "c01_m01_p02_1.jpg,c01_m01_p02_2.jpg,c01_m01_p02_3.jpg,c01_m01_p02_4.jpg,c01_m01_p02_5.jpg,c01_m01_p02_poster.png,shadow.png,thumbnail.png",
+        "downloadImages": "c01_m01_p02_1.jpg,c01_m01_p02_2.jpg,c01_m01_p02_3.jpg,c01_m01_p02_4.jpg,c01_m01_p02_5.jpg,c01_m01_p02_poster.png,shadow.png,thumbnail.png",
+        "img": "",
+        "sections": [{
+            "id": "c01_m01_p02_01",
+            "dataSync": "0.1|",
+            "img": "c01_m01_p02.png",
+            "title": "",
+            "timeLine": [{
+                "time": 0,
+                "selector": "video",
+                "addClass": "gray",
+                "callback": "pauseAll"
+            }],
+            "leftSideVideo": {
+                "id": "leftVideo-container",
+                "poster": "c01_m01_p02_poster.png",
+                "video": "c01_m01_p02.mp4",
+                "track": "c01_m01_p02.vtt",
+                "autoPlay": true,
+                "size": "350,350",
+                "isActivityCompletion": "false"
+            }
+        }],
+        "downloadAndroidImages": "",
+        "downloadIpadImages": "",
+        "downloadImages": "",
+        "image": {
+            "use_image_tag": "false",
+            "desktop": "",
+
+            "ipad": {
+                "landscape": "",
+                "portrait": ""
+            }
+        },
+        "content": "",
+        "textScreens": [{
+            "textBox": []
+        }]
+    }
+}
