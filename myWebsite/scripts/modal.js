@@ -9,11 +9,11 @@ $(document).ready(function() {
       link: 'https://eat.chownow.com/'
     },
     ordering: {
-      title: 'ChowNow Ordering Web',
-      tag: 'WHITE-LABEL ONLINE ORDERING SOLUTION.',
+      title: 'Music Player',
+      tag: 'Music Player',
       detail:
-        'ChowNow is a commission-free online ordering system and food ordering app helping restaurants feed their hungry customers.',
-      link: 'https://direct.chownow.com/direct/195/locations/260'
+        'Music Player',
+      link: 'https://faisalpatel.in/musicPlayer'
     },
     newrelic: {
       title: 'NewRelic.com',
