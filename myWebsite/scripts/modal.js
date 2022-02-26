@@ -8,7 +8,7 @@ $(document).ready(function() {
         'ChowNow Discover is a platform that lets customers discover new local restaurants and provides business owners with tools to convert first time orders into lifelong diners.',
       link: 'https://eat.chownow.com/'
     },
-    ordering: {
+    mPlayer: {
       title: 'Music Player',
       tag: 'Music Player',
       detail:
